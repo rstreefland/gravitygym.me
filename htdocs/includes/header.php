@@ -49,7 +49,7 @@ function externalFile($url, $file) {
 //thumb returns a compressed version of an image for faster page loading times
 function thumb($src, $width) {
 	global $rootpath;
-	return $rootpath."images/thumb/?w=$width&src=$src";
+	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
 }
 
 ?>

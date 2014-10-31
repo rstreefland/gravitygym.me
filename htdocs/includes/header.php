@@ -14,9 +14,9 @@ if ($devMode) {
 	$rootpath='/';
 }
 else {
-	$rooturl='xes.io';
+	$rooturl='workshop.xes.io';
 	$filepath=$_SERVER['DOCUMENT_ROOT'];
-	$rootpath='/';
+	$rootpath='/hci-applications/';
 }
 
 //Start caching

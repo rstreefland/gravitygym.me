@@ -14,20 +14,22 @@
 <!-- Developer-defined javascript & jQuery -->
 <script src="<?php echo $rootpath;?>includes/scripts.js"></script>
 
-<!-- If developer mode, insert LiveReload script http://livereload.com/ -->
-<!-- Otherwise, add Google Analytics (replace UA before uncommenting) -->
-<script>
 <?php if ($devMode) {?>
+<!-- If developer mode, insert LiveReload script http://livereload.com/ -->
+<script>
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
 <?php } else { ?>
+<!-- Otherwise, add Google Analytics (commented out as project won't go into production) -->
+<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//	ga('create', 'UA-49566724-1', 'xes.io');
+//	ga('create', 'UA-XXXXXXXX-X', 'SiteName');
 //	ga('send', 'pageview');
-<?php } ?>
 </script>
+<?php } ?>
 </body> 
 </html>
 <?php

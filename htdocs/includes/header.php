@@ -76,8 +76,6 @@ function thumb($src, $width) {
 		<link rel="icon" type="image/png" href="<?php echo $rootpath;?>images/favicon.png" />
 		<link rel="apple-touch-icon" href="<?php echo $rootpath;?>images/favicon.jpg" />
 
-		<link rel="author" href="https://plus.google.com/100101734729968276703/"/>
-
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/', 'jquery.min.js');?>"></script>
 
 		<!-- Social media integration - set variables $pageTitle, $pageImage, $pageDescription) on page itself -->

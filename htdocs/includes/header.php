@@ -83,7 +83,7 @@ function thumb($src, $width) {
 		<!-- Social media integration - set variables $pageTitle, $pageImage, $pageDescription) on page itself -->
 		<meta property="og:image" content="<!--IMAGE-->"<?php $pageImage = "http://".$rooturl.$rootpath."images/logo.jpg";?>>
 		<meta property="og:title" content="<!--TITLE-->">
-		<meta property="og:description" content="<!--DESCRIPTION-->"<?php $pageDescription = 'Cross-eyed Scripting is the online home of Reading web developer Dan Hughes.';?>>
+		<meta property="og:description" content="<!--DESCRIPTION-->"<?php $pageDescription = 'Gravity Gym lorem ipsum dolor sit amet.';?>>
 		<meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>"/>
 		
 		<title><!--TITLE--></title>

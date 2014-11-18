@@ -56,29 +56,26 @@ function thumb($src, $width) {
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Meta -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Dan Hughes">
+		<meta name="author" content="HCI and Applications Module">
 		<meta name="description" content="<!--DESCRIPTION-->">
 
-		<!-- NORMALIZE.CSS - Put all browsers to similar baseline, means less differences between browsers -->
-		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>">
-		<!-- Font-awesome - https://fortawesome.github.io/Font-Awesome/icons/ -->
+		<!-- Javascript -->
+		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/', 'jquery.min.js');?>"></script>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $rootpath;?>includes/style.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/', 'font-awesome/4.2.0/css/font-awesome.min.css');?>"/>
-		<!-- Developer-defined styles -->
-		<link href="<?php echo $rootpath;?>includes/style.css" rel="stylesheet" type="text/css" />
+		<?php $fonts = array('Open+Sans', 'Noto+Serif', 'Lato:300italic');?><link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=<?php echo implode('|', $fonts); ?>"/>
 
-		<!-- List of Google fonts -->
-		<?php $fonts = array('Open+Sans', 'Noto+Serif', 'Lato:300italic');?> 
-		<link href='//fonts.googleapis.com/css?family=<?php echo implode('|', $fonts); ?>' rel='stylesheet' type='text/css'>
-
-		<!-- Place icon in images folder as favicon.png and favicon.jpg -->
+		<!-- Icons -->
 		<link rel="icon" type="image/png" href="<?php echo $rootpath;?>images/favicon.png" />
 		<link rel="apple-touch-icon" href="<?php echo $rootpath;?>images/favicon.jpg" />
 
-		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/', 'jquery.min.js');?>"></script>
-
-		<!-- Social media integration - set variables $pageTitle, $pageImage, $pageDescription) on page itself -->
+		<!-- Opengraph social media integration -->
 		<meta property="og:image" content="<!--IMAGE-->"<?php $pageImage = "http://".$rooturl.$rootpath."images/logo.jpg";?>>
 		<meta property="og:title" content="<!--TITLE-->">
 		<meta property="og:description" content="<!--DESCRIPTION-->"<?php $pageDescription = 'Gravity Gym lorem ipsum dolor sit amet.';?>>

@@ -50,17 +50,14 @@
 /* =====================================*/
 
 /* Font-sizes based on Golden Ratio */
-.fontsize-1 { font-size: 5}
-.fontsize-2 { font-size: 7 }
-.fontsize-3 { font-size: 9 }
-.fontsize-4 { font-size: 12 }
-.fontsize-5 { font-size: 16 }
-.fontsize-6 { font-size: 21 }
-.fontsize-7 { font-size: 28 }
-.fontsize-8 { font-size: 37 }
-.fontsize-9 { font-size: 50 }
-.fontsize-10 { font-size: 67 }
-.fontsize-11 { font-size: 83 }
+.fontsize-0 { font-size: 12px }
+.fontsize-1 { font-size: 16px }
+.fontsize-2 { font-size: 21px }
+.fontsize-3 { font-size: 28px }
+.fontsize-4 { font-size: 37px }
+.fontsize-5 { font-size: 50px }
+.fontsize-6 { font-size: 67px }
+.fontsize-7 { font-size: 83px }
 
 .faint { color: grey; }
 

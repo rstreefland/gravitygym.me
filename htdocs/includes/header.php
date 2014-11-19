@@ -33,8 +33,6 @@ if (!$devMode) {
 }
 ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
 	
-$nav = array('portfolio', 'workshop', 'about', 'contact');
-
 //externalFile returns the local copy of a file, or the CDN copy if production
 function externalFile($url, $file) {
 	global $rootpath, $devMode;

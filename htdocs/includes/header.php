@@ -59,7 +59,7 @@ function thumb($src, $width) {
 		<!-- Meta -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="HCI and Applications Module">
+		<meta name="author" content="UoR HCI and Applications Group 1 (Beth Clements, Dan Hughes, George Bryant, Rhys Streefland)">
 		<meta name="description" content="<!--DESCRIPTION-->">
 
 		<!-- Javascript -->

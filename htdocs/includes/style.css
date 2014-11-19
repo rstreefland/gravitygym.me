@@ -1,5 +1,78 @@
+/*
+	Formatting
+		
+		Follow the selector with a single space, and indent properties
+		selector {
+			property: value;
+			property2: value;
+		}
+		
+		Put single attributes on single lines
+		selector { property: value; }
+
+*/
+
+/* =====================================*/
+/*			GLOBALS						*/
+/* =====================================*/
+
+/* Box-sizing hack for cross-browser box sizing */
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+/* =====================================*/
+/*			SITE-WIDE HEADER			*/
+/* =====================================*/
+
+/* =====================================*/
+/*			HEADINGS					*/
+/* =====================================*/
+
+/* =====================================*/
+/*			PAGE-SPECIFIC				*/
+/*	 Try to have as few as possible		*/
+/* =====================================*/
+
+/* =====================================*/
+/*			FORMS						*/
+/* =====================================*/
+
+/* =====================================*/
+/*			EXTRAS						*/
+/*	 If there's lots, we'll add category*/
+/* =====================================*/
+
+/* =====================================*/
+/*			UTILITY CLASSES				*/
+/* =====================================*/
+
+/* Font-sizes based on Golden Ratio */
+.fontsize-1 { font-size: 5}
+.fontsize-2 { font-size: 7 }
+.fontsize-3 { font-size: 9 }
+.fontsize-4 { font-size: 12 }
+.fontsize-5 { font-size: 16 }
+.fontsize-6 { font-size: 21 }
+.fontsize-7 { font-size: 28 }
+.fontsize-8 { font-size: 37 }
+.fontsize-9 { font-size: 50 }
+.fontsize-10 { font-size: 67 }
+.fontsize-11 { font-size: 83 }
+
+.faint { color: grey; }
+
+.block {
+	/* Full width colour block, usually with a .wrap inside */
+	width: 100%;
+	background-color: #EEE;
+}
+
+.wrap {
+	max-width: 1140px; /* Maximum width so page doesn't stretch to huge sizes */
+	padding: 1em 0; /* Add vertical space in between items */
+	margin: 0 auto; /* Automatically centre the blocks in the page */
+	overflow: auto; /* Expand containers rather than scrollbars */
 }

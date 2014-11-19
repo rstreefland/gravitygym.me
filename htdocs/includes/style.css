@@ -76,3 +76,11 @@
 	margin: 0 auto; /* Automatically centre the blocks in the page */
 	overflow: auto; /* Expand containers rather than scrollbars */
 }
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-clear { clear: both; }
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }

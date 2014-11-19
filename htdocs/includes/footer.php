@@ -22,12 +22,12 @@
 <?php } else { ?>
 <!-- Otherwise, add Google Analytics (commented out as project won't go into production) -->
 <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//	ga('create', 'UA-XXXXXXXX-X', 'SiteName');
-//	ga('send', 'pageview');
+	(function(x,e,s,d,a,n){x.GoogleAnalyticsObject=d;x[d]||(x[d]=
+	function(){(x[d].q=x[d].q||[]).push(arguments)});x[d].d=+new Date;
+	a=e.createElement(s);n=e.getElementsByTagName(s)[0];
+	a.src='//www.google-analytics.com/analytics.js';
+	n.parentNode.insertBefore(a,n)}(window,document,'script','ga'));
+	//ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
 <?php } ?>
 </body> 

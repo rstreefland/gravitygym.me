@@ -14,9 +14,9 @@ if ($devMode) {
 	$rootpath='/';
 }
 else {
-	$rooturl='workshop.xes.io';
+	$rooturl='gravitygym.me';
 	$filepath=$_SERVER['DOCUMENT_ROOT'];
-	$rootpath='/hci-applications/';
+	$rootpath='/';
 }
 
 //Start caching

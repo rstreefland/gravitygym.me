@@ -21,7 +21,8 @@
 		rgba(211, 24, 103, 1);
 		http://www.color-hex.com/color/d31867
 		
-	
+	BODY FONT COLOUR
+		#19171D
 	
 */
 
@@ -45,12 +46,6 @@ html {
 	color: #19171d;
 }
 
-h1, h2, h3 {
-	font-family: 'Raleway', Georgia, serif;
-	font-weight: normal;
-	line-height: 1.2em;
-}
-
 a {
 	color: #D32867;
 	text-decoration: none;
@@ -67,16 +62,17 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* =====================================*/
+/*			SITE-WIDE HEADER			*/
+/* =====================================*/
+
 body > header a.float-left:hover {
 	/* Don't change background of header image */
 	background-color: inherit;
 }
 
-/* =====================================*/
-/*			SITE-WIDE HEADER			*/
-/* =====================================*/
-
 body > header img {
+	/* Fit header image to small screens */
 	width: 100%;
 	max-width: 300px;
 }
@@ -87,26 +83,24 @@ body > header {
 }
 
 body > header img {
-	/* Ensures that anchor tag fits the image exactly */
+	/* Ensure that anchor tag fits around the image exactly */
 	display: block;
 }
 
-body > header nav {
-	vertical-align: middle;
-}
-
-body > header nav a {
+body > header nav .navigation a {
 	display: inline-block;
 	padding: 1em;
-}
-
-body > header nav a:not(:last-of-type) {
-	border-right: 1px solid #DDD;
 }
 
 /* =====================================*/
 /*			HEADINGS					*/
 /* =====================================*/
+
+h1, h2, h3 {
+	font-family: 'Raleway', Georgia, serif;
+	font-weight: normal;
+	line-height: 1.2em;
+}
 
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
@@ -145,22 +139,22 @@ body > header nav a:not(:last-of-type) {
 }
 
 .wrap {
-	/*wrap sets the max width of the element, 
-	  makes sure the margins both sides are the same size
-	  This stops the element from appearing unnecessarily large on big screens*/
+	/* Set the maximum width of the element */
+	/* Make sure the margins on both sides are equal */
+	/* (Stops the element stretching to huge sizes on big screens */
 	max-width: 1140px; /* Maximum width so page doesn't stretch to huge sizes */
-	padding: 1em 0; /* Add vertical space in between items */
+	padding: 1em 0; /* Add vertical space above and below the block */
 	margin: 0 auto; /* Automatically centre the blocks in the page */
-	overflow: auto; /* Expand containers rather than scrollbars */
+	overflow: auto; /* Expand containers rather than add scrollbars */
 }
 
-/*Is like setting image properties in a word document to "In line with text"*/
+/* Float is similar to setting image properties in Word to "in line with text" */
 .float-container { overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
 .float-clear { clear: both; }
 
-/*Alligns tect to the left, right, or center of the page*/
+/*Align text to the left, right, or centre of the page*/
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }

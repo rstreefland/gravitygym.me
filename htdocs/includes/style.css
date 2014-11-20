@@ -23,9 +23,43 @@
 	box-sizing: border-box;
 }
 
+a {
+	color: rgba(211, 24, 103, 1);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	
+	-webkit-transition: color 0.25s ease, border-bottom 0.25s ease;
+	-moz-transition: color 0.25s ease, border-bottom 0.25s ease;
+	-o-transition: color 0.25s ease, border-bottom 0.25s ease;
+	transition: color 0.25s ease, border-bottom 0.25s ease;
+}
+
+a:hover {
+	color: rgba(211, 24, 103, 0.5);
+	border-bottom: 1px solid rgba(211, 24, 103, 0.5);
+}
+
 /* =====================================*/
 /*			SITE-WIDE HEADER			*/
 /* =====================================*/
+
+body > header img {
+	width: 100%;
+	max-width: 300px;
+}
+
+body > header {
+	border-bottom: 1px solid #DDD;
+	font-family: Raleway, sans-serif;
+}
+
+body > header nav {
+}
+
+body > header nav a {
+	display: inline-block;
+	padding: 1em;
+}
 
 /* =====================================*/
 /*			HEADINGS					*/

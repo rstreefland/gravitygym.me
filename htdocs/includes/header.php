@@ -68,7 +68,7 @@ function thumb($src, $width) {
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo $rootpath;?>includes/style.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/', 'font-awesome/4.2.0/css/font-awesome.min.css');?>"/>
-		<?php $fonts = array('Open+Sans', 'Noto+Serif', 'Lato:300italic');?><link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=<?php echo implode('|', $fonts); ?>"/>
+		<?php $fonts = array('Open+Sans', 'Noto+Serif', 'Lato:300italic', 'Raleway');?><link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=<?php echo implode('|', $fonts); ?>"/>
 
 		<!-- Icons -->
 		<link rel="icon" type="image/png" href="<?php echo $rootpath;?>images/favicon.png" />
@@ -84,6 +84,22 @@ function thumb($src, $width) {
 	</head>
 	<body>
 		<!--[if IE]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-		<header class='wrap'>
+		<header class='block'>
+			<div class="wrap">
+				<div class="float-container">
+					<a href="<?php echo $rootpath;?>">
+						<img class="float-left" src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 600);?>">
+					</a>
+					<nav class="float-right align-center">
+						<a href = "#">About</a>
+						<a href = "#">Gallery</a>
+						<a href = "#">News</a>
+						<a href = "#">Events</a>
+						<a href = "#">Community</a>
+						<a href = "#">Contact</a>
+					</nav>
+					</div>
+				</div>
+			</div>
 		</header>
 	<div id="content">

@@ -88,7 +88,7 @@ function thumb($src, $width) {
 			<nav class="wrap">
 				<div class="float-container">
 					<a class="float-left" href="<?php echo $rootpath;?>">
-						<img src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 600);?>">
+						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
 					<div class="navigation float-right align-center">
 						<a href = "#">About</a

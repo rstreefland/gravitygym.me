@@ -133,12 +133,13 @@ body > header nav a:not(:last-of-type) {
 	overflow: auto; /* Expand containers rather than scrollbars */
 }
 
-
+/*Is like setting image properties in a word document to "In line with text"*/
 .float-container { overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
 .float-clear { clear: both; }
 
+/*Alligns tect to the left, right, or center of the page*/
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }

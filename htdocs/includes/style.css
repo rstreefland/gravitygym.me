@@ -115,6 +115,29 @@ h1, h2, h3 {
 	line-height: 1.2em;
 }
 
+
+.block.bg1 {
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 5em 2em;
+	
+	background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 1)
+    ),
+    /* bottom, image */
+    url(../images/block-bg/1.jpg);
+	background-size: cover;
+}
+
+.block.bg-black {
+	background-color: black;
+	color: white;
+}
+
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/
@@ -175,3 +198,20 @@ h1, h2, h3 {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+
+.button {
+	border-radius: 5px;
+	background-color: #D32867;
+	padding: 1em 2em;
+	border: 1px solid #D32867;
+	
+	-webkit-transition: color 0.25s, background-color 0.25s;
+	-moz-transition: color 0.25s, background-color 0.25s;
+	-o-transition: color 0.25s, background-color 0.25s;
+	transition: color 0.25s, background-color 0.25s;
+}
+
+.button:hover {
+	color: #D32867;
+	background-color: white;
+}

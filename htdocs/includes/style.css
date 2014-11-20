@@ -37,6 +37,20 @@
 	box-sizing: border-box;
 }
 
+html {
+	/* font-family tries each in turn and uses the first that works */
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+	color: #19171d;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', Georgia, serif;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
 a {
 	color: rgba(211, 24, 103, 1);
 	text-decoration: none;
@@ -49,6 +63,11 @@ a {
 
 a:hover {
 	background-color: rgba(0, 0, 0, 0.05);
+}
+
+body > header a.float-left:hover {
+	/* Don't change background of header image */
+	background-color: inherit;
 }
 
 /* =====================================*/
@@ -106,12 +125,12 @@ body > header nav a:not(:last-of-type) {
 /* =====================================*/
 
 /* Font-sizes based on Golden Ratio */
-.fontsize-tiny { font-size: 12px }
-.fontsize-normal { font-size: 16px }
-.fontsize-large { font-size: 21px }
-.fontsize-xlarge { font-size: 28px }
-.fontsize-huge { font-size: 37px }
-.fontsize-xhuge { font-size: 50px }
+.fontsize-tiny { font-size: 12px; }
+.fontsize-normal { font-size: 16px; }
+.fontsize-large { font-size: 21px; }
+.fontsize-xlarge { font-size: 28px; }
+.fontsize-huge { font-size: 37px; }
+.fontsize-xhuge { font-size: 50px; }
 
 .faint { color: grey; }
 

@@ -2,4 +2,4 @@
 ##Overview
 Second year group project for the HCI module at University of Reading.
 ##Demo
-http://gravitygym.me
+https://gravitygym.me

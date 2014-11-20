@@ -33,8 +33,6 @@ if (!$devMode) {
 }
 ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
 	
-$nav = array('portfolio', 'workshop', 'about', 'contact');
-
 //externalFile returns the local copy of a file, or the CDN copy if production
 function externalFile($url, $file) {
 	global $rootpath, $devMode;
@@ -59,12 +57,13 @@ function thumb($src, $width) {
 		<!-- Meta -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="HCI and Applications Module">
+		<meta name="author" content="UoR HCI and Applications Group 1 (Beth Clements, Dan Hughes, George Bryant, Rhys Streefland)">
 		<meta name="description" content="<!--DESCRIPTION-->">
 
 		<!-- Javascript -->
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/', 'jquery.min.js');?>"></script>
-		
+		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/', 'modernizr.min.js');?>"></script>
+
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo $rootpath;?>includes/style.css"/>

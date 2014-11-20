@@ -65,12 +65,17 @@
 .faint { color: grey; }
 
 .block {
+	/*This gives you a full width section of the page to put content inside
+	(not all content has to be inside a block, just content that you want to be highlighted)*/
 	/* Full width colour block, usually with a .wrap inside */
 	width: 100%;
 	background-color: #EEE;
 }
 
 .wrap {
+	/*wrap sets the max width of the element, 
+	  makes sure the margins both sides are the same size
+	  This stops the element from appearing unnecessarily large on big screens*/
 	max-width: 1140px; /* Maximum width so page doesn't stretch to huge sizes */
 	padding: 1em 0; /* Add vertical space in between items */
 	margin: 0 auto; /* Automatically centre the blocks in the page */

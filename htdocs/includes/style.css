@@ -23,6 +23,9 @@
 		
 	BODY FONT COLOUR
 		#19171D
+		
+	GRAY BG COLOUR
+		#EEE
 	
 */
 
@@ -90,7 +93,17 @@ body > header img {
 body > header nav .navigation a {
 	display: inline-block;
 	padding: 1em;
+	border: 1px solid transparent;
+	border-radius: 5px;
 }
+
+body > header nav .navigation a.current {
+	border: 1px solid #DDD;
+}
+
+/* =====================================*/
+/*			SITE-WIDE FOOTER			*/
+/* =====================================*/
 
 /* =====================================*/
 /*			HEADINGS					*/
@@ -143,9 +156,13 @@ h1, h2, h3 {
 	/* Make sure the margins on both sides are equal */
 	/* (Stops the element stretching to huge sizes on big screens */
 	max-width: 1140px; /* Maximum width so page doesn't stretch to huge sizes */
-	padding: 1em 0; /* Add vertical space above and below the block */
+	padding: 1em; /* Add padding space around the block */
 	margin: 0 auto; /* Automatically centre the blocks in the page */
 	overflow: auto; /* Expand containers rather than add scrollbars */
+}
+
+.wrap.small {
+	max-width: 760px;
 }
 
 /* Float is similar to setting image properties in Word to "in line with text" */

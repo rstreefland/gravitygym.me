@@ -13,6 +13,20 @@
 */
 
 /* =====================================*/
+/*			STYLE GUIDE					*/
+/* =====================================*/
+/*
+	MAIN HOUSE STYLE PINK
+		#D32867
+		rgba(211, 24, 103, 1);
+		http://www.color-hex.com/color/d31867
+		
+	
+	
+*/
+
+
+/* =====================================*/
 /*			GLOBALS						*/
 /* =====================================*/
 
@@ -26,17 +40,15 @@
 a {
 	color: rgba(211, 24, 103, 1);
 	text-decoration: none;
-	border-bottom: 1px solid transparent;
 	
-	-webkit-transition: color 0.25s ease, border-bottom 0.25s ease;
-	-moz-transition: color 0.25s ease, border-bottom 0.25s ease;
-	-o-transition: color 0.25s ease, border-bottom 0.25s ease;
-	transition: color 0.25s ease, border-bottom 0.25s ease;
+	-webkit-transition: background-color 0.25s ease;
+	-moz-transition: background-color 0.25s ease;
+	-o-transition: background-color 0.25s ease;
+	transition: background-color 0.25s ease;
 }
 
 a:hover {
-	color: rgba(211, 24, 103, 0.5);
-	border-bottom: 1px solid rgba(211, 24, 103, 0.5);
+	background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* =====================================*/
@@ -53,12 +65,22 @@ body > header {
 	font-family: Raleway, sans-serif;
 }
 
+body > header img {
+	/* Ensures that anchor tag fits the image exactly */
+	display: block;
+}
+
 body > header nav {
+	vertical-align: middle;
 }
 
 body > header nav a {
 	display: inline-block;
 	padding: 1em;
+}
+
+body > header nav a:not(:last-of-type) {
+	border-right: 1px solid #DDD;
 }
 
 /* =====================================*/
@@ -111,6 +133,8 @@ body > header nav a {
 	overflow: auto; /* Expand containers rather than scrollbars */
 }
 
+
+.float-container { overflow: auto; }
 .float-left { float: left; }
 .float-right { float: right; }
 .float-clear { clear: both; }

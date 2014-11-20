@@ -87,16 +87,16 @@ function thumb($src, $width) {
 		<header class='block'>
 			<div class="wrap">
 				<div class="float-container">
-					<a href="<?php echo $rootpath;?>">
-						<img class="float-left" src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 600);?>">
+					<a class="float-left" href="<?php echo $rootpath;?>">
+						<img src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 600);?>">
 					</a>
 					<nav class="float-right align-center">
-						<a href = "#">About</a>
-						<a href = "#">Gallery</a>
-						<a href = "#">News</a>
-						<a href = "#">Events</a>
-						<a href = "#">Community</a>
-						<a href = "#">Contact</a>
+						<a href = "#">About</a
+						><a href = "#">Gallery</a
+						><a href = "#">News</a
+						><a href = "#">Events</a
+						><a href = "#">Community</a
+						><a href = "#">Contact</a>
 					</nav>
 					</div>
 				</div>

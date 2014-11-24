@@ -22,8 +22,8 @@ else {
 //Start caching
 if (!$devMode) {
 	$cache_time = 5; // Time in seconds to keep a page cached
-	$cache_folder = $filepath.$rootpath.'includes/cache/file'; // Folder to store cached files (no trailing slash)
-	$cache_filename = $cache_folder.md5($_SERVER['REQUEST_URI']); // Location to lookup or store cached file
+	$cache_folder = $filepath.$rootpath.'includes/cache/'; // Folder to store cached files (no trailing slash)
+	$cache_filename = $cache_folder.md5($_SERVER['REQUEST_URI']).'.html'; // Location to lookup or store cached file
 	$cache_created  = (file_exists($cache_filename)) ? filemtime($cache_filename) : 0; //Check to see if this file has already been cached, if it has then get and store the file creation time
 
 	if ((time() - $cache_created) < $cache_time) {

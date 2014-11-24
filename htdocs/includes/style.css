@@ -143,6 +143,23 @@ h1, h2, h3 {
 /*	 Try to have as few as possible		*/
 /* =====================================*/
 
+progress {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+
+	max-width: 500px;
+	width: 100%;
+	height: 20px;
+}
+
+/* Change color in Firefox */
+progress::-moz-progress-bar { background: #D32867; }
+/* Chrome or Safari */
+progress::-webkit-progress-value { background: #D32867; }
+/* IE10 */
+progress { color: #D32867; }
+
 /* =====================================*/
 /*			FORMS						*/
 /* =====================================*/

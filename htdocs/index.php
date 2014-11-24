@@ -1,4 +1,9 @@
-<?php include "./includes/header.php"; ?>
+<?php include "./includes/header.php";
+
+$targetMoney = 1500000;
+$raisedMoney = 317460;
+
+?>
 <div class="block bg1">
 	<div class="wrap">
 		<h1 class="fontsize-xhuge">Welcome to Gravity Gym.</h1>
@@ -7,6 +12,8 @@
 </div>
 <div class="block bg-black">
 	<div class="wrap small align-center">
+		<p><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>
+		<p class="fontsize-tiny">£<?php echo $raisedMoney;?> raised of £<?php echo $targetMoney;?></p>
 		<p>Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex.<p>
 		<p>Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
 		<button class="button">Donate now<br/><i class="fa fa-paypal"></i></button>

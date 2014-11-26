@@ -116,11 +116,14 @@ h1, h2, h3 {
 }
 
 
-.block.bg1 {
+.block.bg {
 	text-align: center;
 	color: white;
 	margin: 0;
 	padding: 5em 2em;
+}
+
+.block.bg.bg1 {
 	
 	background:
     /* top, transparent black, faked with gradient */ 

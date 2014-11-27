@@ -20,6 +20,9 @@ $raisedMoney = 317460;
 	</div>
 </div>
 <div class="wrap">
-		<p>Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex. Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. Duis justo odio, tincidunt ac pulvinar nec, dapibus non neque. Quisque eget risus et urna tempor ultrices. Etiam id vehicula massa, eget mattis lectus. Proin consequat, elit id consequat aliquet, odio justo posuere nisl, non tempus leo purus quis erat. Fusce nibh lorem, fermentum sit amet tortor at, molestie molestie neque. Vestibulum bibendum dolor id lacus euismod scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vel dolor sit amet eros egestas imperdiet vitae sed sapien. Aenean facilisis orci purus.</p>
+	<h2>Classes</h2>
+	<h2>Freerunning USP</h2>
+	<h2>Testimonials</h2>
+	<h2>About (short summary)</h2>
 </div>
 <?php include "./includes/footer.php"; ?>

@@ -1,14 +1,19 @@
 </div>
-<footer>
-	<ul class="social"><?php
-		$social = array(
-			//'link' => 'font-awesome icon name'
-		);
+<footer class="block">
+	<div class="wrap">
+		<ul class="social"><?php
+			$social = array(
+				//'link' => 'font-awesome icon name'
+			);
 
-		foreach ($social as $link => $fa) {
-			echo "\n\t\t<li><a class='nohover' href='$link'><i class='fa $fa'></i></a></li>";
-		}
-	?></ul>
+			foreach ($social as $link => $fa) {
+				echo "\n\t\t<li><a class='nohover' href='$link'><i class='fa $fa'></i></a></li>";
+			}
+		?></ul>
+		<h2>Copyright</h2>
+		<h2>Navigation</h2>
+		<h2>Site by HCI group one (Beth Clements, <a href="https://xes.io">Dan Hughes</a>, Rhys Streefland, George Bryant)</h2>
+	</div>
 </footer>
 
 <!-- Developer-defined javascript & jQuery -->

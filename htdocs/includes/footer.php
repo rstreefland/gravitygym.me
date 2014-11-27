@@ -10,9 +10,16 @@
 				echo "\n\t\t<li><a class='nohover' href='$link'><i class='fa $fa'></i></a></li>";
 			}
 		?></ul>
-		<h2>Copyright</h2>
-		<h2>Navigation</h2>
-		<h2>Site by HCI group one (Beth Clements, <a href="https://xes.io">Dan Hughes</a>, Rhys Streefland, George Bryant)</h2>
+		<div class="float-container">
+			<div class="float-left">
+				<h2>Copyright</h2>
+				<h2>Navigation</h2>
+			</div>
+			<div class="float-right align-right">
+				<h2>Site by HCI group one</h2>
+				<h2>Beth Clements, <a href="https://xes.io">Dan Hughes</a>, Rhys Streefland, George Bryant</h2>
+			</div>
+		</div>
 	</div>
 </footer>
 

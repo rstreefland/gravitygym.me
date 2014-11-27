@@ -96,7 +96,8 @@ function thumb($src, $width) {
 						><a href = "#">News</a
 						><a href = "#">Events</a
 						><a href = "#">Community</a
-						><a href = "#">Contact</a>
+						><a href = "#">Contact</a
+						><a class = "highlight" href = "#">Donate</a>
 					</div>
 				</div>
 			</nav>

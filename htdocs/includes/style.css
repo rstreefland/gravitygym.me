@@ -101,6 +101,17 @@ body > header nav .navigation a.current {
 	border: 1px solid #DDD;
 }
 
+body > header nav .navigation a.highlight {
+	background-color: #D32867;
+	color: white;
+}
+
+body > header nav .navigation a.highlight:hover {
+	background-color: #DDD;
+	color: #D32867;
+	border: 1px solid transparent;
+}
+
 /* =====================================*/
 /*			SITE-WIDE FOOTER			*/
 /* =====================================*/

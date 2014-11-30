@@ -108,17 +108,6 @@ body > header nav .navigation a.current {
 	border: 1px solid #DDD;
 }
 
-body > header nav .navigation a.highlight {
-	background-color: #D32867;
-	color: white;
-}
-
-body > header nav .navigation a.highlight:hover {
-	background-color: #DDD;
-	color: #D32867;
-	border: 1px solid transparent;
-}
-
 /* =====================================*/
 /*			SITE-WIDE FOOTER			*/
 /* =====================================*/
@@ -248,7 +237,7 @@ progress { color: #D32867; }
 	border-radius: 5px;
 	background-color: #D32867;
 	padding: 1em 2em;
-	border: 1px solid #D32867;
+	border: 1px solid #D32867 !important;
 	display: inline-block;
 	color: white;
 	

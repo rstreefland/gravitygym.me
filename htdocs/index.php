@@ -4,7 +4,7 @@ $targetMoney = 1500000;
 $raisedMoney = 317460;
 
 ?>
-<div class="block bg bg1">
+<div class="block bg bg1 align-center">
 	<div class="wrap">
 		<h1 class="fontsize-xhuge">Welcome to Gravity Gym.</h1>
 		<h2 class="fontsize-large">We're going to be the best gym in Springton. But to do it, we need your help.</h2>
@@ -16,7 +16,7 @@ $raisedMoney = 317460;
 		<p class="fontsize-tiny">£<?php echo $raisedMoney;?> raised of £<?php echo $targetMoney;?></p>
 		<p>Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex.<p>
 		<p>Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
-		<button class="button">Donate now<br/><i class="fa fa-paypal"></i></button>
+		<a href="#" class="button">Donate now<br/><i class="fa fa-paypal"></i></a>
 	</div>
 </div>
 <div class="wrap">

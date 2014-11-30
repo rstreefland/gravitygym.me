@@ -25,8 +25,7 @@
 		#19171D
 		
 	GRAY BG COLOUR
-		#EEE
-	
+		#EEE	
 */
 
 
@@ -144,24 +143,21 @@ h1, h2, h3 {
 	line-height: 1.2em;
 }
 
-
 .block.bg {
-	text-align: center;
 	color: white;
 	margin: 0;
 	padding: 5em 2em;
 }
 
 .block.bg.bg1 {
-	
 	background:
-    /* top, transparent black, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 1)
-    ),
-    /* bottom, image */
-    url(../images/block-bg/1.jpg);
+	/* top, transparent black, faked with gradient */ 
+	linear-gradient(
+		rgba(0, 0, 0, 0.25), 
+		rgba(0, 0, 0, 1)
+	),
+	/* bottom, image */
+	url(../images/block-bg/1.jpg);
 	background-size: cover;
 }
 
@@ -253,6 +249,8 @@ progress { color: #D32867; }
 	background-color: #D32867;
 	padding: 1em 2em;
 	border: 1px solid #D32867;
+	display: inline-block;
+	color: white;
 	
 	-webkit-transition: color 0.25s, background-color 0.25s;
 	-moz-transition: color 0.25s, background-color 0.25s;

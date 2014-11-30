@@ -17,7 +17,7 @@
 			</div>
 			<div class="float-right align-right">
 				<h2>Site by HCI group one</h2>
-				<h2>Beth Clements, <a href="https://xes.io">Dan Hughes</a>, Rhys Streefland, George Bryant</h2>
+				<h2>Beth Clements, Dan Hughes, Rhys Streefland, George Bryant</h2>
 			</div>
 		</div>
 	</div>

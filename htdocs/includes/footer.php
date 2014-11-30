@@ -1,23 +1,14 @@
 </div>
 <footer class="block">
 	<div class="wrap">
-		<ul class="social"><?php
-			$social = array(
-				//'link' => 'font-awesome icon name'
-			);
-
-			foreach ($social as $link => $fa) {
-				echo "\n\t\t<li><a class='nohover' href='$link'><i class='fa $fa'></i></a></li>";
-			}
-		?></ul>
-		<div class="float-container">
+		<div class="fontsize-small float-container">
 			<div class="float-left">
-				<h2>Copyright</h2>
-				<h2>Navigation</h2>
+				<p>Copyright</p>
+				<p>Navigation</p>
 			</div>
 			<div class="float-right align-right">
-				<h2>Site by HCI group one</h2>
-				<h2>Beth Clements, Dan Hughes, Rhys Streefland, George Bryant</h2>
+				<p>Site by HCI group one</p>
+				<p class="fontsize-tiny">B. Clements, D. Hughes, R. Streefland and G. Bryant</p>
 			</div>
 		</div>
 	</div>

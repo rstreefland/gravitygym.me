@@ -54,6 +54,8 @@ function thumb($src, $width) {
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Served from cache built at <?php echo date('Y-m-d H:i:s'); ?> -->
+	
 		<!-- Meta -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">

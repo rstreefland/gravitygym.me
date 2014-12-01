@@ -20,9 +20,9 @@ $raisedMoney = 317460;
 	</div>
 </div>
 <div class="wrap">
-	<h2>Classes</h2>
-	<h2>Freerunning USP</h2>
-	<h2>Testimonials</h2>
 	<h2>About (short summary)</h2>
+	<h2>Freerunning USP</h2>
+	<h2>Classes</h2>
+	<h2>Testimonials</h2>
 </div>
 <?php include "./includes/footer.php"; ?>

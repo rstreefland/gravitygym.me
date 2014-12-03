@@ -14,7 +14,7 @@
 	</div>
 </footer>
 
-<!-- Developer-defined javascript & jQuery -->
+<!-- Developer-defined Javascript & jQuery -->
 <script src="<?php echo $rootpath;?>includes/scripts.js"></script>
 
 <?php if ($devMode) {?>
@@ -30,7 +30,7 @@
 	a=e.createElement(s);n=e.getElementsByTagName(s)[0];
 	a.src='//www.google-analytics.com/analytics.js';
 	n.parentNode.insertBefore(a,n)}(window,document,'script','ga'));
-	//ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+	ga('create','UA-41203843-2','auto');ga('send','pageview');
 </script>
 <?php } ?>
 </body> 

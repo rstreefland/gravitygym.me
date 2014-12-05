@@ -19,6 +19,9 @@ else {
 	$rootpath='/';
 }
 
+//Include external PHP libraries
+require($rootpath.'includes/scripts/parsedown/parsedown.php');
+
 //Start caching
 if (!$devMode) {
 	$cache_time = 5; // Time in seconds to keep a page cached
@@ -54,7 +57,7 @@ function thumb($src, $width) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Served from cache built at <?php echo date('Y-m-d H:i:s'); ?> -->
+		<!-- Page built at <?php echo date('Y-m-d H:i:s'); ?> -->
 	
 		<!-- Meta -->
 		<meta charset="UTF-8">

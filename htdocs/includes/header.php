@@ -20,7 +20,7 @@ else {
 }
 
 //Include external PHP libraries
-require($rootpath.'includes/scripts/parsedown/parsedown.php');
+require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
 
 //Start caching
 if (!$devMode) {

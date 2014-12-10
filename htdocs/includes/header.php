@@ -1,21 +1,20 @@
 <?php 
 
 //If running on local machine, use devmode settings (don't cache, use local rather than CDN files)
-$devMode = ($_SERVER['HTTP_HOST'] == 'localhost' ? true : false);
+$devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
 
 //Display all errors and warnings
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
 //Change URLs depending on whether server is development or production
+$rooturl = $_SERVER['HTTP_HOST'];
+$filepath = $_SERVER['DOCUMENT_ROOT'];
+
 if ($devMode) {
-	$rooturl='localhost';
-	$filepath=$_SERVER['DOCUMENT_ROOT'];
 	$rootpath='/';
 }
 else {
-	$rooturl='gravitygym.me';
-	$filepath=$_SERVER['DOCUMENT_ROOT'];
 	$rootpath='/';
 }
 

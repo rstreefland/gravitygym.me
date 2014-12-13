@@ -186,6 +186,41 @@ progress { color: #D32867; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.floor-fade .rhythmicgymnastics {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/rhythmicgymnastics.jpg);
+}
+
+.floor-fade .freerunning {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/freerunning.jpg);
+}
+
+.floor-fade .parallelbars {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/parallelbars.jpg);
+}
+
+.floor-fade .trampoline {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/trampoline.jpg);
+}
+
+.floor-fade .lorem {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/lorem.jpg);
+}
+
+.floor-fade .ipsum {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/ipsum.jpg);
+}
+
+.floor-fade .dolor {
+	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
+		url(../images/classes/dolor.jpg);
+}
+
 /* =====================================*/
 /*			UTILITY CLASSES				*/
 /* =====================================*/
@@ -250,4 +285,32 @@ progress { color: #D32867; }
 .button:hover {
 	color: #D32867;
 	background-color: white;
+}
+
+.floor-fade {
+	width: 25%;
+	display: inline-block;
+	padding: 0.33em;
+	vertical-align: top;
+}
+
+.floor-fade.w2 {
+	width: 50%;
+}
+
+.floor-fade > div {
+	background-size: cover !important;
+	height: 250px;
+	position: relative;
+}
+
+.floor-fade h2 {
+	margin: 0;
+	position: absolute;
+	bottom: 0.5em;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 150%;
 }

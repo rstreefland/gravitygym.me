@@ -227,6 +227,7 @@ progress { color: #D32867; }
 
 /* Font-sizes based on Golden Ratio */
 .fontsize-tiny { font-size: 12px; }
+.fontsize-small { font-size: 14px; }
 .fontsize-normal { font-size: 16px; }
 .fontsize-large { font-size: 21px; }
 .fontsize-xlarge { font-size: 28px; }

@@ -67,11 +67,6 @@ a:hover {
 /*			SITE-WIDE HEADER			*/
 /* =====================================*/
 
-body > header a.float-left:hover {
-	/* Don't change background of header image */
-	background-color: inherit;
-}
-
 body > header img {
 	/* Fit header image to small screens */
 	width: 100%;

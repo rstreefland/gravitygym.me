@@ -162,6 +162,18 @@ progress { color: $feature-color; }
 /*			FORMS						*/
 /* =====================================*/
 
+input.error {
+	border: 1px solid red;
+}
+
+input, textarea {
+	width: 100%;
+}
+
+textarea {
+	height: 200px;
+}
+
 /* =====================================*/
 /*			EXTRAS						*/
 /*	 If there's lots, we'll add category*/

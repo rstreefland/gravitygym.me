@@ -43,7 +43,7 @@ $raisedMoney = 317460;
 			<h2 class="align-center">Gravity gym offers a wide range of lorem ipsums. We also dolor our amets, and feel that consectetur is the best way to adipiscing.</h2>
 			<!--
 				This will be pulled from the database eventually.
-				The space after </a> has been commented to the
+				The space after </a> has been shifted to the
 				following line to remove the blank space that
 				appears between inline-block items.
 				http://css-tricks.com/fighting-the-space-between-inline-block-elements/
@@ -54,13 +54,13 @@ $raisedMoney = 317460;
 				<div class="rhythmicgymnastics">
 					<h2>Rhythmic</h2>
 				</div>
-			</a><!--
-			--><a class="floor-fade w2" href="#">
+			</a
+			><a class="floor-fade w2" href="#">
 				<div class="freerunning">
 					<h2>Freerunning</h2>
 				</div>
-			</a><!--
-			--><a class="floor-fade" href="#">
+			</a
+			><a class="floor-fade" href="#">
 				<div class="parallelbars">
 					<h2>Parallel bars</h2>
 				</div>
@@ -71,18 +71,18 @@ $raisedMoney = 317460;
 				<div class="trampoline">
 					<h2>Trampoline</h2>
 				</div>
-			</a><!--
-			--><a class="floor-fade" href="#">
+			</a
+			><a class="floor-fade" href="#">
 				<div class="lorem">
 					<h2>Lorem</h2>
 				</div>
-			</a><!--
-			--><a class="floor-fade" href="#">
+			</a
+			><a class="floor-fade" href="#">
 				<div class="ipsum">
 					<h2>Ipsum</h2>
 				</div>
-			</a><!--
-			--><a class="floor-fade" href="#">
+			</a
+			><a class="floor-fade" href="#">
 				<div class="dolor">
 					<h2>Dolor</h2>
 				</div>

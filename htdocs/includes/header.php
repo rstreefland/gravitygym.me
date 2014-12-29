@@ -103,13 +103,13 @@ function thumb($src, $width) {
 						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
 					<div class="eight columns navigation align-right">
-						<a href = "#">About</a><!--
-						--><a href = "#">Gallery</a><!--
-						--><a href = "#">News</a><!--
-						--><a href = "#">Events</a><!--
-						--><a href = "#">Community</a><!--
-						--><a href = "#">Contact</a><!--
-						--><a class = "button" href = "#">Donate</a>
+						<a href="#">About</a><!--
+						--><a href="#">Gallery</a><!--
+						--><a href="#">News</a><!--
+						--><a href="#">Events</a><!--
+						--><a href="#">Community</a><!--
+						--><a href="#">Contact</a><!--
+						--><a class="button" href = "#">Donate</a>
 					</div>
 				</div>
 			</nav>

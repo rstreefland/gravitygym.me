@@ -1,10 +1,13 @@
 $feature-color:			rgba(211, 24, 103, 1);
 $body-text-color:		rgba(25, 23, 29, 1);
 $hcontrast-text-color:	rgba(255, 255, 255, 1);
+$error-text-color:		rgba(216, 30, 91, 1);
 
 $body-bg:				rgba(255, 255, 255, 1);
 $contrast-bg:			rgba(238, 238, 238, 1);
 $hcontrast-bg:			rgba(25, 25, 25, 1);
+$error-bg:				rgba(216, 30, 91, 0.1);
+
 
 $darker-bg:				rgba(0, 0, 0, 0.25);
 $lighter-bg:			rgba(255, 255, 255, 0.25);
@@ -162,8 +165,9 @@ progress { color: $feature-color; }
 /*			FORMS						*/
 /* =====================================*/
 
-input.error {
-	border: 1px solid red;
+form input.error, form textarea.error {
+	border: 1px solid $error-text-color;
+	background-color: $error-bg;
 }
 
 input, textarea {

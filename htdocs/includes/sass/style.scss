@@ -5,8 +5,9 @@ $hcontrast-text-color:	rgba(255, 255, 255, 1);
 $body-bg:				rgba(255, 255, 255, 1);
 $contrast-bg:			rgba(238, 238, 238, 1);
 $hcontrast-bg:			rgba(25, 25, 25, 1);
-$image-caption-bg:		rgba(0, 0, 0, 0.5);
-$link-hover-bg:			rgba(0, 0, 0, 0.05);
+
+$darker-bg:				rgba(0, 0, 0, 0.25);
+$lighter-bg:			rgba(255, 255, 255, 0.25);
 	
 $body-font:				PT Sans, Helvetica, Arial, sans-serif;
 $feature-font:			Raleway, Georgia, sans-serif;
@@ -20,6 +21,7 @@ $desktop-width:			1000px;
 
 @import "functions";
 @import "grid";
+
 /* =====================================*/
 /*			GLOBALS						*/
 /* =====================================*/
@@ -49,7 +51,7 @@ a {
 a:hover {
 	/* Use mostly transparent black rather than a colour */
 	/* Means that regardless of background, link will always darken */
-	background-color: $link-hover-bg;
+	background-color: $darker-bg;
 }
 
 #content {

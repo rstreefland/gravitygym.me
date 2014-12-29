@@ -22,7 +22,7 @@ $raisedMoney = 317460;
 			<p class="twelve columns align-center fontsize-tiny">£<?php echo number_format($raisedMoney);?> raised of £<?php echo number_format($targetMoney);?></p>
 		</div>
 		<div class="row">
-			<p class="twelve columns align-center">Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex. Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
+			<p class="eight columns offset-by-two align-center">Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex. Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
 		</div>
 		<div class="row align-center">
 			<a class="button" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>

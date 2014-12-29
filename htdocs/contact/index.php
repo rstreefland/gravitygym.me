@@ -9,9 +9,10 @@
 
 			<div class="six columns">
 				<label class="pad-top" for="email">Email</label>
-				<input type="text" id="email" name="email">
+				<input type="email" id="email" name="email">
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="twelve columns">
 				<label class="pad-top" for="subject">Subject</label>

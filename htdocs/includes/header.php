@@ -98,18 +98,18 @@ function thumb($src, $width) {
 		<!--[if IE]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		<header>
 			<nav class="wrap">
-				<div class="float-container">
-					<a class="float-left" href="<?php echo $rootpath;?>">
+				<div class="row">
+					<a class="four columns" href="<?php echo $rootpath;?>">
 						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
-					<div class="navigation float-right align-center">
-						<a href = "#">About</a
-						><a href = "#">Gallery</a
-						><a href = "#">News</a
-						><a href = "#">Events</a
-						><a href = "#">Community</a
-						><a href = "#">Contact</a
-						><a class = "button" href = "#">Donate</a>
+					<div class="eight columns navigation align-right">
+						<a href = "#">About</a><!--
+						--><a href = "#">Gallery</a><!--
+						--><a href = "#">News</a><!--
+						--><a href = "#">Events</a><!--
+						--><a href = "#">Community</a><!--
+						--><a href = "#">Contact</a><!--
+						--><a class = "button" href = "#">Donate</a>
 					</div>
 				</div>
 			</nav>

@@ -99,7 +99,7 @@ function thumb($src, $width) {
 		<header>
 			<nav class="wrap">
 				<div class="row">
-					<a class="four columns" href="<?php echo $rootpath;?>">
+					<a class="four columns logo" href="<?php echo $rootpath;?>">
 						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
 					<div class="eight columns navigation align-right">

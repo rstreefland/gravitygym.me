@@ -91,6 +91,10 @@ body > header img {
 	display: block;
 }
 
+body > header a.logo:hover {
+	background-color: inherit;
+}
+
 body > header nav .navigation a {
 	display: inline-block;
 	padding: 1em;

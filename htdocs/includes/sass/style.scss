@@ -161,11 +161,11 @@ form input.error, form textarea.error {
 	background-color: $error-bg;
 }
 
-input, textarea {
+form input, form textarea {
 	width: 100%;
 }
 
-textarea {
+form textarea {
 	height: 200px;
 	max-width: 100%;
 }

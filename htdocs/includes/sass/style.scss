@@ -73,8 +73,7 @@ body > header img {
 }
 
 body > header {
-	border-bottom: 1px solid darken($contrast-bg, 10%);
-	border-bottom: 1px solid $feature-color;
+	border-bottom: 1px solid $contrast-bg;
 	font-family: $feature-font;
 	position: fixed;
 	top: 0;

@@ -280,6 +280,17 @@ textarea {
 .align-right { text-align: right; }
 .align-center { text-align: center; }
 
+.pad-top { padding-top: 2em; }
+.pad-bottom { padding-bottom: 2em; }
+
+.border-bottom { border-bottom: 1px solid $darker-bg; }
+
+.no-margin { margin-top: 0; margin-bottom: 0; }
+
+.caps { text-transform: uppercase; }
+
+.bold { font-weight: bold; }
+
 .button {
 	border-radius: 5px;
 	background-color: $feature-color;

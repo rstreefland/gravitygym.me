@@ -302,7 +302,7 @@ progress { color: $feature-color; }
 }
 
 a.floor-fade {
-	@include transition(opacity 0.25s);
+	@include transition(opacity 0.25s, background-color 0.25s);
 }
 
 a.floor-fade:hover {

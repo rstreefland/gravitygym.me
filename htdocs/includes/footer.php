@@ -1,12 +1,12 @@
 </div>
 <footer class="block">
 	<div class="wrap">
-		<div class="fontsize-small float-container">
-			<div class="float-left">
+		<div class="row fontsize-small">
+			<div class="six columns">
 				<p>Copyright</p>
 				<p>Navigation</p>
 			</div>
-			<div class="float-right align-right">
+			<div class="six columns align-right">
 				<p>Site by HCI group one</p>
 				<p class="fontsize-tiny">B. Clements, D. Hughes, R. Streefland and G. Bryant</p>
 			</div>

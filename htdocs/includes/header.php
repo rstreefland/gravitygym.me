@@ -108,7 +108,7 @@ function thumb($src, $width) {
 						--><a href="#">News</a><!--
 						--><a href="#">Events</a><!--
 						--><a href="#">Community</a><!--
-						--><a href="#">Contact</a><!--
+						--><a href="<?php echo $rootpath;?>contact/">Contact</a><!--
 						--><a class="button" href = "#">Donate</a>
 					</div>
 				</div>

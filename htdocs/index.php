@@ -13,7 +13,7 @@ $raisedMoney = 317460;
 		</div>
 	</div>
 </div>
-<div class="block bg-black">
+<div class="block hcontrast">
 	<div class="wrap">
 		<div class="row">
 			<p class="twelve columns align-center"><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>

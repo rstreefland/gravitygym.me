@@ -10,7 +10,7 @@
 					<?php } ?>
 			</nav>
 			<div class="six columns align-right">
-				<p>Site by HCI group one</p>
+				<p>&copy; HCI Group One, <?php echo (date("Y") == '2014' ? '2014' : '2014 - '.date("Y")); ?>. All rights reserved.</p>
 				<p class="fontsize-tiny">B. Clements, D. Hughes, R. Streefland and G. Bryant</p>
 			</div>
 		</div>

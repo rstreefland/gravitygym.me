@@ -1,0 +1,18 @@
+table {
+	border-radius: $curve-radius;
+}
+
+td {
+	padding: 1em;
+}
+
+th {
+	border-bottom: 1px solid $darker-bg;
+	padding: 1.5em;
+	text-align: center;
+	background-color: $body-bg;
+}
+
+tr:nth-child(odd) {
+	background-color: $slight-darker-bg;
+}

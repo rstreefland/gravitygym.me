@@ -54,6 +54,15 @@ function thumb($src, $width) {
 	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
 }
 
+$navItems = array(
+	"About" => "about/",
+	"Gallery" => "gallery/",
+	"News" => "news/",
+	"Events" => "events/",
+	"Community" => "community/",
+	"Contact" => "contact/"
+);
+
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,25 +1,4 @@
-$body-text-color:		rgba(25, 25, 25, 1);
-$hcontrast-text-color:	rgba(255, 255, 255, 1);
-$error-text-color:		rgba(216, 30, 91, 1);
-
-$body-bg:				rgba(255, 255, 255, 1);
-$contrast-bg:			rgba(238, 238, 238, 1);
-$hcontrast-bg:			rgba(0, 0, 0, 1);
-$error-bg:				rgba(216, 30, 91, 0.1);
-
-$darker-bg:				rgba(0, 0, 0, 0.25);
-$slight-darker-bg:		rgba(0, 0, 0, 0.05);
-$lighter-bg:			rgba(255, 255, 255, 0.25);
-$slight-lighter-bg:		rgba(255, 255, 255, 0.05);
-
-$curve-radius:			4px;
-
-$site-width:			1140px;
-
-$mobile-width:			400px;
-$phablet-width:			550px;
-$tablet-width:			750px;
-$desktop-width:			1000px;
+@import "settings";
 
 @import "partials/functions";
 
@@ -71,16 +50,6 @@ a img:hover {
 /* =====================================*/
 /*			CONTENT						*/
 /* =====================================*/
-
-#content {
-	padding-bottom: 2em;
-}
-
-article section {
-	padding-top: 4em;
-	padding-bottom: 2em;
-	border-bottom: 1px solid $slight-darker-bg;
-}
 
 /* =====================================*/
 /*			SITE-WIDE HEADER			*/

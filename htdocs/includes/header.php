@@ -112,13 +112,12 @@ $navItems = array(
 						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
 					<div class="eight columns navigation align-right">
-						<a href="#">About</a><!--
-						--><a href="#">Gallery</a><!--
-						--><a href="#">News</a><!--
-						--><a href="#">Events</a><!--
-						--><a href="#">Community</a><!--
-						--><a href="<?php echo $rootpath;?>contact/">Contact</a><!--
-						--><a class="button-primary" href = "#">Donate</a>
+						<?php foreach ($navItems as $name => $link) {
+							$url = $rootpath.$link;
+							echo "<a href='$url'>$name</a>";
+						}
+						echo "<a class='button-primary' href='donate/'>Donate</a>";
+						?>
 					</div>
 				</div>
 			</nav>

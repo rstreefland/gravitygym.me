@@ -2,10 +2,13 @@
 <footer class="block">
 	<div class="wrap">
 		<div class="row fontsize-small">
-			<div class="six columns">
-				<p>Copyright</p>
-				<p>Navigation</p>
-			</div>
+			<nav class="six columns">
+					<?php foreach ($navItems as $name => $link) {
+						$url = $rootpath.$link;
+					?>
+					<p><a href="<?php echo $url;?>"><?php echo $name;?></a></p>
+					<?php } ?>
+			</nav>
 			<div class="six columns align-right">
 				<p>Site by HCI group one</p>
 				<p class="fontsize-tiny">B. Clements, D. Hughes, R. Streefland and G. Bryant</p>

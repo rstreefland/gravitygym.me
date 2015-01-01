@@ -12,6 +12,7 @@
 			<div class="six columns align-right">
 				<p>&copy; HCI Group One, <?php echo (date("Y") == '2014' ? '2014' : '2014 - '.date("Y")); ?>. All rights reserved.</p>
 				<p class="fontsize-tiny">B. Clements, D. Hughes, R. Streefland and G. Bryant</p>
+				<p class="fontsize-tiny">Images used under education copyright exception</p>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,109 @@
+$body-text-color:		rgba(25, 25, 25, 1);
+$hcontrast-text-color:	rgba(255, 255, 255, 1);
+$error-text-color:		rgba(216, 30, 91, 1);
+
+$body-bg:				rgba(255, 255, 255, 1);
+$contrast-bg:			rgba(238, 238, 238, 1);
+$hcontrast-bg:			rgba(0, 0, 0, 1);
+$error-bg:				rgba(216, 30, 91, 0.1);
+
+$darker-bg:				rgba(0, 0, 0, 0.25);
+$slight-darker-bg:		rgba(0, 0, 0, 0.05);
+$lighter-bg:			rgba(255, 255, 255, 0.25);
+$slight-lighter-bg:		rgba(255, 255, 255, 0.05);
+
+$curve-radius:			4px;
+
+$site-width:			1140px;
+
+$mobile-width:			400px;
+$phablet-width:			550px;
+$tablet-width:			750px;
+$desktop-width:			1000px;
+
+@import "partials/functions";
+
+@import "partials/buttons";
+@import "partials/code";
+@import "partials/forms";
+@import "partials/grid";
+@import "partials/lists";
+@import "partials/tables";
+@import "partials/utilities";
+
+/* =====================================*/
+/*			GLOBALS						*/
+/* =====================================*/
+
+/* Box-sizing hack for cross-browser box sizing */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: $body-font;
+	background-color: $body-bg;
+	color: $body-text-color;
+}
+
+a {
+	color: $feature-color;
+	text-decoration: none;
+
+	@include transition(color 0.25s);
+}
+
+a:hover {
+	color: rgba($feature-color, 0.5);
+}
+
+a img {
+	@include transition(opacity 0.25s);
+}
+
+a img:hover {
+	opacity: 0.75;
+}
+
+/* =====================================*/
+/*			CONTENT						*/
+/* =====================================*/
+
+#content {
+	padding-bottom: 2em;
+}
+
+article section {
+	padding-top: 4em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid $slight-darker-bg;
+}
+
+/* =====================================*/
+/*			SITE-WIDE HEADER			*/
+/* =====================================*/
+
+body header {
+	padding: 1em 0;
+}
+
+/* =====================================*/
+/*			SITE-WIDE FOOTER			*/
+/* =====================================*/
+
+body footer {
+	padding: 3em 0;
+}
+
+/* =====================================*/
+/*			HEADINGS					*/
+/* =====================================*/
+
+h1, h2, h3 {
+	font-family: $feature-font;
+	font-weight: normal;
+	letter-spacing: -1px;
+}

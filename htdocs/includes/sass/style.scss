@@ -1,65 +1,19 @@
-$feature-color:			rgba(211, 24, 103, 1);
-$body-text-color:		rgba(25, 23, 29, 1);
-$hcontrast-text-color:	rgba(255, 255, 255, 1);
-$error-text-color:		rgba(216, 30, 91, 1);
-
-$body-bg:				rgba(255, 255, 255, 1);
-$contrast-bg:			rgba(238, 238, 238, 1);
-$hcontrast-bg:			rgba(25, 25, 25, 1);
-$error-bg:				rgba(216, 30, 91, 0.1);
-
-$darker-bg:				rgba(0, 0, 0, 0.1);
-$lighter-bg:			rgba(255, 255, 255, 0.1);
+/* =====================================*/
+/*			METALPLATE SETTINGS			*/
+/* =====================================*/
 
 $body-font:				PT Sans, Helvetica, Arial, sans-serif;
 $feature-font:			Raleway, Georgia, sans-serif;
-
-$site-width:			1140px;
-
-$mobile-width:			400px;
-$phablet-width:			550px;
-$tablet-width:			750px;
-$desktop-width:			1000px;
-
-@import "functions";
-@import "forms";
-@import "grid";
+$feature-color:			rgba(211, 24, 103, 1);
+@import "metalplate/metalplate";
 
 /* =====================================*/
 /*			GLOBALS						*/
 /* =====================================*/
-
-/* Box-sizing hack for cross-browser box sizing */
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-html {
-	/* font-family tries each in turn and uses the first that works */
-	font-family: $body-font;
-	height: 100%;
-	-webkit-font-smoothing: antialiased;
-	color: $body-text-color;
-}
-
-a {
-	color: $feature-color;
-	text-decoration: none;
-	
-	@include transition(background-color 0.25s);
-}
-
-a:hover {
-	/* Use mostly transparent black rather than a colour */
-	/* Means that regardless of background, link will always darken */
-	background-color: $darker-bg;
-}
+@import "functions";
 
 #content {
-	background-color: $hcontrast-text-color;
-	padding-top: 92px;
+	padding-top: 5.5em;
 }
 
 /* =====================================*/
@@ -75,6 +29,7 @@ body > header {
 	background-color: $body-bg;
 	z-index: 1000;
 	width: 100%;
+	padding: 0;
 }
 
 body > header img {
@@ -109,12 +64,6 @@ body > header nav .navigation a.current {
 /*			HEADINGS					*/
 /* =====================================*/
 
-h1, h2, h3 {
-	font-family: $feature-font;
-	font-weight: normal;
-	line-height: 1.2em;
-}
-
 .block.bg {
 	color: $hcontrast-text-color;
 	margin: 0;
@@ -123,11 +72,6 @@ h1, h2, h3 {
 
 .block.bg.bg1 {
 	@include bg-image('../../images/block-bg/1.jpg');
-}
-
-.block.bg-black {
-	background-color: black;
-	color: $hcontrast-text-color;
 }
 
 /* =====================================*/
@@ -155,24 +99,6 @@ progress { color: $feature-color; }
 /* =====================================*/
 /*			FORMS						*/
 /* =====================================*/
-
-form input.error, form textarea.error {
-	border: 1px solid $error-text-color;
-	background-color: $error-bg;
-}
-
-form input, form textarea {
-	width: 100%;
-}
-
-form textarea {
-	height: 200px;
-	max-width: 100%;
-}
-
-form button {
-	margin-top: 2em;
-}
 
 /* =====================================*/
 /*			EXTRAS						*/
@@ -223,85 +149,6 @@ form button {
 /* =====================================*/
 /*			UTILITY CLASSES				*/
 /* =====================================*/
-
-/* Font-sizes based on Golden Ratio */
-.fontsize-tiny { font-size: 12px; }
-.fontsize-small { font-size: 14px; }
-.fontsize-normal { font-size: 16px; }
-.fontsize-large { font-size: 21px; }
-.fontsize-xlarge { font-size: 28px; }
-.fontsize-huge { font-size: 37px; }
-.fontsize-xhuge { font-size: 50px; }
-
-.faint { color: grey; }
-
-.block {
-	/*This gives you a full width section of the page to put content inside
-	(not all content has to be inside a block, just content that you want to be highlighted)*/
-	/* Full width colour block, usually with a .wrap inside */
-	width: 100%;
-	background-color: $contrast-bg;
-}
-
-.wrap {
-	/* Set the maximum width of the element */
-	/* Make sure the margins on both sides are equal */
-	/* (Stops the element stretching to huge sizes on big screens */
-	max-width: $site-width; /* Maximum width so page doesn't stretch to huge sizes */
-	padding: 1em 0; /* Add padding space around the block */
-	margin: 0 auto; /* Automatically centre the blocks in the page */
-	overflow: auto; /* Expand containers rather than add scrollbars */
-
-	@include transition(padding 0.25s);
-}
-
-@media only screen and (max-width: $site-width) {
-	.wrap {
-		padding: 1em;
-	}
-}
-
-.wrap.small {
-	max-width: $site-width/3 * 2;
-}
-
-/* Float is similar to setting image properties in Word to "in line with text" */
-.float-container { overflow: auto; }
-.float-left { float: left; }
-.float-right { float: right; }
-.float-clear { clear: both; }
-
-/*Align text to the left, right, or centre of the page*/
-.align-left { text-align: left; }
-.align-right { text-align: right; }
-.align-center { text-align: center; }
-
-.pad-top { padding-top: 2em; }
-.pad-bottom { padding-bottom: 2em; }
-
-.border-bottom { border-bottom: 1px solid $darker-bg; }
-
-.no-margin { margin-top: 0; margin-bottom: 0; }
-
-.caps { text-transform: uppercase; }
-
-.bold { font-weight: bold; }
-
-.button {
-	border-radius: 5px;
-	background-color: $feature-color;
-	padding: 1em 2em;
-	border: 1px solid $feature-color !important;
-	display: inline-block;
-	color: $hcontrast-text-color;
-	
-	@include transition(color 0.25s, background-color 0.25s);
-}
-
-.button:hover {
-	color: $feature-color;
-	background-color: $hcontrast-text-color;
-}
 
 .floor-fade {
 	width: 100%;

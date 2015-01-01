@@ -1,0 +1,45 @@
+/* Font-sizes */
+.fontsize-tiny { font-size: 12px }
+.fontsize-small { font-size: 14px }
+.fontsize-normal { font-size: 16px }
+.fontsize-large { font-size: 21px }
+.fontsize-xlarge { font-size: 28px }
+.fontsize-huge { font-size: 37px }
+.fontsize-xhuge { font-size: 50px }
+
+/* Text modifiers */
+.faint { color: grey; }
+.bold { font-weight: bold; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+
+/* Text alignment */
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+/* Full width colour block types */
+.block {
+	width: 100%;
+	background-color: $contrast-bg;
+}
+.block.hcontrast {
+	background-color: $hcontrast-bg;
+	color: $hcontrast-text-color;
+}
+
+/* Floats and clearfix */
+.float-left { float: left; }
+.float-right { float: right; }
+.float-container:after { clear: both; }
+.float-container:before, .float-container:after {
+	content: " ";
+	display: table;
+}
+
+/* Spacing modifiers */
+.pad-top { padding-top: 3em; }
+.pad-bottom { padding-bottom: 3em; }
+.no-margin { margin-top: 0; margin-bottom: 0; }
+
+.border-bottom { border-bottom: 1px solid $darker-bg; }

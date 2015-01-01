@@ -1,16 +1,9 @@
-/* =====================================*/
-/*			METALPLATE SETTINGS			*/
-/* =====================================*/
-
-$body-font:				PT Sans, Helvetica, Arial, sans-serif;
-$feature-font:			Raleway, Georgia, sans-serif;
-$feature-color:			rgba(211, 24, 103, 1);
 @import "metalplate/metalplate";
+@import "functions";
 
 /* =====================================*/
 /*			GLOBALS						*/
 /* =====================================*/
-@import "functions";
 
 #content {
 	padding-top: 5.5em;

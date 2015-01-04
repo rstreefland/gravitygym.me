@@ -1,5 +1,12 @@
-db.php
+#OS files
 Thumbs.db
+Desktop.ini
+.DS_Store
+
+#Database configuration
+db.php
+
+#Cached files (images, compiled CSS)
 *.timthumb.txt
-*.css
-*.css.imports
+**/scss_cache/*/*.css
+**/scss_cache/*/*.css.imports

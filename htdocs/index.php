@@ -25,7 +25,7 @@ $raisedMoney = 317460;
 			<p class="eight columns offset-by-two align-center">Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex. Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
 		</div>
 		<div class="row align-center">
-			<a class="button-primary" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
+			<a class="button" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
 		</div>
 	</div>
 </div>

@@ -98,9 +98,40 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.colorbox {
+	display: block;
+	padding: 3em;
+	text-align: center;
+	border-radius: $curve-radius;
+	border: 1px solid $slight-darker-bg;
+}
+
+.colorbox .auto-fill {
+	text-transform: uppercase;
+
+}
+
+.colorbox.feature-color { background-color: $feature-color; color: white;}
+.colorbox.feature-color .auto-fill:after { content: "#{$feature-color}"; }
+
+.colorbox.body-bg { background-color: $feature-color; color: $body-text-color;}
+.colorbox.body-bg .auto-fill:after { content: "#{$body-bg}"; }
+
+.colorbox.contrast-bg { background-color: $contrast-bg; color: $body-text-color; }
+.colorbox.contrast-bg .auto-fill:after { content: "#{$contrast-bg}"; }
+
+.colorbox.hcontrast-bg { background-color: $hcontrast-bg; color: $hcontrast-text-color; }
+.colorbox.hcontrast-bg .auto-fill:after { content: "#{$hcontrast-bg}"; }
+
+
+
+.colorbox.body-bg { background-color: $body-bg; }
+.colorbox.contrast-bg { background-color: $contrast-bg; }
+.colorbox.black-bg { background-color: black; color: white;}
+
 /*
 	TODO
-	
+
 	Move these into page content not CSS
 */
 
@@ -154,7 +185,7 @@ progress { color: $feature-color; }
 	.floor-fade {
 		width: 25%;
 	}
-	
+
 	.floor-fade.w2 {
 		width: 50%;
 	}

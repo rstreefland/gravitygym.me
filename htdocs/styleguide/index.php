@@ -60,6 +60,25 @@
 	</section>
 	<section>
 		<h2>Forms</h2>
+		<form action="#" method="post">
+			<div class="row">
+				<div class="six columns">
+					<label for="standard">Form input</label>
+					<input type="text" name="standard">
+				</div>
+				<div class="six columns">
+					<label for="error">Form input with an error</label>
+					<input type="text" name="error" class="error">
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<label for="message">Expandable input / textarea</label>
+					<textarea name="message" id="message"></textarea>
+				</div>
+			</div>
+
+
 	</section>
 </article>
 <?php include "../includes/footer.php"; ?>

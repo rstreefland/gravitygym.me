@@ -5,7 +5,7 @@ $targetMoney = 1500000;
 $raisedMoney = 317460;
 
 ?>
-<div class="block bg bg1 align-center">
+<div class="block pad bg bg1 align-center">
 	<div class="wrap">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>

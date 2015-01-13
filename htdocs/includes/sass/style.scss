@@ -57,10 +57,13 @@ body > header nav .navigation a.current {
 /*			HEADINGS					*/
 /* =====================================*/
 
-.block.bg {
-	color: $hcontrast-text-color;
+.block.pad {
 	margin: 0;
 	padding: 5em 2em;
+}
+
+.block.bg {
+	color: $hcontrast-text-color;
 }
 
 .block.bg.bg1 {

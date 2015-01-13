@@ -40,13 +40,13 @@
 		<h3>Headings - Raleway</h3>
 		<p>Body - Source Sans Pro. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
 		<h3>Font sizes</h3>
-		<p class="fontsize-tiny"><code>fontsize-tiny -</code> 12px</p>
-		<p class="fontsize-small"><code>fontsize-small </code>- 14px</p>
+		<p class="fontsize-tiny"><code>fontsize-tiny</code> - 12px</p>
+		<p class="fontsize-small"><code>fontsize-small</code> - 14px</p>
 		<p class="fontsize-normal"><code>fontsize-normal</code> - 16px</p>
-		<p class="fontsize-large"><code>fontsize-large </code>- 21px</p>
+		<p class="fontsize-large"><code>fontsize-large</code> - 21px</p>
 		<p class="fontsize-xlarge"><code>fontsize-xlarge</code> - 28px</p>
-		<p class="fontsize-huge"><code>fontsize-huge -</code> 37px</p>
-		<p class="fontsize-xhuge"><code>fontsize-xhuge </code>- 50px</p>
+		<p class="fontsize-huge"><code>fontsize-huge</code> - 37px</p>
+		<p class="fontsize-xhuge"><code>fontsize-xhuge</code> - 50px</p>
 	</section>
 	<section>
 		<h2>Buttons</h2>

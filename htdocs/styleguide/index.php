@@ -55,11 +55,11 @@
 	</section>
 	<section>
 		<h2>Icons</h2>
-		<div class="row"></div>
+		<p class="fontsize-large"><i class="fa fa-paypal"></i> Paypal</p>
+		<p class="fontsize-large"><i class="fa fa-paper-plane-o"></i> Send</p>
 	</section>
 	<section>
 		<h2>Forms</h2>
-		<div class="row"></div>
 	</section>
 </article>
 <?php include "../includes/footer.php"; ?>

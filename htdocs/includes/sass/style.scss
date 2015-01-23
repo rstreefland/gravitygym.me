@@ -53,7 +53,7 @@ body > header nav .navigation a.current {
 /*			SITE-WIDE FOOTER			*/
 /* =====================================*/
 
-	/* =====================================*/
+/* =====================================*/
 /*			HEADINGS					*/
 /* =====================================*/
 
@@ -68,6 +68,10 @@ body > header nav .navigation a.current {
 
 .block.bg.bg1 {
 	@include bg-image('../../images/block-bg/1.jpg');
+}
+
+.block.bg.bg2 {
+    @include bg-image('../../images/block-bg/2.jpg');
 }
 
 /* =====================================*/

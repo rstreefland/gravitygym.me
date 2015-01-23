@@ -3,7 +3,7 @@
 <div class="block pad bg bg2 align-center">
 	<div class="wrap">
 		<div class="row">
-            <h1>Blah Blah</h1>
+            <h1>About Us</h1>
 		</div>
 	</div>
 </div>

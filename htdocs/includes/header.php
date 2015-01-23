@@ -85,6 +85,7 @@ $navItems = array(
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/', 'modernizr.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/', 'slick.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('masonry.desandro.com/', 'masonry.pkgd.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo externalFile('imagesloaded.desandro.com/', 'imagesloaded.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/', 'lightbox.min.js');?>"></script>
 
 		<!-- CSS -->

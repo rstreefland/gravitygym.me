@@ -119,10 +119,7 @@ progress { color: $feature-color; }
 	max-width: none;
 
 	opacity: 0.25;
-	-webkit-transition: opacity 0.25s;
-	-moz-transition: opacity 0.25s;
-	-o-transition: opacity 0.25s;
-	transition: opacity 0.25s;
+	@include transition(opacity 0.25s);
 }
 
 @media only screen and (min-width: $mobile-width) {

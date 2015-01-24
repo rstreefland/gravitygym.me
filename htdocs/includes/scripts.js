@@ -5,4 +5,27 @@ $( document ).ready(function() {
 			jQuery(this).addClass('current');
 		}
 	});
+
+	//Run sliders
+/*	$('#firstinfo .slider').slick({
+		speed: 2000,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slide: '.slider > .slide',
+		fade: true,
+		cssEase: 'ease-in-out',
+		arrows: false,
+		dots: false,
+		draggable: false,
+		swipe: false
+	}); */
+
+	//Masonry when images have loaded
+	var $container = $('.masonry-container');
+	$container.imagesLoaded( function() {
+		$container.masonry({
+			itemSelector: '.masonry-item'
+		});
+		$container.addClass('loaded');
+	});
 });

@@ -105,6 +105,10 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.circle.image {
+    border-radius: 50% 50% 50% 50%
+}
+
 .colorbox {
 	display: block;
 	padding: 3em;

@@ -3,6 +3,14 @@
 
 $items = array(
 	'freerunning',
+	'parallel-bars',
+	'freerunning',
+	'parallel-bars',
+	'freerunning',
+	'parallel-bars',
+	'freerunning',
+	'parallel-bars',
+	'freerunning',
 	'parallel-bars'
 );
 ?>

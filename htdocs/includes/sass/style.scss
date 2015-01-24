@@ -105,6 +105,53 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.masonry-container .masonry-item {
+	width: 100%;
+	padding: 0.25em;
+	max-width: none;
+
+	opacity: 0.25;
+	-webkit-transition: opacity 0.25s;
+	-moz-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+}
+
+@media only screen and (min-width: $mobile-width) {
+	.masonry-container .masonry-item {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	.masonry-container .masonry-item {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $desktop-width) {
+	.masonry-container .masonry-item {
+		width: 25%;
+	}
+}
+
+.masonry-container.loaded a .masonry-item {
+	opacity: 1;
+}
+
+.masonry-container a {
+	-webkit-transition: opacity 0.25s;
+	-moz-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+}
+
+.masonry-container a:hover {
+	opacity: 0.75;
+}
+
+
+
 .colorbox {
 	display: block;
 	padding: 3em;

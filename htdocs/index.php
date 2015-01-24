@@ -29,12 +29,24 @@ $raisedMoney = 317460;
 		</div>
 	</div>
 </div>
-<div class="wrap">
-	<div class="row">
-		<h2>About (short summary)</h2>
+<div class="block pad bg bg4">
+	<div class="wrap">
+		<div class="row">
+			<div class="eight columns">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<h2>Freerunning USP</h2>
+</div>
+<div class="block pad bg bg5">
+	<div class="wrap">
+		<div class="row">
+			<div class="eight columns offset-by-four">
+				<h2>Freerunning</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="block">

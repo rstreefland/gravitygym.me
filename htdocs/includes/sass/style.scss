@@ -109,6 +109,10 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.circle.image {
+    border-radius: 50% 50% 50% 50%
+}
+
 .slider .slide img {
 	width: 100%;
 }
@@ -154,8 +158,6 @@ progress { color: $feature-color; }
 .masonry-container a:hover {
 	opacity: 0.75;
 }
-
-
 
 .colorbox {
 	display: block;

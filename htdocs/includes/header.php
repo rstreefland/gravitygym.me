@@ -21,6 +21,7 @@ if ($devMode) {
 //Detect if running in staging environment (workshop.xes.io/gravitygym)
 $stagingMode = (strpos($filepath,'workshop') !== false);
 if ($stagingMode) {
+	$devMode = false;
 	$rootpath='/gravitygym/';
 	$stylesheet=$rootpath.'includes/style.php/style.scss';
 }

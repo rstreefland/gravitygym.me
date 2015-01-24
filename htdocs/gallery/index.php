@@ -34,11 +34,14 @@ $items = array(
 			<?php } ?>
 			</div>
 	<?php } else { ?>
-		<article class="wrap">
-			<header class="center">
-				<h2>Gallery</h2>
-			</header>
-		<div id="gallery-list">
+		<div class="block pad bg bg3 align-center">
+			<div class="wrap">
+				<div class="row">
+					<h1>Gallery</h1>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-list slider">
 		<?php foreach ($items as $folder) {
 		$title = ucwords(str_replace('-', ' ', $folder));
 		?>
@@ -51,5 +54,4 @@ $items = array(
 		<?php } ?>
 		</div>
 	<?php } ?>
-</article>
 <?php include "../includes/footer.php"; ?>

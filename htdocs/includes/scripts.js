@@ -7,18 +7,20 @@ $( document ).ready(function() {
 	});
 
 	//Run sliders
-/*	$('#firstinfo .slider').slick({
+	$('.gallery-list.slider').slick({
 		speed: 2000,
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slide: '.slider > .slide',
-		fade: true,
 		cssEase: 'ease-in-out',
 		arrows: false,
+		slidesToShow: 3,
 		dots: false,
 		draggable: false,
-		swipe: false
-	}); */
+		swipe: false,
+		centerMode: true,
+		centerPadding: '60px'
+	});
 
 	//Masonry when images have loaded
 	var $container = $('.masonry-container');

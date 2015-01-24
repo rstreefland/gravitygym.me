@@ -109,6 +109,10 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
+.slider .slide img {
+	width: 100%;
+}
+
 .masonry-container .masonry-item {
 	width: 100%;
 	padding: 0.25em;

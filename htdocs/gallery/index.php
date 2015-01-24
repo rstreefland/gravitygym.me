@@ -45,7 +45,7 @@ $items = array(
 		<?php foreach ($items as $folder) {
 		$title = ucwords(str_replace('-', ' ', $folder));
 		?>
-			<a href="<?php echo $rootpath.'gallery/?p='.$folder;?>">
+			<a class="slide" href="<?php echo $rootpath.'gallery/?p='.$folder;?>">
 				<div class="img-container">
 					<img src="<?php echo thumb($rootpath.'gallery/'.$folder.'/front.jpg', 1140);?>">
 				</div>

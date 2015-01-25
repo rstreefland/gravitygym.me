@@ -5,4 +5,29 @@ $( document ).ready(function() {
 			jQuery(this).addClass('current');
 		}
 	});
+
+	//Run sliders
+	$('.gallery-list.slider').slick({
+		speed: 2000,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slide: '.slider > .slide',
+		cssEase: 'ease-in-out',
+		arrows: false,
+		slidesToShow: 3,
+		dots: false,
+		draggable: false,
+		swipe: false,
+		centerMode: true,
+		centerPadding: '60px'
+	});
+
+	//Masonry when images have loaded
+	var $container = $('.masonry-container');
+	$container.imagesLoaded( function() {
+		$container.masonry({
+			itemSelector: '.masonry-item'
+		});
+		$container.addClass('loaded');
+	});
 });

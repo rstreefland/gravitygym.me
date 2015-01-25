@@ -1,4 +1,4 @@
-<?php 
+<?php
 //Display all errors and warnings
 error_reporting(-1);
 ini_set('display_errors', 'On');
@@ -8,21 +8,22 @@ $filepath = $_SERVER['DOCUMENT_ROOT'];
 
 //Assume production environment, tweak otherwise
 $rootpath='/';
-$stylesheet=$rootpath.'includes/style.php/style.scss';
+$stylesheet=$rootpath.'includes/style.php?p=style.scss';
 
 //If running on local machine, use devmode settings (don't cache, use local rather than CDN files)
 //Detect if running in production (gravitygym.me)
 $devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
 if ($devMode) {
 	$rootpath='/';
-	$stylesheet=$rootpath.'includes/style.dev.php/style.scss?reset=1';
+	$stylesheet=$rootpath.'includes/style.dev.php?p=style.scss&reset=1';
 }
 
 //Detect if running in staging environment (workshop.xes.io/gravitygym)
 $stagingMode = (strpos($filepath,'workshop') !== false);
 if ($stagingMode) {
+	$devMode = false;
 	$rootpath='/gravitygym/';
-	$stylesheet=$rootpath.'includes/style.php/style.scss';
+	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
 }
 
 //Include external PHP libraries
@@ -41,7 +42,7 @@ if (!$devMode) {
 	}
 }
 ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
-	
+
 //externalFile returns the local copy of a file, or the CDN copy if production
 function externalFile($url, $file) {
 	global $rootpath, $devMode;
@@ -73,7 +74,7 @@ $navItems = array(
 <html>
 	<head>
 		<!-- Page built at <?php echo date('Y-m-d H:i:s'); ?> -->
-	
+
 		<!-- Meta -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,11 +84,17 @@ $navItems = array(
 		<!-- Javascript -->
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/', 'jquery.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/', 'modernizr.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/', 'slick.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo externalFile('masonry.desandro.com/', 'masonry.pkgd.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo externalFile('imagesloaded.desandro.com/', 'imagesloaded.pkgd.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/', 'lightbox.min.js');?>"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>
-		<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet;?>"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.6/', 'slick.css');?>"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/', 'lightbox.css');?>"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/', 'font-awesome/4.2.0/css/font-awesome.min.css');?>"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $stylesheet;?>"/>
 
 		<!-- Icons -->
 		<link rel="icon" type="image/png" href="<?php echo $rootpath;?>images/favicon.png" />
@@ -98,13 +105,13 @@ $navItems = array(
 		<meta property="og:title" content="<!--TITLE-->">
 		<meta property="og:description" content="<!--DESCRIPTION-->"<?php $pageDescription = 'Gravity Gym lorem ipsum dolor sit amet.';?>>
 		<meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>"/>
-		
+
 		<?php if ($devMode) { ?>
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
 		<?php } ?>
-		
+
 		<title><!--TITLE--></title>
 	</head>
 	<body>

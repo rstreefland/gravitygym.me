@@ -8,12 +8,13 @@
 	border: 1px solid $darker-bg;
 	cursor: pointer;
 	box-sizing: border-box;
-	
+
 	@include transition(color 0.25s, border 0.25s);
 }
 
 .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover,
-.button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+.button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus,
+.button.active {
 	color: $darker-bg;
 	border: 1px solid $feature-color;
 	outline: 0;
@@ -23,7 +24,7 @@
 	color: white;
 	background-color: $feature-color;
 	border: 1px solid $feature-color;
-	
+
 	@include transition(color 0.25s, background-color 0.25s);
 }
 

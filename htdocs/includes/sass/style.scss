@@ -91,18 +91,7 @@ body > header nav .navigation a.current {
 /*	 Try to have as few as possible		*/
 /* =====================================*/
 
-progress {
-	/* Reset the default appearance */
-	-webkit-appearance: none;
-	appearance: none;
-
-	max-width: 500px;
-	width: 100%;
-	height: 20px;
-}
-
 .donate {
-	min-width: 200px;
 	width:19%;
 	float: left;
 	margin: 1% 1% 0 0;
@@ -125,6 +114,15 @@ progress {
 	background-color: #eee;
 }
 
+progress {
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+
+	max-width: 500px;
+	width: 100%;
+	height: 20px;
+}
 
 /* Change color in Firefox */
 progress::-moz-progress-bar { background: $feature-color; }

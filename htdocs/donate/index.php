@@ -19,8 +19,7 @@ $amounts = array(
 	</div>
 </div>
 <div class="wrap">
-	<div class="row">
-		<?php foreach ($amounts as $amount => $description) { ?>
+	<?php foreach ($amounts as $amount => $description) { ?>
 		<div class="donate">
 			<div class="amount">
 				<label>
@@ -33,7 +32,6 @@ $amounts = array(
 				<p><a class="button" href="#">Make donation<br/><i class="fa fa-paypal"></i></a></p>
 			</div>
 		</div>
-		<?php } ?>
-	</div>
+	<?php } ?>
 </div>
 <?php include "../includes/footer.php"; ?>

@@ -101,6 +101,31 @@ progress {
 	height: 20px;
 }
 
+.donate {
+	min-width: 200px;
+	width:19%;
+	float: left;
+	margin: 1% 1% 0 0;
+	display:block;
+	text-align: center;
+}
+
+.donate .amount {
+	padding: 1em;
+	margin-bottom: 1em;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #eee;
+}
+
+.donate .description {
+	padding: 1em;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #eee;
+}
+
+
 /* Change color in Firefox */
 progress::-moz-progress-bar { background: $feature-color; }
 /* Chrome or Safari */

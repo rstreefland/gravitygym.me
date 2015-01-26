@@ -31,3 +31,24 @@ $( document ).ready(function() {
 		$container.addClass('loaded');
 	});
 });
+
+//Find every element with this class
+$('.js-activeOnClick-donate').each( function() {
+
+	//Add a click handler
+	$(this).click( function() {
+
+		//Remove class from every other one
+		$('.js-activeOnClick-donate').each( function() { $(this).removeClass('button-primary'); } );
+
+		//Add class to the clicked one
+		$(this).addClass('button-primary');
+
+		//Find out what the value the user clicked is
+		var value = $(this).data('value');
+
+		//Set the link and the text accordingly
+		$('.js-setHref-donate').attr('href', './pay/?p=' + value);
+		$('.js-setValue-donate').text(' of £' + value);
+	})
+});

@@ -1,5 +1,16 @@
-<?php include "../includes/header.php"; ?>
+<?php include "../includes/header.php";
 
+//amount => description
+//will eventually be pulled from a database
+$amounts = array(
+	10 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	20 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	50 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	100 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	'Other' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+);
+
+?>
 <div class="block pad bg bg1 align-center">
 	<div class="wrap">
 		<div class="row">
@@ -7,100 +18,16 @@
 		</div>
 	</div>
 </div>
-	<div class="wrap">
-		<div class="row">
-			<div class="donate">
-				<div class="amount">
-					<input type="radio" name="amount" value="10"> £10
-				</div>
-				
-				<div class="description">
-					<div class="row">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="row">
-						<a class="button" href="#">
-							Make donation
-							<br>
-							<i class="fa fa-paypal"></i>	
-							</a>
-					</div>
-				</div>
+<div class="wrap">
+	<div class="row">
+		<?php foreach ($amounts as $amount => $description) { ?>
+		<div class="donate">
+			<div class="amount">
 			</div>
-			<div class="donate">
-				<div class="amount">
-					<input type="radio" name="amount" value="20"> £20
-				</div>
-				
-				<div class="description">
-					<div class="row">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="row">
-						<a class="button" href="#">
-							Make donation
-							<br>
-							<i class="fa fa-paypal"></i>	
-							</a>
-					</div>
-				</div>
-			</div>
-			<div class="donate">
-				<div class="amount">
-					<input type="radio" name="amount" value="50"> £50
-				</div>
-				
-				<div class="description">
-					<div class="row">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="row">
-						<a class="button" href="#">
-							Make donation
-							<br>
-							<i class="fa fa-paypal"></i>	
-							</a>
-					</div>
-				</div>
-			</div>
-			<div class="donate">
-				<div class="amount">
-					<input type="radio" name="amount" value="100"> £100
-				</div>
-				
-				<div class="description">
-					<div class="row">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="row">
-						<a class="button" href="#">
-							Make donation
-							<br>
-							<i class="fa fa-paypal"></i>	
-							</a>
-					</div>
-				</div>
-			</div>
-			<div class="donate">
-				<div class="amount">
-					<input type="radio" name="amount" value="other"> Other
-				</div>
-				
-				<div class="description">
-					<div class="row">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="row">
-						<a class="button" href="#">
-							Make donation
-							<br>
-							<i class="fa fa-paypal"></i>	
-							</a>
-					</div>
-				</div>
+			<div class="description">
 			</div>
 		</div>
+		<?php } ?>
 	</div>
 </div>
-
 <?php include "../includes/footer.php"; ?>

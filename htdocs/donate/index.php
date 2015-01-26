@@ -29,6 +29,8 @@ $amounts = array(
 				</label>
 			</div>
 			<div class="description">
+				<p><?php echo $description;?></p>
+				<p><a class="button" href="#">Make donation<br/><i class="fa fa-paypal"></i></a></p>
 			</div>
 		</div>
 		<?php } ?>

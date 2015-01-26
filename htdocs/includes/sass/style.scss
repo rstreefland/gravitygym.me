@@ -91,28 +91,40 @@ body > header nav .navigation a.current {
 /*	 Try to have as few as possible		*/
 /* =====================================*/
 
+.donate-container {
+	width: 90%;
+	margin: auto;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+@media only screen and (min-width: $phablet-width) {
+	.donate-container {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	.donate-container {
+		width: 20%;
+	}
+}
+
 .donate {
-	width:19%;
-	float: left;
-	margin: 1% 1% 0 0;
-	display:block;
-	text-align: center;
+	background-color: $contrast-bg;
+	border-radius: $curve-radius;
+	border: 1px solid $slight-darker-bg;
 }
 
 .donate .amount {
+	border-top: 1px solid $slight-darker-bg;
 	padding: 1em;
-	margin-bottom: 1em;
-	border-radius: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	background-color: #eee;
 }
 
 .donate .description {
 	padding: 1em;
-	border-radius: 2px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	background-color: #eee;
 }
+
 
 progress {
 	/* Reset the default appearance */

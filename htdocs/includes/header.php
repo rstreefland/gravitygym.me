@@ -127,7 +127,8 @@ $navItems = array(
 							$url = $rootpath.$link;
 							echo "<a href='$url'>$name</a>";
 						}
-						echo "<a class='button-primary' href='donate/'>Donate</a>";
+						$url = $rootpath.'donate/';
+						echo "<a class='button-primary' href='$url'>Donate</a>";
 						?>
 					</div>
 				</div>

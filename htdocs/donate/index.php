@@ -23,6 +23,10 @@ $amounts = array(
 		<?php foreach ($amounts as $amount => $description) { ?>
 		<div class="donate">
 			<div class="amount">
+				<label>
+					<input type="radio" name="amount" value="<?php echo $amount;?>">
+					£<?php echo $amount;?>
+				</label>
 			</div>
 			<div class="description">
 			</div>

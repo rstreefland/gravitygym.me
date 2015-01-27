@@ -43,6 +43,13 @@ body > header nav .navigation a {
 	padding: 1em;
 	border: 1px solid transparent;
 	border-radius: 5px;
+
+	@include transition(background-color 0.25s, color 0.25s);
+}
+
+body > header nav .navigation a:hover {
+	background-color: lighten($feature-color, 50%);
+	color: black;
 }
 
 body > header nav .navigation a.current {

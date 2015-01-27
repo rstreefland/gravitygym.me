@@ -192,10 +192,7 @@ progress { color: $feature-color; }
 }
 
 .masonry-container a {
-	-webkit-transition: opacity 0.25s;
-	-moz-transition: opacity 0.25s;
-	-o-transition: opacity 0.25s;
-	transition: opacity 0.25s;
+	@include transition(opacity 0.25s);
 }
 
 .masonry-container a:hover {

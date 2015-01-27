@@ -43,6 +43,13 @@ body > header nav .navigation a {
 	padding: 1em;
 	border: 1px solid transparent;
 	border-radius: 5px;
+
+	@include transition(background-color 0.25s, color 0.25s);
+}
+
+body > header nav .navigation a:hover {
+	background-color: lighten($feature-color, 50%);
+	color: black;
 }
 
 body > header nav .navigation a.current {
@@ -192,10 +199,7 @@ progress { color: $feature-color; }
 }
 
 .masonry-container a {
-	-webkit-transition: opacity 0.25s;
-	-moz-transition: opacity 0.25s;
-	-o-transition: opacity 0.25s;
-	transition: opacity 0.25s;
+	@include transition(opacity 0.25s);
 }
 
 .masonry-container a:hover {

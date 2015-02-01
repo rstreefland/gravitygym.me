@@ -104,7 +104,13 @@ $raisedMoney = 317460;
 </div>
 <div class="wrap">
 	<div class="row">
-			<h2 class="twelve columns">Testimonials</h2>
+		<h2 class="twelve columns">Testimonials</h2>
 	</div>
+	<?php for ($i = 1; $i <= 4; $i++) { ?>
+	<div class="testimonial">
+		<img class="circle" src="<?php echo thumb($rootpath.'images/people/testimonial'.$i.'.jpg', 200)?>">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. <span>John Smith, age 6</span></p>
+	</div>
+	<?php } ?>
 </div>
 <?php include "./includes/footer.php"; ?>

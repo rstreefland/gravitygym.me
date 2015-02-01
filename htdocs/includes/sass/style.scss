@@ -150,6 +150,38 @@ progress::-webkit-progress-value { background: $feature-color; }
 /* IE10 */
 progress { color: $feature-color; }
 
+.testimonial {
+	margin-top: 2em;
+}
+
+.testimonial img {
+	width: 50%;
+	max-width: 150px;
+}
+
+.testimonial p {
+	padding-top: 2em;
+	width: 80%;
+	border-bottom: 1px solid $slight-darker-bg;
+	font-style: italic;
+}
+
+/* Expand div to fit content */
+.testimonial { overflow: auto; }
+
+/* FLoat alternating left and right */
+.testimonial:nth-child(even) img { float: left; }
+.testimonial:nth-child(even) p { float: right; }
+.testimonial:nth-child(odd) img { float: right; }
+.testimonial:nth-child(odd) p { float: left; }
+
+.testimonial span {
+	font-size: 80%;
+	color: $darker-bg;
+	font-style: normal;
+}
+
+
 /* =====================================*/
 /*			FORMS						*/
 /* =====================================*/
@@ -159,7 +191,7 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
-.circle.image {
+img.circle {
     border-radius: 50%;
 }
 

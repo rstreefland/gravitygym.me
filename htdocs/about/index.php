@@ -23,7 +23,7 @@
     </div>
     <div class = "row">
         <div class="three columns">
-            <img class="circle image" src="../images/about/dan.jpg">
+            <img class="circle" src="../images/people/dan.jpg">
         </div>
         <div class="seven columns">
             <p>
@@ -33,7 +33,7 @@
     </div>
     <div class = "row">
         <div class="three columns">
-            <img class="circle image" src="../images/about/george.jpg">
+            <img class="circle" src="../images/people/george.jpg">
         </div>
         <div class="seven columns">
             <p>
@@ -43,7 +43,7 @@
     </div>
     <div class = "row">
         <div class="three columns">
-            <img class="circle image" src="../images/about/beth.jpg">
+            <img class="circle" src="../images/people/beth.jpg">
         </div>
         <div class="seven columns">
             <p>
@@ -53,7 +53,7 @@
     </div>
     <div class = "row">
         <div class="three columns">
-            <img class="circle image" src="../images/about/rhys.jpg">
+            <img class="circle" src="../images/people/rhys.jpg">
         </div>
         <div class="seven columns">
             <p>

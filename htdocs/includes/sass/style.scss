@@ -181,6 +181,10 @@ progress { color: $feature-color; }
 	font-style: normal;
 }
 
+.column img,
+.columns img {
+	width: 100%;
+}
 
 /* =====================================*/
 /*			FORMS						*/

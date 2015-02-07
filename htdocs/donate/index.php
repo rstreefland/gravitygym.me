@@ -50,7 +50,9 @@ $amounts = array(
 	<div class="row margin-bottom margin-top">
 		<div class="four columns">
 			<img src="<?php echo thumb($rootpath."images/amounts/$amount.jpg", 400);?>"/>
-			<a class="button-primary" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
+			<p class="align-center">
+				<a class="button-primary" href="#">Donate £<?php echo $amount;?> now<br/><i class="fa fa-paypal"></i></a>
+			</p>
 		</div>
 		<div class="eight columns">
 			<h2 class="no-margin-top">£10 gets us:</h2>

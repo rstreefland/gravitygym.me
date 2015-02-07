@@ -74,16 +74,13 @@ $amounts = array(
 				<p><?php echo $description;?></p>
 			</div>
 			<div class="amount">
-				<span class="button js-activeOnClick-donate" data-value="<?php echo $amount;?>">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
 					<?php
 					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
 					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
-				</span>
+				</a>
 			</div>
 		</div>
 	</div><?php } ?>
 </div>
-
-<!-- Link to the payment page, with the amount set from clicking the boxes above -->
-<p class="align-center"><a class="button-primary js-setHref-donate" href="./pay/?p=<?php echo $amount?>">Make donation<span class="js-setValue-donate"></span><br/><i class="fa fa-paypal"></i></a></p>
 <?php include "../includes/footer.php"; ?>

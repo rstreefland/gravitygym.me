@@ -27,6 +27,25 @@ $amounts = array(
 			</div>
 		</div>
 	</div>
+</div>
+<div class="wrap align-center">
+	<?php foreach ($amounts as $amount => $description) {
+	?><div class="donate-container">
+		<div class="donate">
+			<div class="description">
+				<p><?php echo $description;?></p>
+			</div>
+			<div class="amount">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
+					<?php
+					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
+					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
+				</a>
+			</div>
+		</div>
+	</div><?php } ?>
+</div>
+<div class="wrap">
 	<?php foreach($amounts as $amount => $description) { ?>
 	<div class="row margin-bottom margin-top">
 		<div class="four columns">

@@ -55,10 +55,10 @@ $amounts = array(
 			</p>
 		</div>
 		<div class="eight columns">
-			<h2 class="no-margin-top">£10 gets us:</h2>
+			<h2 class="no-margin-top">£<?php echo $amount;?> gets us:</h2>
 			<p><?php echo $description;?></p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
-			<h2>£10 gets you:</h2>
+			<h2>£<?php echo $amount;?> gets you:</h2>
 			<ul>
 				<li>A week of yolo</li>
 				<li>A two month supply of swag</li>

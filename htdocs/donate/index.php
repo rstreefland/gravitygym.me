@@ -27,17 +27,38 @@ $amounts = array(
 			</div>
 		</div>
 	</div>
+</div>
+<div class="wrap align-center">
+	<?php foreach ($amounts as $amount => $description) {
+	?><div class="donate-container">
+		<div class="donate">
+			<div class="description">
+				<p><?php echo $description;?></p>
+			</div>
+			<div class="amount">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
+					<?php
+					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
+					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
+				</a>
+			</div>
+		</div>
+	</div><?php } ?>
+</div>
+<div class="wrap">
 	<?php foreach($amounts as $amount => $description) { ?>
 	<div class="row margin-bottom margin-top">
 		<div class="four columns">
 			<img src="<?php echo thumb($rootpath."images/amounts/$amount.jpg", 400);?>"/>
-			<a class="button-primary" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
+			<p class="align-center">
+				<a class="button-primary" href="#">Donate £<?php echo $amount;?> now<br/><i class="fa fa-paypal"></i></a>
+			</p>
 		</div>
 		<div class="eight columns">
-			<h2 class="no-margin-top">£10 gets us:</h2>
+			<h2 class="no-margin-top">£<?php echo $amount;?> gets us:</h2>
 			<p><?php echo $description;?></p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
-			<h2>£10 gets you:</h2>
+			<h2>£<?php echo $amount;?> gets you:</h2>
 			<ul>
 				<li>A week of yolo</li>
 				<li>A two month supply of swag</li>
@@ -55,16 +76,13 @@ $amounts = array(
 				<p><?php echo $description;?></p>
 			</div>
 			<div class="amount">
-				<span class="button js-activeOnClick-donate" data-value="<?php echo $amount;?>">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
 					<?php
 					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
 					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
-				</span>
+				</a>
 			</div>
 		</div>
 	</div><?php } ?>
 </div>
-
-<!-- Link to the payment page, with the amount set from clicking the boxes above -->
-<p class="align-center"><a class="button-primary js-setHref-donate" href="./pay/?p=<?php echo $amount?>">Make donation<span class="js-setValue-donate"></span><br/><i class="fa fa-paypal"></i></a></p>
 <?php include "../includes/footer.php"; ?>

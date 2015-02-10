@@ -5,7 +5,7 @@ $targetMoney = 1500000;
 $raisedMoney = 317460;
 
 ?>
-<div class="block pad bg bg1 align-center">
+<div class="block large pad bg bg1 align-center">
 	<div class="wrap">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>
@@ -29,7 +29,7 @@ $raisedMoney = 317460;
 		</div>
 	</div>
 </div>
-<div class="block pad bg bg4">
+<div class="block huge pad bg bg4">
 	<div class="wrap">
 		<div class="row">
 			<div class="eight columns">
@@ -39,7 +39,7 @@ $raisedMoney = 317460;
 		</div>
 	</div>
 </div>
-<div class="block pad bg bg5">
+<div class="block huge pad bg bg5">
 	<div class="wrap">
 		<div class="row">
 			<div class="eight columns offset-by-four">

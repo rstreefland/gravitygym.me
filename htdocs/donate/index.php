@@ -22,7 +22,7 @@ $amounts = array(
 	<div class="row margin-bottom">
 		<div class="twelve columns">
 			<div class="block pad">
-				<h1 class="align-center">We need all the money</h1>
+				<h1 class="align-center">We need your help</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
 			</div>
 		</div>

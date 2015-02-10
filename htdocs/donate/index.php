@@ -3,11 +3,11 @@
 //amount => description
 //will eventually be pulled from a database
 $amounts = array(
-	10 => 'With your generous funding, we can rip off slightly less people.',
-	20 => 'For just £20 a month, Beth could afford to eat.',
-	50 => 'Now you\'re talking. Can we take those notes off your hands?',
-	100 => 'Stop flashing the cash. We could really use some of that.',
-	'Other' => 'Give us everything. You know you want to. It\'ll help.'
+	10 => 'With your generous funding, we can lorem ipsum dolor.',
+	20 => 'For just £20 a month, we could afford to adipiscing est.',
+	50 => 'With £50, we could lorem much more ipsums than we\'re doing.',
+	100 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	'Other' => 'Pellentesque mollis libero at diam volutpat.'
 );
 
 ?>

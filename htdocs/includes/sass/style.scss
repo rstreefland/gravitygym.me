@@ -73,8 +73,8 @@ body > header nav .navigation a.current {
 	color: $hcontrast-text-color;
 }
 
-.block.large { height: 50vh; }
-.block.huge { height: 80vh; }
+.block.large { height: 50vh; min-height: 400px; }
+.block.huge { height: 80vh; min-height: 400px; }
 
 .block.bg.bg1 {
 	@include bg-image('../images/block-bg/1.jpg');

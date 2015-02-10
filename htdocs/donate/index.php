@@ -5,7 +5,7 @@
 $amounts = array(
 	10 => 'With your generous funding, we can lorem ipsum dolor.',
 	20 => 'For just £20 a month, we could afford to adipiscing est.',
-	50 => 'With £50, we could lorem much more ipsums than we\'re doing.',
+	50 => 'With £50, we could lorem much more ipsums.',
 	100 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	'Other' => 'Pellentesque mollis libero at diam volutpat.'
 );

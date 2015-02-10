@@ -3,11 +3,11 @@
 //amount => description
 //will eventually be pulled from a database
 $amounts = array(
-	10 => 'With your generous funding, we can rip off slightly less people.',
-	20 => 'For just £20 a month, Beth could afford to eat.',
-	50 => 'Now you\'re talking. Can we take those notes off your hands?',
-	100 => 'Stop flashing the cash. We could really use some of that.',
-	'Other' => 'Give us everything. You know you want to. It\'ll help.'
+	10 => 'With your generous funding, we can lorem ipsum dolor.',
+	20 => 'For just £20 a month, we could afford to adipiscing est.',
+	50 => 'With £50, we could lorem much more ipsums.',
+	100 => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	'Other' => 'Pellentesque mollis libero at diam volutpat.'
 );
 
 ?>
@@ -22,7 +22,7 @@ $amounts = array(
 	<div class="row margin-bottom">
 		<div class="twelve columns">
 			<div class="block pad">
-				<h1 class="align-center">We need all the money</h1>
+				<h1 class="align-center">We need your help</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.</p>
 			</div>
 		</div>

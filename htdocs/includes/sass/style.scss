@@ -189,6 +189,29 @@ progress { color: $feature-color; }
 	width: 100%;
 }
 
+.community_item {
+	height: 500px;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: $curve-radius;
+	border: 3px solid $darker-bg;
+	overflow-y: auto;
+}
+
+.community_item button {
+	padding: 0 1em 0 1em;
+	height: 20px;
+	float:right;
+	font-size: small;
+}
+
+.community_item .full {
+	font-size: small;
+}
+
+
+
+
 /* =====================================*/
 /*			FORMS						*/
 /* =====================================*/

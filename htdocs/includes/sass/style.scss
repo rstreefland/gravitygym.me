@@ -43,6 +43,13 @@ body > header nav .navigation a {
 	padding: 1em;
 	border: 1px solid transparent;
 	border-radius: 5px;
+
+	@include transition(background-color 0.25s, color 0.25s);
+}
+
+body > header nav .navigation a:hover {
+	background-color: lighten($feature-color, 50%);
+	color: black;
 }
 
 body > header nav .navigation a.current {
@@ -65,6 +72,9 @@ body > header nav .navigation a.current {
 .block.bg {
 	color: $hcontrast-text-color;
 }
+
+.block.large { height: 50vh; }
+.block.huge { height: 80vh; }
 
 .block.bg.bg1 {
 	@include bg-image('../images/block-bg/1.jpg');
@@ -91,6 +101,41 @@ body > header nav .navigation a.current {
 /*	 Try to have as few as possible		*/
 /* =====================================*/
 
+.donate-container {
+	width: 90%;
+	margin: auto;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+@media only screen and (min-width: $phablet-width) {
+	.donate-container {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	.donate-container {
+		width: 20%;
+	}
+}
+
+.donate {
+	background-color: $contrast-bg;
+	border-radius: $curve-radius;
+	border: 1px solid $slight-darker-bg;
+}
+
+.donate .amount {
+	border-top: 1px solid $slight-darker-bg;
+	padding: 1em;
+}
+
+.donate .description {
+	padding: 1em;
+}
+
+
 progress {
 	/* Reset the default appearance */
 	-webkit-appearance: none;
@@ -101,37 +146,48 @@ progress {
 	height: 20px;
 }
 
-.donate {
-	min-width: 200px;
-	width:19%;
-	float: left;
-	margin: 1% 1% 0 0;
-	display:block;
-	text-align: center;
-}
-
-.donate .amount {
-	padding: 1em;
-	margin-bottom: 1em;
-	border-radius: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	background-color: #eee;
-}
-
-.donate .description {
-	padding: 1em;
-	border-radius: 2px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	background-color: #eee;
-}
-
-
 /* Change color in Firefox */
 progress::-moz-progress-bar { background: $feature-color; }
 /* Chrome or Safari */
 progress::-webkit-progress-value { background: $feature-color; }
 /* IE10 */
 progress { color: $feature-color; }
+
+.testimonial {
+	margin-top: 2em;
+}
+
+.testimonial img {
+	width: 50%;
+	max-width: 150px;
+}
+
+.testimonial p {
+	padding-top: 2em;
+	width: 80%;
+	border-bottom: 1px solid $slight-darker-bg;
+	font-style: italic;
+}
+
+/* Expand div to fit content */
+.testimonial { overflow: auto; }
+
+/* FLoat alternating left and right */
+.testimonial:nth-child(even) img { float: left; }
+.testimonial:nth-child(even) p { float: right; }
+.testimonial:nth-child(odd) img { float: right; }
+.testimonial:nth-child(odd) p { float: left; }
+
+.testimonial span {
+	font-size: 80%;
+	color: $darker-bg;
+	font-style: normal;
+}
+
+.column img,
+.columns img {
+	width: 100%;
+}
 
 /* =====================================*/
 /*			FORMS						*/
@@ -142,7 +198,7 @@ progress { color: $feature-color; }
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
 
-.circle.image {
+img.circle {
     border-radius: 50%;
 }
 
@@ -182,10 +238,7 @@ progress { color: $feature-color; }
 }
 
 .masonry-container a {
-	-webkit-transition: opacity 0.25s;
-	-moz-transition: opacity 0.25s;
-	-o-transition: opacity 0.25s;
-	transition: opacity 0.25s;
+	@include transition(opacity 0.25s);
 }
 
 .masonry-container a:hover {

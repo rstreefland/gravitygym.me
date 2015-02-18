@@ -4,4 +4,4 @@
 
 require_once __DIR__ . '/composer' . '/autoload_real.php';
 
-return ComposerAutoloaderInit4d3b86ec552d34464174bef6a8e75299::getLoader();
+return ComposerAutoloaderInitGravityGym::getLoader();

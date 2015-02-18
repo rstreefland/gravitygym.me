@@ -362,3 +362,7 @@ a.floor-fade:hover {
 	color: $hcontrast-text-color;
 	font-size: 150%;
 }
+
+.wrap.small {
+	max-width: 2 * $site-width/3;
+}

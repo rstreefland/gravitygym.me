@@ -42,12 +42,16 @@ if (isset($_GET['p'])) {
 			<input class="nine columns" type="email" name="email">
 		</div>
 		<div class="align-left row pad-top">
-			<label class="two columns" for="firstname">First name</label>
-			<input class="four columns" type="text" name="firstname">
-			<label class="two columns" for="lastname">Last name</label>
-			<input class="four columns" type="text" name="lastname">
+			<label class="three columns" for="firstname">First name</label>
+			<input class="nine columns" type="text" name="firstname">
 		</div>
-		<button type="submit">Submit</button>
+		<div class="align-left row pad-top">
+			<label class="three columns" for="lastname">Last name</label>
+			<input class="nine columns" type="text" name="lastname">
+		</div>
+		<div class="pad-top">
+			<button class="button-primary" type="submit">Submit</button>
+		</div>
 	</form>
 </div>
 <?php } else { ?>

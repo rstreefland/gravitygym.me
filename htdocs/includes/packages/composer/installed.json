@@ -1,0 +1,72 @@
+[
+    {
+        "name": "xes/templater",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/templater.git",
+            "reference": "f7e545bef4623dfdb8dd2322523428b53059e102"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/templater/zipball/f7e545bef4623dfdb8dd2322523428b53059e102",
+            "reference": "f7e545bef4623dfdb8dd2322523428b53059e102",
+            "shasum": ""
+        },
+        "time": "2015-02-17 16:51:55",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Basic template library with a Twig-like syntax",
+        "homepage": "https://github.com/dan1elhughes/templater"
+    },
+    {
+        "name": "xes/cacher",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/cacher.git",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/cacher/zipball/b1c60186b8999d16500c646824e877c920933f32",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32",
+            "shasum": ""
+        },
+        "time": "2015-02-17 16:51:42",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple file caching for PHP with string replacements",
+        "homepage": "https://github.com/dan1elhughes/cacher"
+    }
+]

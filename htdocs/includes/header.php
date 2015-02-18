@@ -30,19 +30,12 @@ if ($stagingMode) {
 require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
 require($filepath.$rootpath.'includes/db.php');
 
-//Start caching
-if (!$devMode) {
-	$cache_time = 5; // Time in seconds to keep a page cached
-	$cache_folder = $filepath.$rootpath.'includes/cache/'; // Folder to store cached files (no trailing slash)
-	$cache_filename = $cache_folder.md5($_SERVER['REQUEST_URI']).'.html'; // Location to lookup or store cached file
-	$cache_created  = (file_exists($cache_filename)) ? filemtime($cache_filename) : 0; //Check to see if this file has already been cached, if it has then get and store the file creation time
+require($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/packages/autoload.php');
 
-	if ((time() - $cache_created) < $cache_time) {
-		readfile($cache_filename); // The cached copy is still valid, read it into the output buffer and exit
-		die();
-	}
-}
-ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
+$cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
+$cache->start();
+
+$templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
 
 //externalFile returns the local copy of a file, or the CDN copy if production
 function externalFile($url, $file) {

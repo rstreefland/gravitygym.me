@@ -10,3 +10,8 @@ db.php
 *.timthumb.txt
 **/scss_cache/*/*.css
 **/scss_cache/*/*.css.imports
+
+#Composer files
+composer.phar
+composer.json
+composer.lock

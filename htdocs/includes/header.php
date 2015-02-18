@@ -3,6 +3,7 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
+$siteName = "GRAVITY";
 $rooturl = $_SERVER['HTTP_HOST'];
 $filepath = $_SERVER['DOCUMENT_ROOT'];
 

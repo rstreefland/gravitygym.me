@@ -28,6 +28,7 @@ if ($stagingMode) {
 
 //Include external PHP libraries
 require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
+require($filepath.$rootpath.'includes/db.php');
 
 //Start caching
 if (!$devMode) {

@@ -194,29 +194,20 @@ progress { color: $feature-color; }
 }
 
 .community {
-	height: 400px;
 	padding: 0 1em 0 1em;
-	margin-bottom: 1em;
 	border-radius: $curve-radius;
-	border: 3px solid $darker-bg;
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 
-.community button {
-	padding: 0 1em 0 1em;
-	height: 20px;
-	float:right;
-	font-size: small;
+.community .row {
+	border-bottom: 1px solid $slight-darker-bg;
+}
+
+.community .slider {
+	overflow: hidden;
 }
 
 .community .full {
-	font-size: small;
-}
-
-.slider img {
-	border-radius: $curve-radius;
-	padding: 0 1px 0 1px;
+	display: none;
 }
 
 /* =====================================*/

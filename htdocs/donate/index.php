@@ -2,11 +2,12 @@
 
 //amount => description
 //will eventually be pulled from a database
+$query = $dbView->query("SELECT amount,description,getsUs,getsYou FROM donationDetails");
+
+$result = queryToArray($query);
+
 if (isset($_GET['p'])) {
 	$amount = $dbEdit->real_escape_string($_GET['p']);
-
-	$query = $dbView->query("SELECT amount FROM donationDetails");
-	$amounts = columnToArray($query, 'amount');
 
 ?>
 <div class="wrap small pad-top">
@@ -18,13 +19,13 @@ if (isset($_GET['p'])) {
 		</div>
 		<p>Or select another amount:</p>
 		<div class="row pad-left">
-			<?php foreach ($amounts as $otherAmount) {
-			if ($amount != $otherAmount) {
+			<?php foreach ($result as $row) {
+			if ($amount != $row['amount']) {
 			?>
-				<a class="button three columns" href="<?php echo $rootpath.'donate/?p='.$otherAmount;?>">
+				<a class="button three columns" href="<?php echo $rootpath.'donate/?p='.$row['amount'];?>">
 					<?php
 					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
-					echo ($otherAmount == 0 ? 'Other' : '£'.$otherAmount);?>
+					echo ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']);?>
 				</a>
 		<?php }} ?>
 		</div>
@@ -69,17 +70,17 @@ if (isset($_GET['p'])) {
 	</div>
 </div>
 <div class="wrap align-center">
-	<?php foreach ($amounts as $amount => $description) {
+	<?php foreach ($result as $row) {
 	?><div class="donate-container">
 		<div class="donate">
 			<div class="description">
-				<p><?php echo $description;?></p>
+				<p><?php echo $row['description'];?></p>
 			</div>
 			<div class="amount">
-				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$row['amount'];?>">
 					<?php
 					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
-					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
+					echo ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']);?>
 				</a>
 			</div>
 		</div>
@@ -89,26 +90,26 @@ if (isset($_GET['p'])) {
 	<?php $template = $templater->loadModule('donatemodule.html');
 		$query = $dbView->query("SELECT * FROM donationDetails WHERE amount > 0");
 
-		while ($r = $query->fetch_assoc()) {
+		while ($row = $query->fetch_assoc()) {
 			$template->render(array(
-				"image" => thumb($rootpath.'images/amounts/'.$r['amount'].'.jpg', 400),
-				"URL" => './?p='.$r['amount'],
-				"donate-button-text" => ($r['amount'] == 0 ? "Donate other amount" : "Donate £" . $r['amount']),
-				"amount-text" => ($r['amount'] == 0 ? 'Other' : '£'.$r['amount']),
-				"gets-us" => $r['getsUs'],
-				"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $r['getsYou'])).'</li></ul>',
+				"image" => thumb($rootpath.'images/amounts/'.$row['amount'].'.jpg', 400),
+				"URL" => './?p='.$row['amount'],
+				"donate-button-text" => ($row['amount'] == 0 ? "Donate other amount" : "Donate £" . $row['amount']),
+				"amount-text" => ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']),
+				"gets-us" => $row['getsUs'],
+				"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $row['getsYou'])).'</li></ul>',
 			));
 		}
 
 		$query = $dbView->query("SELECT * FROM donationDetails WHERE amount = 0");
-		$r = $query->fetch_assoc();
+		$row = $query->fetch_assoc();
 		$template->render(array(
-			"image" => thumb($rootpath.'images/amounts/'.$r['amount'].'.jpg', 400),
-			"URL" => './?p='.$r['amount'],
-			"donate-button-text" => ($r['amount'] == 0 ? "Donate other amount" : "Donate " . $r['amountText']),
-			"amount-text" => ($r['amount'] == 0 ? 'Other' : '£'.$r['amount']),
-			"gets-us" => $r['getsUs'],
-			"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $r['getsYou'])).'</li></ul>',
+			"image" => thumb($rootpath.'images/amounts/'.$row['amount'].'.jpg', 400),
+			"URL" => './?p='.$row['amount'],
+			"donate-button-text" => ($row['amount'] == 0 ? "Donate other amount" : "Donate " . $row['amountText']),
+			"amount-text" => ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']),
+			"gets-us" => $row['getsUs'],
+			"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $row['getsYou'])).'</li></ul>',
 		));
 
 
@@ -116,17 +117,17 @@ if (isset($_GET['p'])) {
 	?>
 </div>
 <div class="wrap align-center">
-	<?php foreach ($amounts as $amount => $description) {
+	<?php foreach ($result as $row) {
 	?><div class="donate-container">
 		<div class="donate">
 			<div class="description">
-				<p><?php echo $description;?></p>
+				<p><?php echo $row['description'];?></p>
 			</div>
 			<div class="amount">
-				<a class="button" href="<?php echo $rootpath.'donate/?p='.$amount;?>">
+				<a class="button" href="<?php echo $rootpath.'donate/?p='.$row['amount'];?>">
 					<?php
 					//If amount is other, then print "Other". Otherwise, add a pound sign and print the amount
-					echo ($amount == 'Other' ? 'Other' : '£'.$amount);?>
+					echo ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']);?>
 				</a>
 			</div>
 		</div>

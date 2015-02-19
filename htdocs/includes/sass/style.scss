@@ -204,13 +204,12 @@ progress { color: $feature-color; }
 	border-bottom: 1px solid $slight-darker-bg;
 }
 
-.slider {
-	overflow: hidden;
-	max-height: 400px;
-}
-
 .community .full {
 	display: none;
+}
+
+.community_slider img {
+	height:400px;
 }
 
 /* =====================================*/

@@ -20,12 +20,10 @@ $(document).ready(function(){
         }
     });
 
-    $('.slider').slick({
-	infinite: true,
+    $('.community_slider').slick({ 
 	centerMode: true,
-	autoplay: true,
-	autoplaySpeed: 2000,
-	});
+	slidesToShow: 1,
+ 	});
 });
 </script>
 <div class="block pad bg bg6 align-center">
@@ -50,7 +48,7 @@ $(document).ready(function(){
 			<?php } ?>
 		</div>
 		<div class="six columns">
-			<div class="slider">
+			<div class="community_slider">
 			<div><img src="../images/community/1.jpg"></div>
 			<div><img src="../images/community/2.jpg"></div>
 			<div><img src="../images/community/3.jpg"></div>

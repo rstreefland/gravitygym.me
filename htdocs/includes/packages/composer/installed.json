@@ -6,15 +6,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/dan1elhughes/templater.git",
-            "reference": "f7e545bef4623dfdb8dd2322523428b53059e102"
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dan1elhughes/templater/zipball/f7e545bef4623dfdb8dd2322523428b53059e102",
-            "reference": "f7e545bef4623dfdb8dd2322523428b53059e102",
+            "url": "https://api.github.com/repos/dan1elhughes/templater/zipball/794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
             "shasum": ""
         },
-        "time": "2015-02-17 16:51:55",
+        "time": "2015-02-19 16:10:17",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -68,5 +68,40 @@
         ],
         "description": "Simple file caching for PHP with string replacements",
         "homepage": "https://github.com/dan1elhughes/cacher"
+    },
+    {
+        "name": "xes/lipsum",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/lipsum.git",
+            "reference": "124ca392d9155dba8c5bbfd685f765f55fa246e6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/124ca392d9155dba8c5bbfd685f765f55fa246e6",
+            "reference": "124ca392d9155dba8c5bbfd685f765f55fa246e6",
+            "shasum": ""
+        },
+        "time": "2015-02-19 16:13:28",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Get paragraphs of Lorem Ipsum",
+        "homepage": "https://github.com/dan1elhughes/lipsum"
     }
 ]

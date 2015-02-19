@@ -96,6 +96,10 @@ body > header nav .navigation a.current {
     @include bg-image('../images/block-bg/5.jpg');
 }
 
+.block.bg.bg6 {
+    @include bg-image('../images/block-bg/6.jpg');
+}
+
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/
@@ -189,28 +193,31 @@ progress { color: $feature-color; }
 	width: 100%;
 }
 
-.community_item {
+.community {
 	height: 400px;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: 0 1em 0 1em;
+	margin-bottom: 1em;
 	border-radius: $curve-radius;
 	border: 3px solid $darker-bg;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 
-.community_item button {
+.community button {
 	padding: 0 1em 0 1em;
 	height: 20px;
 	float:right;
 	font-size: small;
 }
 
-.community_item .full {
+.community .full {
 	font-size: small;
 }
 
-
-
+.slider img {
+	border-radius: $curve-radius;
+	padding: 0 1px 0 1px;
+}
 
 /* =====================================*/
 /*			FORMS						*/

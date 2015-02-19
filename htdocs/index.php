@@ -25,7 +25,7 @@ $raisedMoney = 317460;
 			<p class="eight columns offset-by-two align-center">In order to achieve our goal, we need to raise we need to raise £1,500,000 dollars, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
 		</div>
 		<div class="row align-center">
-			<a class="button" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
+			<a class="button" href="<?php echo $rootpath?>donate/">Donate now<br/><i class="fa fa-paypal"></i></a>
 		</div>
 	</div>
 </div>

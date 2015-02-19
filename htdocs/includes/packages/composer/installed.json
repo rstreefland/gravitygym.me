@@ -76,15 +76,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/dan1elhughes/lipsum.git",
-            "reference": "124ca392d9155dba8c5bbfd685f765f55fa246e6"
+            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/124ca392d9155dba8c5bbfd685f765f55fa246e6",
-            "reference": "124ca392d9155dba8c5bbfd685f765f55fa246e6",
+            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/b34bceacf468661cd44600e1fcb03df230fe260c",
+            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c",
             "shasum": ""
         },
-        "time": "2015-02-19 16:13:28",
+        "time": "2015-02-19 16:21:03",
         "type": "library",
         "installation-source": "source",
         "autoload": {

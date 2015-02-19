@@ -89,7 +89,7 @@ $(document).ready(function(){
 			<div class="slider">
 			<div><img src="../images/classes/parallelbars.jpg"></div>
 			<div><img src="../images/classes/rhythmicgymnastics.jpg"></div>
-			<div><img src="../images/classes/trampoline.jpg"></div>
+			<div><img src="../images/community/1.jpg"></div>
 			</div>
 		</div>
 	</div>

@@ -55,6 +55,17 @@ function thumb($src, $width) {
 	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
 }
 
+function columnToArray($query, $fieldName) {
+	$results = array();
+
+	while ($r = $query->fetch_assoc()) {
+		$results[] = $r[$fieldName];
+	}
+
+	return $results;
+
+}
+
 $navItems = array(
 	"About" => "about/",
 	"Gallery" => "gallery/",

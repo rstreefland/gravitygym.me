@@ -23,7 +23,6 @@ $(document).ready(function(){
     $('.slider').slick({
 	infinite: true,
 	centerMode: true,
-	centerPadding: '27.7%',
 	autoplay: true,
 	autoplaySpeed: 2000,
 	});
@@ -42,11 +41,11 @@ $(document).ready(function(){
 			<?php $i = 0; foreach ($posts as $title => $content) { $i++; ?>
 	        <div class="row pad-bottom">
 	        	<h3><?php echo $title;?></h3>
-				<p>This is the summary</p>
+				<p>This is the summary
 				<div class="<?php echo $i;?> full">
-					<p><?php echo $content;?></p>
+					<?php echo $content;?></p>
 				</div>
-            	<button class="js-community-toggle fontsize-small float-right" data-toggle-num="<?php echo $i;?>">View</button>
+            	<button class="js-community-toggle fontsize-small float-right small" data-toggle-num="<?php echo $i;?>">View</button>
 	        </div>
 			<?php } ?>
 		</div>

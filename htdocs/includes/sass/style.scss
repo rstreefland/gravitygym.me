@@ -194,6 +194,8 @@ progress { color: $feature-color; }
 }
 
 .community {
+	height: 400px;
+	overflow-y: scroll;
 	padding: 0 1em 0 1em;
 	border-radius: $curve-radius;
 }
@@ -202,8 +204,9 @@ progress { color: $feature-color; }
 	border-bottom: 1px solid $slight-darker-bg;
 }
 
-.community .slider {
+.slider {
 	overflow: hidden;
+	max-height: 400px;
 }
 
 .community .full {

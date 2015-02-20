@@ -1,0 +1,15 @@
+{
+	"require": {
+		"xes/templater": "dev-master",
+		"xes/cacher": "dev-master",
+		"xes/lipsum": "dev-master"
+	},
+	"config": {
+		"vendor-dir": "htdocs/includes/packages",
+		"autoloader-suffix": "GravityGym"
+	},
+	"scripts": {
+		"post-update-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf htdocs/**/**/**/**/.git"],
+		"post-install-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf htdocs/**/**/**/**/.git"]
+	}
+}

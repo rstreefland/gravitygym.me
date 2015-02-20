@@ -13,5 +13,5 @@ db.php
 
 #Composer files
 composer.phar
-composer.json
 composer.lock
+**/composer.json

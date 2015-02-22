@@ -11,6 +11,6 @@
 	"scripts": {
 		"post-update-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf htdocs/**/**/**/**/.git"],
 		"post-install-cmd": ["echo [WARNING] Delete all .git dirs", "rm -rf htdocs/**/**/**/**/.git"],
-		"wipe": ["echo Removing all installed packages", "rm -rf htdocs/includes/packages"]
+		"wipe": ["echo Removing all installed packages", "rm -rf htdocs/includes/packages && rm -f composer.json"]
 	}
 }

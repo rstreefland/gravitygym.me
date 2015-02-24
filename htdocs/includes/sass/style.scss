@@ -5,13 +5,27 @@
 /*			GLOBALS						*/
 /* =====================================*/
 
+body, html {
+    background-color: transparent;
+}
+
 #content {
 	padding-top: 5.5em;
 }
 
+.parallax-window {
+    background: linear-gradient(
+		rgba(0, 0, 0, 0.25),
+		rgba(0, 0, 0, 1)
+	),
+}
+
+.parallax-window.nofade {
+    background: rgba(0, 0, 0, 0.5);
+}
 /* =====================================*/
 /*			SITE-WIDE HEADER			*/
-/* =====================================*/
+/* ==== ================================*/
 
 body > header {
 	border-bottom: 1px solid $contrast-bg;
@@ -73,7 +87,7 @@ body > header nav .navigation a.current {
 	color: $hcontrast-text-color;
 }
 
-.block.large { height: 50vh; min-height: 400px; }
+.block.large { height: auto; min-height: 400px; }
 .block.huge { height: 80vh; min-height: 400px; }
 
 .block.bg.bg1 {

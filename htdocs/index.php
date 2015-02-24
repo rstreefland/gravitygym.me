@@ -5,16 +5,12 @@ $targetMoney = 1500000;
 $raisedMoney = 317460;
 
 ?>
-<div class="block large pad bg bg1 align-center">
+<div class="block large pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/1.jpg">
 	<div class="wrap">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>
 			<h2 class="twelve columns fontsize-large">We're going to be the best gym in Springton. But to do it, we need your help.</h2>
 		</div>
-	</div>
-</div>
-<div class="block hcontrast">
-	<div class="wrap">
 		<div class="row">
 			<p class="twelve columns align-center"><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>
 		</div>
@@ -39,7 +35,7 @@ $raisedMoney = 317460;
 		</div>
 	</div>
 </div>
-<div class="block huge pad bg bg5">
+<div class="block huge pad bg parallax-window nofade" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/5.jpg">
 	<div class="wrap">
 		<div class="row">
 			<div class="eight columns offset-by-four">

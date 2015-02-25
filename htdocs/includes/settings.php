@@ -28,10 +28,7 @@ if ($stagingMode) {
 	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
 }
 
-//Include external PHP libraries
-require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
 require($filepath.$rootpath.'includes/db.php');
-
 require($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/packages/autoload.php');
 
 $cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);

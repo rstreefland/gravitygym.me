@@ -1,73 +1,7 @@
 <?php
-//Display all errors and warnings
-error_reporting(-1);
-ini_set('display_errors', 'On');
 
-$siteName = "GRAVITY";
-$rooturl = $_SERVER['HTTP_HOST'];
-$filepath = $_SERVER['DOCUMENT_ROOT'];
-
-//Assume production environment, tweak otherwise
-$rootpath='/';
-$stylesheet=$rootpath.'includes/style.php?p=style.scss';
-
-//If running on local machine, use devmode settings (don't cache, use local rather than CDN files)
-//Detect if running in production (gravitygym.me)
-$devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
-if ($devMode) {
-	$rootpath='/';
-	$stylesheet=$rootpath.'includes/style.dev.php?p=style.scss&reset=1';
-}
-
-//Detect if running in staging environment (workshop.xes.io/gravitygym)
-$stagingMode = (strpos($filepath,'workshop') !== false);
-if ($stagingMode) {
-	$devMode = false;
-	$rootpath='/gravitygym/';
-	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
-}
-
-//Include external PHP libraries
-require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
-require($filepath.$rootpath.'includes/db.php');
-
-require($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/packages/autoload.php');
-
-$cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
-$cache->start();
-
-$templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
-$lipsum = new xes\Lipsum();
-
-//externalFile returns the local copy of a file, or the CDN copy if production
-function externalFile($url, $file) {
-	global $rootpath, $devMode;
-	if ($devMode) {
-		return $rootpath.'includes/external/'.$file;
-	}
-	else {
-		return '//'.$url.$file;
-	}
-}
-
-//thumb returns a compressed version of an image for faster page loading times
-function thumb($src, $width) {
-	global $rootpath;
-	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
-}
-
-function queryToArray($query, $fieldName = null) {
-	$result = array();
-	while ($row = $query->fetch_assoc()) {
-		if ($fieldName != null) {
-			$result[] = $row[$fieldName];
-		}
-		else {
-			$result[] = $row;
-		}
-	}
-	return $result;
-}
+require('settings.php');
+include('functions.php');
 
 $navItems = array(
 	"About" => "about/",

@@ -60,6 +60,10 @@ function thumb($src, $width) {
 	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
 }
 
+function lorem() {
+	return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.";
+}
+
 $navItems = array(
 	"About" => "about/",
 	"Gallery" => "gallery/",

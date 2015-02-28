@@ -1,7 +1,14 @@
 <?php
 
 require('settings.php');
-include('functions.php');
+require('functions.php');
+require('db.php');
+
+$cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
+$cache->start();
+
+$templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
+$lipsum = new xes\Lipsum();
 
 $navItems = array(
 	"About" => "about/",

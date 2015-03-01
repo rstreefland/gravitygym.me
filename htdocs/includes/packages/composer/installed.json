@@ -1,0 +1,157 @@
+[
+    {
+        "name": "xes/templater",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/templater.git",
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/templater/zipball/794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
+            "shasum": ""
+        },
+        "time": "2015-02-19 16:10:17",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Basic template library with a Twig-like syntax",
+        "homepage": "https://github.com/dan1elhughes/templater"
+    },
+    {
+        "name": "xes/cacher",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/cacher.git",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/cacher/zipball/b1c60186b8999d16500c646824e877c920933f32",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32",
+            "shasum": ""
+        },
+        "time": "2015-02-17 16:51:42",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple file caching for PHP with string replacements",
+        "homepage": "https://github.com/dan1elhughes/cacher"
+    },
+    {
+        "name": "xes/lipsum",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/lipsum.git",
+            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/b34bceacf468661cd44600e1fcb03df230fe260c",
+            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c",
+            "shasum": ""
+        },
+        "time": "2015-02-19 16:21:03",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Get paragraphs of Lorem Ipsum",
+        "homepage": "https://github.com/dan1elhughes/lipsum"
+    },
+    {
+        "name": "abeautifulsite/simpleimage",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/claviska/SimpleImage.git",
+            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/a56897173e621590ecb59cd93e4bbf5bf46ae186",
+            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-03-18 06:42:58",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "abeautifulsite": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nazar Mokrynskyi",
+                "email": "nazar@mokrynskyi.com",
+                "homepage": "http://cleverstyle.org/",
+                "role": "Developer"
+            },
+            {
+                "name": "Cory LaViska",
+                "homepage": "http://www.abeautifulsite.net/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class that simplifies working with images"
+    }
+]

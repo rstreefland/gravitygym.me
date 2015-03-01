@@ -1,8 +1,8 @@
 <?php
 
 require('settings.php');
-require('functions.php');
 require('db.php');
+require('functions.php');
 
 $cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
 $cache->start();

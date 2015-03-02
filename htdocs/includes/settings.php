@@ -17,7 +17,7 @@ $stylesheet=$rootpath.'includes/style.php?p=style.scss';
 $devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
 if ($devMode) {
 	$rootpath='/';
-	$stylesheet=$rootpath.'includes/style.dev.php?p=style.scss&reset=1';
+	$stylesheet.='&dev=1';
 }
 
 //Detect if running in staging environment (workshop.xes.io/gravitygym)
@@ -25,7 +25,6 @@ $stagingMode = (strpos($filepath,'workshop') !== false);
 if ($stagingMode) {
 	$devMode = false;
 	$rootpath='/gravitygym/';
-	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
 }
 
 require($filepath.$rootpath.'includes/packages/autoload.php');

@@ -1,13 +1,15 @@
 <?php
-require "lib/scss.inc.php";
+require('packages/autoload.php');
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (!$_GET['p']) {
+    die("Stylesheet not selected. Set as '&p=' in URL.");
+}
 
 $src = "sass";
-$cache = $src.'/scss_cache/production';
+$server = new Leafo\ScssPhp\Server($src);
 
-$scss = new scssc();
-$scss->setFormatter("scss_formatter_compressed");
-$scss->setImportPaths($src);
-
-$server = new scss_server($src, $cache, $scss);
 $server->serve();
 ?>

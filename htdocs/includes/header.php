@@ -8,6 +8,7 @@ $cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !
 $cache->start();
 
 $templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
+
 $lipsum = new xes\Lipsum();
 
 $navItems = array(

@@ -3,7 +3,8 @@
 		"xes/templater": "dev-master",
 		"xes/cacher": "dev-master",
 		"xes/lipsum": "dev-master",
-        "abeautifulsite/simpleimage": "dev-master"
+		"xes/simpleimage": "dev-master",
+		"leafo/scssphp": "dev-master"
 	},
 	"config": {
 		"vendor-dir": "htdocs/includes/packages",

@@ -7,4 +7,5 @@ $baseDir = dirname(dirname(dirname($vendorDir)));
 
 return array(
     'xes\\' => array($vendorDir . '/xes/templater/src', $vendorDir . '/xes/cacher/src', $vendorDir . '/xes/lipsum/src'),
+    'Leafo\\ScssPhp\\' => array($vendorDir . '/leafo/scssphp/src'),
 );

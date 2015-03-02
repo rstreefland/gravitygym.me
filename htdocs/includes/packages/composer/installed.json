@@ -76,15 +76,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/dan1elhughes/lipsum.git",
-            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c"
+            "reference": "25a5db25aec16c7bfda48664cefc729f2bf9e974"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/b34bceacf468661cd44600e1fcb03df230fe260c",
-            "reference": "b34bceacf468661cd44600e1fcb03df230fe260c",
+            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/25a5db25aec16c7bfda48664cefc729f2bf9e974",
+            "reference": "25a5db25aec16c7bfda48664cefc729f2bf9e974",
             "shasum": ""
         },
-        "time": "2015-02-19 16:21:03",
+        "time": "2015-02-28 14:32:45",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -105,30 +105,25 @@
         "homepage": "https://github.com/dan1elhughes/lipsum"
     },
     {
-        "name": "abeautifulsite/simpleimage",
+        "name": "xes/simpleimage",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/claviska/SimpleImage.git",
-            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186"
+            "url": "https://github.com/dan1elhughes/SimpleImage.git",
+            "reference": "0fc5c1e87f642503a46e6f497a851074347aa6e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/a56897173e621590ecb59cd93e4bbf5bf46ae186",
-            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186",
+            "url": "https://api.github.com/repos/dan1elhughes/SimpleImage/zipball/0fc5c1e87f642503a46e6f497a851074347aa6e3",
+            "reference": "0fc5c1e87f642503a46e6f497a851074347aa6e3",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2014-03-18 06:42:58",
+        "time": "2015-03-02 13:50:36",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.5-dev"
-            }
-        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {

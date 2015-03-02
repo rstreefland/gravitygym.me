@@ -28,7 +28,7 @@ class Paragraphs {
 	public function getLines($paragraphs = 1) {
 
 		$mod = count($this->lines);
-		
+
 		$lines = $this->lines;
 		shuffle($lines);
 
@@ -36,9 +36,23 @@ class Paragraphs {
 		for ($i = 0; $i < $paragraphs; $i++) {
 			$result[] = $lines[$i % $mod];
 		}
-		
-		
-		return '<p>'.implode("</p><p>", $result).'</p>';
+
+		return $result;
+	}
+
+	public function getSentence($sentences = 1) {
+		$lines = $this->lines;
+		shuffle($lines);
+
+		$all = implode($lines, " ");
+		$splitSentences = explode(". ", $all);
+		$result = array();
+
+		for ($i = 0; $i < $sentences; $i++) {
+			$result[] = $splitSentences[$i % count($splitSentences)] . ". ";
+		}
+
+		return $result;
 	}
 }
 

@@ -175,11 +175,6 @@ progress { color: $feature-color; }
 	margin-top: 2em;
 }
 
-.testimonial img {
-	width: 50%;
-	max-width: 150px;
-}
-
 .testimonial p {
 	padding-top: 2em;
 	width: 80%;
@@ -237,6 +232,7 @@ progress { color: $feature-color; }
 
 img.circle {
     border-radius: 50%;
+    max-width: 150px;
 }
 
 .slider .slide img {

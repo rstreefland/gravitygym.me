@@ -45,13 +45,28 @@ if (isSet($_GET['p'])) {
 	</div>
 </div>
 
-<div class="wrap">
+<div class="wrap pad-top">
 	<div class="row margin-bottom">
-		<div class="twelve columns">
+		<div class="six columns">
+			<?php foreach ($newsItems as $slug => $item) { ?>
+			<h2 class="no-margin"><a href="./?p=<?php echo $slug;?>"><?php echo $item['title'];?></a></h2>
+			<?php echo explode('</p><p>', $item['content'])[0].'</p>';?>
+			<p class="faint fontsize-tiny"><?php echo $item['date'];?></p>
+			<hr/>
+			<?php } ?>
+		</div>
+		<div class="six columns">
 			<div class="block pad-small">
 				<h2>Latest from Facebook</h2>
 				<p class="fontsize-small">We're making great progress. Come donate! <i class="fa fa-thumbs-o-up"></i>3</p>
 				<p class="fontsize-small"><?php echo $lipsum->getSentence(2);?> <i class="fa fa-thumbs-o-up"></i>2</p>
+			</div>
+			<br/>
+			<div class="block pad-small">
+				<h2>Latest from Twitter</h2>
+				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
+				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
+				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
 			</div>
 		</div>
 	</div>
@@ -59,13 +74,5 @@ if (isSet($_GET['p'])) {
 
 
 <div class="wrap small">
-	<?php foreach ($newsItems as $slug => $item) { ?>
-	<div class="row pad-top">
-		<h2><a href="./?p=<?php echo $slug;?>"><?php echo $item['title'];?></a></h2>
-		<?php echo explode('</p><p>', $item['content'])[0].'</p>';?>
-		<p class="faint fontsize-tiny"><?php echo $item['date'];?></p>
-	</div>
-	<hr/>
-	<?php } ?>
 </div>
 <?php } include "../includes/footer.php"; ?>

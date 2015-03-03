@@ -64,9 +64,9 @@ if (isSet($_GET['p'])) {
 			<br/>
 			<div class="block pad-small">
 				<h2>Latest from Twitter</h2>
+				<?php $i = 4; while ($i--) { ?>
 				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
-				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
-				<p class="fontsize-small"><?php echo $lipsum->getSentence();?> <i class="fa fa-retweet"></i>2</p>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

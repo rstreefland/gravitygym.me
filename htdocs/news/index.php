@@ -44,6 +44,20 @@ if (isSet($_GET['p'])) {
 		</div>
 	</div>
 </div>
+
+<div class="wrap">
+	<div class="row margin-bottom">
+		<div class="twelve columns">
+			<div class="block pad-small">
+				<h2>Latest from Facebook</h2>
+				<p class="fontsize-small">We're making great progress. Come donate! <i class="fa fa-thumbs-o-up"></i>3</p>
+				<p class="fontsize-small"><?php echo $lipsum->getSentence(2);?> <i class="fa fa-thumbs-o-up"></i>2</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <div class="wrap small">
 	<?php foreach ($newsItems as $slug => $item) { ?>
 	<div class="row pad-top">

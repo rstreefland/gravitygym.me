@@ -6,10 +6,9 @@ Desktop.ini
 #Database configuration
 db.php
 
-#Cached files (images, compiled CSS)
-*.timthumb.txt
-**/scss_cache/*/*.css
-**/scss_cache/*/*.css.imports
+#Cached files (compiled CSS)
+htdocs/includes/sass/scss_cache/*.css
+htdocs/includes/sass/scss_cache/*.css.meta
 
 #Composer files
 composer.phar

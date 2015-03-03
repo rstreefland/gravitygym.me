@@ -40,7 +40,11 @@
 /* Spacing modifiers */
 .pad-top { padding-top: 3em; }
 .pad-bottom { padding-bottom: 3em; }
+
 .no-margin { margin-top: 0; margin-bottom: 0; }
+.no-margin-top { margin-top: 0; }
+.no-margin-bottom { margin-bottom: 0; }
+.margin-bottom { margin-bottom: 2em; }
 
 .border-bottom { border-bottom: 1px solid $darker-bg; }
 .border { border: 1px solid $darker-bg; }

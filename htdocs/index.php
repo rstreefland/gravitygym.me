@@ -5,16 +5,12 @@ $targetMoney = 1500000;
 $raisedMoney = 317460;
 
 ?>
-<div class="block pad bg bg1 align-center">
+<div class="block large pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/1.jpg">
 	<div class="wrap">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>
 			<h2 class="twelve columns fontsize-large">We're going to be the best gym in Springton. But to do it, we need your help.</h2>
 		</div>
-	</div>
-</div>
-<div class="block hcontrast">
-	<div class="wrap">
 		<div class="row">
 			<p class="twelve columns align-center"><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>
 		</div>
@@ -22,19 +18,31 @@ $raisedMoney = 317460;
 			<p class="twelve columns align-center fontsize-tiny">£<?php echo number_format($raisedMoney);?> raised of £<?php echo number_format($targetMoney);?></p>
 		</div>
 		<div class="row">
-			<p class="eight columns offset-by-two align-center">Vestibulum tortor nisi, posuere eget risus vel, dictum rutrum ex. Praesent sit amet posuere neque, sed convallis arcu. Vestibulum dapibus mollis est, at placerat leo luctus sit amet. </p>
+			<p class="eight columns offset-by-two align-center">In order to achieve our goal, we need to raise £1,500,000, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
 		</div>
 		<div class="row align-center">
-			<a class="button" href="#">Donate now<br/><i class="fa fa-paypal"></i></a>
+			<a class="button" href="<?php echo $rootpath?>donate/">Donate now<br/><i class="fa fa-paypal"></i></a>
 		</div>
 	</div>
 </div>
-<div class="wrap">
-	<div class="row">
-		<h2>About (short summary)</h2>
+<div class="block huge pad bg bg4">
+	<div class="wrap">
+		<div class="row">
+			<div class="eight columns">
+				<h2>About</h2>
+				<p>We are Gravity Gym. We are the most up to date and infuential gym in the country. With the help of your generous donations we are buying state-of-the-art equipment for all our members to use whenever they like. We cater to all people from all walks of life and would love to see you come along to some of our classes on anything and everything gymnastics. Our team are passionate and dedicated to making sure that you get the best learning experience possible in the safest way and the way that suits you best. See you soon!</p>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<h2>Freerunning USP</h2>
+</div>
+<div class="block huge pad bg parallax-window nofade" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/5.jpg">
+	<div class="wrap">
+		<div class="row">
+			<div class="eight columns offset-by-four">
+				<h2>Freerunning</h2>
+				<p>Our Freerunning classes are our specialty, and are like no other. With our equipment and trained professionals we can help you reach limits that you didnt even know you had using a wide range of equipment which will allow you to practice in a safe and comfortable environment so you can take your newly learned skills literally wherever you want.</p>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="block">
@@ -74,17 +82,17 @@ $raisedMoney = 317460;
 			</a
 			><a class="floor-fade" href="#">
 				<div class="lorem">
-					<h2>Lorem</h2>
+					<h2>Floor</h2>
 				</div>
 			</a
 			><a class="floor-fade" href="#">
 				<div class="ipsum">
-					<h2>Ipsum</h2>
+					<h2>Children Welcome!</h2>
 				</div>
 			</a
 			><a class="floor-fade" href="#">
 				<div class="dolor">
-					<h2>Dolor</h2>
+					<h2>You can do jumping!</h2>
 				</div>
 			</a>
 		</div>
@@ -92,7 +100,13 @@ $raisedMoney = 317460;
 </div>
 <div class="wrap">
 	<div class="row">
-			<h2 class="twelve columns">Testimonials</h2>
+		<h2 class="twelve columns">Testimonials</h2>
 	</div>
+	<?php for ($i = 1; $i <= 4; $i++) { ?>
+	<div class="testimonial">
+		<img class="circle" src="<?php echo thumb($rootpath.'images/people/testimonial'.$i.'.jpg', 200)?>">
+		<p>I really love Gravity Gym, all of the teachers are so friendly, I can't wait for them to open up their new site so I can learn even more! <span>Eleanor Smith, age 6</span></p>
+	</div>
+	<?php } ?>
 </div>
 <?php include "./includes/footer.php"; ?>

@@ -5,13 +5,27 @@
 /*			GLOBALS						*/
 /* =====================================*/
 
+body, html {
+    background-color: transparent;
+}
+
 #content {
 	padding-top: 5.5em;
 }
 
+.parallax-window {
+    background: linear-gradient(
+		rgba(0, 0, 0, 0.25),
+		rgba(0, 0, 0, 1)
+	),
+}
+
+.parallax-window.nofade {
+    background: rgba(0, 0, 0, 0.5);
+}
 /* =====================================*/
 /*			SITE-WIDE HEADER			*/
-/* =====================================*/
+/* ==== ================================*/
 
 body > header {
 	border-bottom: 1px solid $contrast-bg;
@@ -43,6 +57,13 @@ body > header nav .navigation a {
 	padding: 1em;
 	border: 1px solid transparent;
 	border-radius: 5px;
+
+	@include transition(background-color 0.25s, color 0.25s);
+}
+
+body > header nav .navigation a:hover {
+	background-color: lighten($feature-color, 50%);
+	color: black;
 }
 
 body > header nav .navigation a.current {
@@ -66,18 +87,72 @@ body > header nav .navigation a.current {
 	color: $hcontrast-text-color;
 }
 
+.block.large { height: auto; min-height: 400px; }
+.block.huge { height: 80vh; min-height: 400px; }
+
 .block.bg.bg1 {
-	@include bg-image('../../images/block-bg/1.jpg');
+	@include bg-image('../images/block-bg/1.jpg');
 }
 
 .block.bg.bg2 {
-    @include bg-image('../../images/block-bg/2.jpg');
+	@include bg-image('../images/block-bg/2.jpg');
+}
+
+.block.bg.bg3 {
+    @include bg-image('../images/block-bg/3.jpg');
+}
+
+.block.bg.bg4 {
+    @include bg-image('../images/block-bg/4.jpg');
+}
+
+.block.bg.bg5 {
+    @include bg-image('../images/block-bg/5.jpg');
+}
+
+.block.bg.bg6 {
+    @include bg-image('../images/block-bg/6.jpg');
 }
 
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/
 /* =====================================*/
+
+.donate-container {
+	width: 90%;
+	margin: auto;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+@media only screen and (min-width: $phablet-width) {
+	.donate-container {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	.donate-container {
+		width: 20%;
+	}
+}
+
+.donate {
+	background-color: $contrast-bg;
+	border-radius: $curve-radius;
+	border: 1px solid $slight-darker-bg;
+}
+
+.donate .amount {
+	border-top: 1px solid $slight-darker-bg;
+	padding: 1em;
+}
+
+.donate .description {
+	padding: 1em;
+}
+
 
 progress {
 	/* Reset the default appearance */
@@ -96,6 +171,56 @@ progress::-webkit-progress-value { background: $feature-color; }
 /* IE10 */
 progress { color: $feature-color; }
 
+.testimonial {
+	margin-top: 2em;
+}
+
+.testimonial p {
+	padding-top: 2em;
+	width: 80%;
+	border-bottom: 1px solid $slight-darker-bg;
+	font-style: italic;
+}
+
+/* Expand div to fit content */
+.testimonial { overflow: auto; }
+
+/* FLoat alternating left and right */
+.testimonial:nth-child(even) img { float: left; }
+.testimonial:nth-child(even) p { float: right; }
+.testimonial:nth-child(odd) img { float: right; }
+.testimonial:nth-child(odd) p { float: left; }
+
+.testimonial span {
+	font-size: 80%;
+	color: $darker-bg;
+	font-style: normal;
+}
+
+.column img,
+.columns img {
+	width: 100%;
+}
+
+.community {
+	height: 400px;
+	overflow-y: scroll;
+	padding: 0 1em 0 1em;
+	border-radius: $curve-radius;
+}
+
+.community .row {
+	border-bottom: 1px solid $slight-darker-bg;
+}
+
+.community .full {
+	display: none;
+}
+
+.community_slider img {
+	height:400px;
+}
+
 /* =====================================*/
 /*			FORMS						*/
 /* =====================================*/
@@ -104,6 +229,54 @@ progress { color: $feature-color; }
 /*			EXTRAS						*/
 /*	 If there's lots, we'll add category*/
 /* =====================================*/
+
+img.circle {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.slider .slide img {
+	width: 100%;
+}
+
+.masonry-container .masonry-item {
+	width: 100%;
+	padding: 0.25em;
+	max-width: none;
+
+	opacity: 0.25;
+	@include transition(opacity 0.25s);
+}
+
+@media only screen and (min-width: $mobile-width) {
+	.masonry-container .masonry-item {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	.masonry-container .masonry-item {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: $desktop-width) {
+	.masonry-container .masonry-item {
+		width: 25%;
+	}
+}
+
+.masonry-container.loaded a .masonry-item {
+	opacity: 1;
+}
+
+.masonry-container a {
+	@include transition(opacity 0.25s);
+}
+
+.masonry-container a:hover {
+	opacity: 0.75;
+}
 
 .colorbox {
 	display: block;
@@ -144,37 +317,37 @@ progress { color: $feature-color; }
 
 .floor-fade .rhythmicgymnastics {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/rhythmicgymnastics.jpg);
+		url(../images/classes/rhythmicgymnastics.jpg);
 }
 
 .floor-fade .freerunning {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/freerunning.jpg);
+		url(../images/classes/freerunning.jpg);
 }
 
 .floor-fade .parallelbars {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/parallelbars.jpg);
+		url(../images/classes/parallelbars.jpg);
 }
 
 .floor-fade .trampoline {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/trampoline.jpg);
+		url(../images/classes/trampoline.jpg);
 }
 
 .floor-fade .lorem {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/lorem.jpg);
+		url(../images/classes/lorem.jpg);
 }
 
 .floor-fade .ipsum {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/ipsum.jpg);
+		url(../images/classes/ipsum.jpg);
 }
 
 .floor-fade .dolor {
 	background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)) ,
-		url(../../images/classes/dolor.jpg);
+		url(../images/classes/dolor.jpg);
 }
 
 /* =====================================*/
@@ -221,4 +394,8 @@ a.floor-fade:hover {
 	width: 100%;
 	color: $hcontrast-text-color;
 	font-size: 150%;
+}
+
+.wrap.small {
+	max-width: 2 * $site-width/3;
 }

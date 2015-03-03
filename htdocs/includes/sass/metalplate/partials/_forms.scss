@@ -1,4 +1,4 @@
-form input[type="text"], form input[type="email"], form textarea, form select {
+form input[type="text"], form input[type="password"], form input[type="email"], form textarea, form select {
 	height: 2em;
 	padding: 1.25em 0.5em; /* The 6px vertically centers text on FF, ignored by Webkit */
 	background-color: $body-bg;

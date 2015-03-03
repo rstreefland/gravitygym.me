@@ -25,14 +25,14 @@
         <div class="three columns">
             <img class="circle" src="../images/people/dan.jpg">
         </div>
-        <div class="seven columns">
+        <div class="nine columns">
             <p class = "pad-top">
                 This is Dan, he doesn't actually work for the gym, but he's here anyway for being such a nifty guy!
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="seven columns">
+        <div class="nine columns">
             <p class = "pad-top">
                 This is George, he doesn't actually work for the gym, but he's here anyway for being such a swell guy!
             </p>
@@ -45,14 +45,14 @@
         <div class="three columns">
             <img class="circle" src="../images/people/beth.jpg">
         </div>
-        <div class="seven columns">
+        <div class="nine columns">
             <p class = "pad-top">
                 This is Beth, she doesn't actually work for the gym, but she's here anyway for being such a stand-up gal!
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="seven columns">
+        <div class="nine columns">
             <p class = "pad-top">
                 This is Rhys, he doesn't actually work for the gym, but he's here anyway for being such an awesome guy!
             </p>

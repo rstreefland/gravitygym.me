@@ -28,6 +28,10 @@ $raisedMoney = ($donateFinished ? $targetMoney : 317460);
 		<div class="row">
 			<a class="button" href="<?php echo $rootpath?>donate/">Donate now<br/><i class="fa fa-paypal"></i></a>
 		</div>
+		<?php } else { ?>
+		<div class="row">
+			<p class="eight columns offset-by-two"><?php echo $lipsum->getSentence(7);?></p>
+		</div>
 		<?php } ?>
 	</div>
 </div>

@@ -2,9 +2,9 @@
 //TODO : Will be pulled from database
 $posts = array(
 	//Title => Content
-	"Lorem ipsum" => lorem(),
-	"Dolor sit" => lorem(),
-	"Amet consectetur" => lorem()
+	"Lorem ipsum" => $lipsum->getSentence(9),
+	"Dolor sit" => $lipsum->getSentence(9),
+	"Amet consectetur" => $lipsum->getSentence(9)
 );
 
 ?>
@@ -20,7 +20,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.community_slider').slick({ 
+    $('.community_slider').slick({
 	centerMode: true,
 	slidesToShow: 1,
  	});

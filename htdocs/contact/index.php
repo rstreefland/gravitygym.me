@@ -3,8 +3,8 @@
 	<form action="send.php" method="post">
 		<div class="row">
 			<div class="six columns">
-				<label class="pad-top" for="name">Name</label> 
-				<input type="name" id="name" name="name" class='error'>
+				<label class="pad-top" for="name">Name</label>
+				<input type="text" id="name" name="name" class='error'>
 			</div>
 
 			<div class="six columns">
@@ -26,7 +26,7 @@
 				<textarea name="message" id="message"></textarea>
 			</div>
 		</div>
-			
+
 		<div style="display:none;">
 			<label class="pad-top" for="blank">Please leave blank:</label>
 			<input type="text" id="blank" name="blank">

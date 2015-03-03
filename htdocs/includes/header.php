@@ -1,64 +1,15 @@
 <?php
-//Display all errors and warnings
-error_reporting(-1);
-ini_set('display_errors', 'On');
 
-$rooturl = $_SERVER['HTTP_HOST'];
-$filepath = $_SERVER['DOCUMENT_ROOT'];
+require('settings.php');
+require('db.php');
+require('functions.php');
 
-//Assume production environment, tweak otherwise
-$rootpath='/';
-$stylesheet=$rootpath.'includes/style.php?p=style.scss';
+$cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
+$cache->start();
 
-//If running on local machine, use devmode settings (don't cache, use local rather than CDN files)
-//Detect if running in production (gravitygym.me)
-$devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
-if ($devMode) {
-	$rootpath='/';
-	$stylesheet=$rootpath.'includes/style.dev.php?p=style.scss&reset=1';
-}
+$templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
 
-//Detect if running in staging environment (workshop.xes.io/gravitygym)
-$stagingMode = (strpos($filepath,'workshop') !== false);
-if ($stagingMode) {
-	$devMode = false;
-	$rootpath='/gravitygym/';
-	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
-}
-
-//Include external PHP libraries
-require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
-
-//Start caching
-if (!$devMode) {
-	$cache_time = 5; // Time in seconds to keep a page cached
-	$cache_folder = $filepath.$rootpath.'includes/cache/'; // Folder to store cached files (no trailing slash)
-	$cache_filename = $cache_folder.md5($_SERVER['REQUEST_URI']).'.html'; // Location to lookup or store cached file
-	$cache_created  = (file_exists($cache_filename)) ? filemtime($cache_filename) : 0; //Check to see if this file has already been cached, if it has then get and store the file creation time
-
-	if ((time() - $cache_created) < $cache_time) {
-		readfile($cache_filename); // The cached copy is still valid, read it into the output buffer and exit
-		die();
-	}
-}
-ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
-
-//externalFile returns the local copy of a file, or the CDN copy if production
-function externalFile($url, $file) {
-	global $rootpath, $devMode;
-	if ($devMode) {
-		return $rootpath.'includes/external/'.$file;
-	}
-	else {
-		return '//'.$url.$file;
-	}
-}
-
-//thumb returns a compressed version of an image for faster page loading times
-function thumb($src, $width) {
-	global $rootpath;
-	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
-}
+$lipsum = new xes\Lipsum();
 
 function lorem() {
 	return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.";
@@ -92,6 +43,7 @@ $navItems = array(
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/', 'masonry.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/', 'imagesloaded.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/', 'lightbox.min.js');?>"></script>
+        <script type="text/javascript" src="<?php echo $rootpath;?>includes/scripts/parallax.min.js"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>

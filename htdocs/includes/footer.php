@@ -37,26 +37,18 @@
 	ga('create','UA-41203843-2','auto');ga('send','pageview');
 </script>
 <?php } ?>
-</body> 
+</body>
 </html>
 <?php
 
-//Replace variables into the HTML, cache the page if devMode, then output the final HTML to screen
-$output = ob_get_contents (); // Get all the page's HTML into a string
-ob_end_clean (); // Wipe the buffer
-if (isset($pageTitle)) {
-	$pageTitle = ' | ' . $pageTitle;
-}
-else {
-	$pageTitle = NULL;
-}
-// Replace <!--VARS--> with $pageVars contents
-$output = str_replace('<!--TITLE-->', "GRAVITY" . $pageTitle, $output);
-$output = str_replace('<!--IMAGE-->', $pageImage, $output);
-$output = str_replace('<!--DESCRIPTION-->', $pageDescription, $output);
-$output = str_replace('<!--CACHE-->', '<!-- Cached file - built at ' . date('H:i:s', time()) . ' -->', $output);
+$pageTitle = (isSet($pageTitle) ? ' | '.$pageTitle : NULL);
 
-if (!$devMode) { file_put_contents($cache_filename, $output); }
+$cache->setReplacements(array(
+	'<!--TITLE-->' => $siteName.$pageTitle,
+	'<!--IMAGE-->' => $pageImage,
+	'<!--DESCRIPTION-->' => $pageDescription,
+	'<!--CACHE-->' => '<!-- Cached file - built at ' . date('H:i:s', time()) . ' -->'
+));
 
-//output everything
-echo $output; ?>
+$cache->finish();
+?>

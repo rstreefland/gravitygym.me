@@ -24,6 +24,8 @@ $navItems = array(
 	"Contact" => "contact/"
 );
 
+$donateFinished = isSet($_GET['donateFinished']);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,8 +85,10 @@ $navItems = array(
 							$url = $rootpath.$link;
 							echo "<a href='$url'>$name</a>";
 						}
-						$url = $rootpath.'donate/';
-						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        if (!$donateFinished) {
+    						$url = $rootpath.'donate/';
+    						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        }
 						?>
 					</div>
 				</div>

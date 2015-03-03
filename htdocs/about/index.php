@@ -32,13 +32,13 @@
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/george.jpg">
-        </div>
         <div class="seven columns">
             <p class = "pad-top">
                 This is George, he doesn't actually work for the gym, but he's here anyway for being such a swell guy!
             </p>
+        </div>
+        <div class="three columns">
+            <img class="circle" src="../images/people/george.jpg">
         </div>
     </div>
     <div class = "row">
@@ -52,13 +52,13 @@
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/rhys.jpg">
-        </div>
         <div class="seven columns">
             <p class = "pad-top">
-                This is Rhys, he doesn't actually work for the gym, but he's here anyway!
+                This is Rhys, he doesn't actually work for the gym, but he's here anyway for being such an awesome guy!
             </p>
+        </div>
+        <div class="three columns">
+            <img class="circle" src="../images/people/rhys.jpg">
         </div>
     </div>
 </div>

@@ -110,6 +110,10 @@ body > header nav .navigation a.current {
     @include bg-image('../images/block-bg/5.jpg');
 }
 
+.block.bg.bg6 {
+    @include bg-image('../images/block-bg/6.jpg');
+}
+
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/
@@ -196,6 +200,25 @@ progress { color: $feature-color; }
 .column img,
 .columns img {
 	width: 100%;
+}
+
+.community {
+	height: 400px;
+	overflow-y: scroll;
+	padding: 0 1em 0 1em;
+	border-radius: $curve-radius;
+}
+
+.community .row {
+	border-bottom: 1px solid $slight-darker-bg;
+}
+
+.community .full {
+	display: none;
+}
+
+.community_slider img {
+	height:400px;
 }
 
 /* =====================================*/

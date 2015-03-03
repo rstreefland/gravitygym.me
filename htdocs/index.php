@@ -18,7 +18,7 @@ $raisedMoney = 317460;
 			<p class="twelve columns align-center fontsize-tiny">£<?php echo number_format($raisedMoney);?> raised of £<?php echo number_format($targetMoney);?></p>
 		</div>
 		<div class="row">
-			<p class="eight columns offset-by-two align-center">In order to achieve our goal, we need to raise we need to raise £1,500,000 dollars, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
+			<p class="eight columns offset-by-two align-center">In order to achieve our goal, we need to raise £1,500,000, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
 		</div>
 		<div class="row align-center">
 			<a class="button" href="<?php echo $rootpath?>donate/">Donate now<br/><i class="fa fa-paypal"></i></a>

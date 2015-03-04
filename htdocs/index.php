@@ -1,5 +1,7 @@
 <?php include "./includes/header.php";
 
+$url = $rootpath.'classes/';
+
 //These will be fetched from database
 $targetMoney = 1500000;
 $raisedMoney = 317460;
@@ -58,39 +60,39 @@ $raisedMoney = 317460;
 			-->
 		</div>
 		<div class="row">
-			<a class="floor-fade" href="#">
+			<a class="floor-fade" href="<?php echo $url ?>">
 				<div class="rhythmicgymnastics">
 					<h2>Rhythmic</h2>
 				</div>
 			</a
-			><a class="floor-fade w2" href="#">
+			><a class="floor-fade w2" href="<?php echo $url ?>">
 				<div class="freerunning">
 					<h2>Freerunning</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="#">
+			><a class="floor-fade" href="<?php echo $url ?>">
 				<div class="parallelbars">
 					<h2>Parallel bars</h2>
 				</div>
 			</a>
 		</div>
 		<div class="row">
-			<a class="floor-fade" href="#">
+			<a class="floor-fade" href="<?php echo $url ?>">
 				<div class="trampoline">
 					<h2>Trampoline</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="#">
+			><a class="floor-fade" href="<?php echo $url ?>">
 				<div class="lorem">
 					<h2>Floor</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="#">
+			><a class="floor-fade" href="<?php echo $url ?>">
 				<div class="ipsum">
 					<h2>Children Welcome!</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="#">
+			><a class="floor-fade" href="<?php echo $url ?>">
 				<div class="dolor">
 					<h2>You can do jumping!</h2>
 				</div>

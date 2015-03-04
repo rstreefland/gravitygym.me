@@ -114,6 +114,10 @@ body > header nav .navigation a.current {
     @include bg-image('../images/block-bg/6.jpg');
 }
 
+.block.bg.bg7 {
+    @include bg-image('../images/block-bg/7.jpg');
+}
+
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/
@@ -219,6 +223,15 @@ progress { color: $feature-color; }
 
 .community_slider img {
 	height:400px;
+	width: auto;
+}
+
+.classes {
+  width: 60%;
+}
+
+.classes .circle {
+  max-width: 80%;
 }
 
 /* =====================================*/

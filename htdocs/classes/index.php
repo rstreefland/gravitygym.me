@@ -9,7 +9,8 @@
 </div>
 
 <div class="wrap float-none classes">
-    <div class = "row pad-bottom">
+
+    <div id="rhythmic" class = "row pad-bottom">
         <div class="four columns align-center">
             <img class="circle" src="../images/classes/page/rhythmic.jpg">
         </div>
@@ -20,7 +21,7 @@
             </p>
         </div>
     </div>
-    <div class = "row pad-bottom">
+    <div id="freerunning" class = "row pad-bottom">
         <div class="four columns align-center">
 					<img class="circle" src="../images/classes/page/freerunning.jpg">
         </div>
@@ -31,7 +32,7 @@
 					</p>
         </div>
     </div>
-    <div class = "row pad-bottom">
+    <div id="parallelbars" class = "row pad-bottom">
         <div class="four columns align-center">
             <img class="circle" src="../images/classes/page/parallelbars.jpg">
         </div>
@@ -42,7 +43,7 @@
             </p>
         </div>
     </div>
-		<div class = "row pad-bottom">
+		<div id="trampoline" class = "row pad-bottom">
         <div class="four columns align-center">
 					<img class="circle" src="../images/classes/page/trampoline.jpg">
         </div>
@@ -53,7 +54,7 @@
             </p>
         </div>
     </div>
-		<div class = "row pad-bottom">
+		<div id="floor" class = "row pad-bottom">
         <div class="four columns align-center">
 					<img class="circle" src="../images/classes/page/floor.jpg">
         </div>
@@ -64,7 +65,7 @@
             </p>
         </div>
     </div>
-		<div class = "row pad-bottom">
+		<div id="jumping" class = "row pad-bottom">
         <div class="four columns align-center">
 					<img class="circle" src="../images/classes/page/jumping.jpg">
         </div>
@@ -75,7 +76,7 @@
             </p>
         </div>
     </div>
-		<div class = "row pad-bottom">
+		<div id="children" class = "row pad-bottom">
         <div class="four columns align-center">
 					<img class="circle" src="../images/classes/page/children.jpg">
         </div>

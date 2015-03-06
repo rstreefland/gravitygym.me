@@ -60,39 +60,39 @@ $raisedMoney = 317460;
 			-->
 		</div>
 		<div class="row">
-			<a class="floor-fade" href="<?php echo $url ?>">
+			<a class="floor-fade" href="<?php echo $url ?>#rhythmic">
 				<div class="rhythmicgymnastics">
 					<h2>Rhythmic</h2>
 				</div>
 			</a
-			><a class="floor-fade w2" href="<?php echo $url ?>">
+			><a class="floor-fade w2" href="<?php echo $url ?>#freerunning">
 				<div class="freerunning">
 					<h2>Freerunning</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $url ?>">
+			><a class="floor-fade" href="<?php echo $url ?>#parallelbars">
 				<div class="parallelbars">
 					<h2>Parallel bars</h2>
 				</div>
 			</a>
 		</div>
 		<div class="row">
-			<a class="floor-fade" href="<?php echo $url ?>">
+			<a class="floor-fade" href="<?php echo $url ?>#trampoline">
 				<div class="trampoline">
 					<h2>Trampoline</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $url ?>">
+			><a class="floor-fade" href="<?php echo $url ?>#floor">
 				<div class="lorem">
 					<h2>Floor</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $url ?>">
+			><a class="floor-fade" href="<?php echo $url ?>#children">
 				<div class="ipsum">
 					<h2>Children Welcome!</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $url ?>">
+			><a class="floor-fade" href="<?php echo $url ?>#jumping">
 				<div class="dolor">
 					<h2>You can do jumping!</h2>
 				</div>

@@ -2,27 +2,37 @@
 
 //These will be fetched from database
 $targetMoney = 1500000;
-$raisedMoney = 317460;
+$raisedMoney = ($donateFinished ? $targetMoney : 317460);
 
 ?>
 <div class="block large pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/1.jpg">
-	<div class="wrap">
+	<div class="wrap align-center">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>
+			<?php if ($donateFinished) { ?>
+			<h2 class="twelve columns fontsize-large">We're building the best gym in Springton. Thank you for supporting us.</h2>
+			<?php } else { ?>
 			<h2 class="twelve columns fontsize-large">We're going to be the best gym in Springton. But to do it, we need your help.</h2>
+			<?php } ?>
 		</div>
 		<div class="row">
-			<p class="twelve columns align-center"><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>
+			<p class="twelve columns"><progress value="<?php echo $raisedMoney;?>" max="<?php echo $targetMoney;?>"></progress></p>
 		</div>
 		<div class="row">
-			<p class="twelve columns align-center fontsize-tiny">£<?php echo number_format($raisedMoney);?> raised of £<?php echo number_format($targetMoney);?></p>
+			<p class="twelve columns fontsize-tiny">£<?php echo number_format($raisedMoney);?> raised of £<?php echo number_format($targetMoney);?></p>
+		</div>
+		<?php if (!$donateFinished) { ?>
+		<div class="row">
+			<p class="eight columns offset-by-two">In order to achieve our goal, we need to raise £1,500,000, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
 		</div>
 		<div class="row">
-			<p class="eight columns offset-by-two align-center">In order to achieve our goal, we need to raise £1,500,000, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!</p>
-		</div>
-		<div class="row align-center">
 			<a class="button" href="<?php echo $rootpath?>donate/">Donate now<br/><i class="fa fa-paypal"></i></a>
 		</div>
+		<?php } else { ?>
+		<div class="row">
+			<p class="eight columns offset-by-two"><?php echo $lipsum->getSentence(7);?></p>
+		</div>
+		<?php } ?>
 	</div>
 </div>
 <div class="block huge pad bg bg4">

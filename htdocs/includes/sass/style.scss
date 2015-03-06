@@ -83,6 +83,11 @@ body > header nav .navigation a.current {
 	padding: 5em 2em;
 }
 
+.block.pad-small {
+	margin: 0;
+	padding: 1.5em;
+}
+
 .block.bg {
 	color: $hcontrast-text-color;
 }

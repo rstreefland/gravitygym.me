@@ -21,10 +21,7 @@ $(document).ready(function(){
     });
 
     $('.community_slider').slick({
-<<<<<<< HEAD
-=======
 	infinite: true,
->>>>>>> working/rhys
 	centerMode: true,
 	speed: 300,
   slidesToShow: 1,

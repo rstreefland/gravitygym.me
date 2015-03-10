@@ -11,8 +11,8 @@ $templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/tem
 
 $lipsum = new xes\Lipsum();
 
-function lorem() {
-	return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis libero at diam volutpat, ac placerat nisi euismod. Suspendisse vestibulum a nisl eget ultrices. Donec interdum quam vel lacinia faucibus. Sed quis arcu varius, elementum neque vitae, dictum urna. Ut et ante gravida, feugiat diam a, laoreet libero. Pellentesque eleifend purus sit amet nisl porta hendrerit. Sed metus est, gravida sed gravida a, sollicitudin a erat.";
+function generateCode() {
+    return strToUpper(substr(md5(rand()), -8));
 }
 
 $navItems = array(
@@ -23,6 +23,8 @@ $navItems = array(
 	"Community" => "community/",
 	"Contact" => "contact/"
 );
+
+$donateFinished = isSet($_GET['donateFinished']);
 
 ?>
 <!DOCTYPE html>
@@ -83,8 +85,10 @@ $navItems = array(
 							$url = $rootpath.$link;
 							echo "<a href='$url'>$name</a>";
 						}
-						$url = $rootpath.'donate/';
-						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        if (!$donateFinished) {
+    						$url = $rootpath.'donate/';
+    						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        }
 						?>
 					</div>
 				</div>

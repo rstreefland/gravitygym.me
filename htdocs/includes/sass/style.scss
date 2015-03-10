@@ -83,6 +83,11 @@ body > header nav .navigation a.current {
 	padding: 5em 2em;
 }
 
+.block.pad-small {
+	margin: 0;
+	padding: 1.5em;
+}
+
 .block.bg {
 	color: $hcontrast-text-color;
 }
@@ -207,7 +212,7 @@ progress { color: $feature-color; }
 }
 
 .community {
-	height: 400px;
+	height: 500px;
 	overflow-y: scroll;
 	padding: 0 1em 0 1em;
 	border-radius: $curve-radius;
@@ -221,8 +226,16 @@ progress { color: $feature-color; }
 	display: none;
 }
 
-.community_slider img {
-	height:400px;
+.community_slider {
+  height: 100%;
+}
+
+.classes {
+  width: 60%;
+}
+
+.classes .circle {
+  max-width: 80%;
 }
 
 /* =====================================*/

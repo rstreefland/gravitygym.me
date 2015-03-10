@@ -21,8 +21,13 @@ $(document).ready(function(){
     });
 
     $('.community_slider').slick({
+<<<<<<< HEAD
+=======
+	infinite: true,
+>>>>>>> working/rhys
 	centerMode: true,
-	slidesToShow: 1,
+	speed: 300,
+  slidesToShow: 1,
  	});
 });
 </script>
@@ -34,7 +39,7 @@ $(document).ready(function(){
 	</div>
 </div>
 <div class="wrap">
-	<div class="row">
+	<div class="row pad-bottom">
         <div class="five columns community border">
 			<?php $i = 0; foreach ($posts as $title => $content) { $i++; ?>
 	        <div class="row pad-bottom">

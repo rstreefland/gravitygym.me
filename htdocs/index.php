@@ -91,18 +91,18 @@ $raisedMoney = ($donateFinished ? $targetMoney : 317460);
 				</div>
 			</a
 			><a class="floor-fade" href="<?php echo $rootpath;?>classes/#floor">
-				<div class="lorem">
+				<div class="floor">
 					<h2>Floor</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $rootpath;?>classes/#children">
-				<div class="ipsum">
-					<h2>Children Welcome!</h2>
+			><a class="floor-fade" href="<?php echo $rootpath;?>classes/#jumping">
+				<div class="jumping">
+					<h2>Jumping</h2>
 				</div>
 			</a
-			><a class="floor-fade" href="<?php echo $rootpath;?>classes/#jumping">
-				<div class="dolor">
-					<h2>You can do jumping!</h2>
+			><a class="floor-fade" href="<?php echo $rootpath;?>classes/#children">
+				<div class="children">
+					<h2>Children</h2>
 				</div>
 			</a>
 		</div>

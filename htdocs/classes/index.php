@@ -17,7 +17,7 @@
         <div class="eight columns">
 					<h3><b>Rhythmic</b></h3>
             <p>
-              <?php echo lorem(); ?>
+              <?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <div class="eight columns">
 					<h3><b>Freerunning</b></h3>
 					<p>
-						<?php echo lorem(); ?>
+						<?php echo $lipsum->getSentence(9); ?>
 					</p>
         </div>
     </div>
@@ -39,7 +39,7 @@
         <div class="eight columns">
 					<h3><b>Parallel Bars</b></h3>
             <p>
-							<?php echo lorem(); ?>
+							<?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="eight columns">
 					<h3><b>Trampoline</b></h3>
             <p>
-							<?php echo lorem(); ?>
+							<?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>
@@ -61,7 +61,7 @@
         <div class="eight columns">
 					<h3><b>Floor</b></h3>
             <p>
-							<?php echo lorem(); ?>
+							<?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="eight columns">
 					<h3><b>Jumping</b></h3>
             <p>
-							<?php echo lorem(); ?>
+							<?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>
@@ -83,7 +83,7 @@
         <div class="eight columns">
 					<h3><b>Children Welcome</b></h3>
             <p>
-							<?php echo lorem(); ?>
+							<?php echo $lipsum->getSentence(9); ?>
             </p>
         </div>
     </div>

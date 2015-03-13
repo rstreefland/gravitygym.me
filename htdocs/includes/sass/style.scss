@@ -123,6 +123,14 @@ body > header nav .navigation a.current {
     @include bg-image('../images/block-bg/7.jpg');
 }
 
+.block.bg.bg8 {
+    @include bg-image('../images/block-bg/8.jpg');
+}
+
+.block.bg.bg9 {
+    @include bg-image('../images/block-bg/9.jpg');
+}
+
 /* =====================================*/
 /*			PAGE-SPECIFIC				*/
 /*	 Try to have as few as possible		*/

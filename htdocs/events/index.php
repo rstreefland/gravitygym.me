@@ -16,7 +16,7 @@ $events = array(
 );
 
 ?>
-<div class="block pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo thumb($rootpath.'images/block-bg/events.jpg', 1000);?>">
+<div class="block pad bg bg8 align-center">
 	<div class="wrap">
 		<div class="row">
             <h1>Events</h1>

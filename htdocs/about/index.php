@@ -22,42 +22,42 @@
         <h2>Meet the Team</h2>
     </div>
     <div class = "row">
-        <div class="three columns">
+        <div class="two columns">
             <img class="circle" src="../images/people/dan.jpg">
         </div>
-        <div class="seven columns">
+        <div class="ten columns">
             <p class = "pad-top">
                 This is Dan, he doesn't actually work for the gym, but he's here anyway for being such a nifty guy!
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="seven columns">
+        <div class="ten columns">
             <p class = "pad-top">
                 This is George, he doesn't actually work for the gym, but he's here anyway for being such a swell guy!
             </p>
         </div>
-        <div class="three columns">
+        <div class="two columns">
             <img class="circle" src="../images/people/george.jpg">
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
+        <div class="two columns">
             <img class="circle" src="../images/people/beth.jpg">
         </div>
-        <div class="seven columns">
+        <div class="ten columns">
             <p class = "pad-top">
                 This is Beth, she doesn't actually work for the gym, but she's here anyway for being such a stand-up gal!
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="seven columns">
+        <div class="ten columns">
             <p class = "pad-top">
                 This is Rhys, he doesn't actually work for the gym, but he's here anyway for being such an awesome guy!
             </p>
         </div>
-        <div class="three columns">
+        <div class="two columns">
             <img class="circle" src="../images/people/rhys.jpg">
         </div>
     </div>

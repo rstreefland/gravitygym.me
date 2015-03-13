@@ -1,4 +1,14 @@
 <?php include "../includes/header.php"; ?>
+
+<div class="block pad bg bg7 align-center">
+	<div class="wrap">
+		<div class="row">
+            <h1>Contact Us</h1>
+		</div>
+	</div>
+</div>
+
+
 <div class="wrap">
 	<form action="send.php" method="post">
 		<div class="row">

@@ -2,9 +2,23 @@
 //TODO : Will be pulled from database
 $posts = array(
 	//Title => Content
-	"Lorem ipsum" => $lipsum->getSentence(9),
-	"Dolor sit" => $lipsum->getSentence(9),
-	"Amet consectetur" => $lipsum->getSentence(9)
+	array(
+		"title" => "Recycling",
+		"subtitle" => "Send Us Your Pics!",
+		"content" => "We here at Gravity Gym believe that global warming is a very serious issue,
+		so we have started a recycling program! Send us your pictures of nice full recycling boxes
+		outside of your house, and we'll give you a discount on your next visit to the club!"
+	),
+	array(
+		"title" => "Dolor sit",
+		"subtitle" => "Lorem",
+		"content" => $lipsum->getSentence(9)
+	),
+	array(
+		"title" => "Amet consectetur",
+		"subtitle" => "Dolor",
+		"content" => $lipsum->getSentence(9)
+	)
 );
 
 ?>
@@ -38,12 +52,12 @@ $(document).ready(function(){
 <div class="wrap">
 	<div class="row pad-bottom">
         <div class="five columns community border">
-			<?php $i = 0; foreach ($posts as $title => $content) { $i++; ?>
+			<?php $i = 0; foreach ($posts as $post) { $i++; ?>
 	        <div class="row pad-bottom">
-	        	<h3><?php echo $title;?></h3>
-				<p>This is the summary
-				<div class="<?php echo $i;?> full">
-					<?php echo $content;?></p>
+	        	<h3><?php echo $post['title'];?></h3>
+				<p><?php echo $post['subtitle'];?></p>
+				<p> <div class="<?php echo $i;?> full">
+					<?php echo $post['content'];?></p>
 				</div>
             	<button class="js-community-toggle fontsize-small float-right small" data-toggle-num="<?php echo $i;?>">View</button>
 	        </div>

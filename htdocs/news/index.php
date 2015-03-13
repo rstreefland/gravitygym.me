@@ -37,14 +37,13 @@ if (isSet($_GET['p'])) {
 
 } else {
 ?>
-<div class="block pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo thumb($rootpath.'images/block-bg/news.jpg', 1000);?>">
+<div class="block pad bg bg9 align-center">
 	<div class="wrap">
 		<div class="row">
             <h1>News</h1>
 		</div>
 	</div>
 </div>
-
 <div class="wrap pad-top">
 	<div class="row margin-bottom">
 		<div class="six columns">

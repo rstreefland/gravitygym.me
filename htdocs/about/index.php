@@ -28,6 +28,7 @@
         <div class="ten columns">
             <p class = "pad-top">
                 This is Dan, he doesn't actually work for the gym, but he's here anyway for being such a nifty guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
     </div>
@@ -35,6 +36,7 @@
         <div class="ten columns">
             <p class = "pad-top">
                 This is George, he doesn't actually work for the gym, but he's here anyway for being such a swell guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
         <div class="two columns">
@@ -48,6 +50,7 @@
         <div class="ten columns">
             <p class = "pad-top">
                 This is Beth, she doesn't actually work for the gym, but she's here anyway for being such a stand-up gal!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
     </div>
@@ -55,6 +58,7 @@
         <div class="ten columns">
             <p class = "pad-top">
                 This is Rhys, he doesn't actually work for the gym, but he's here anyway for being such an awesome guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
         <div class="two columns">

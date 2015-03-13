@@ -76,7 +76,11 @@ $donateFinished = isSet($_GET['donateFinished']);
 		<!--[if IE]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		<header>
 			<nav class="wrap">
-				<div class="row">
+                <div id="pull" class="float-container">
+                    <img class="float-left" src="<?php echo thumb($rootpath.'images/favicon.png', 500);?>">
+                    <i class="float-right fa fa-bars"></i>
+                </div>
+                <div class="row">
 					<a class="four columns logo" href="<?php echo $rootpath;?>">
 						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
 					</a>
@@ -92,6 +96,18 @@ $donateFinished = isSet($_GET['donateFinished']);
 						?>
 					</div>
 				</div>
+                <div class="mobnavigation align-center">
+                    <?php foreach ($navItems as $name => $link) {
+                        $url = $rootpath.$link;
+                        echo "<a href='$url'>$name</a>";
+                    }
+                    if (!$donateFinished) {
+                        $url = $rootpath.'donate/';
+                        echo "<a class='button-primary' href='$url'>Donate</a>";
+                    }
+                    ?>
+                </div>
+
 			</nav>
 		</header>
 	<div id="content">

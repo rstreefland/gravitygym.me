@@ -77,12 +77,12 @@ $donateFinished = isSet($_GET['donateFinished']);
 		<header>
 			<nav class="wrap">
                 <div id="pull" class="float-container">
-                    <img class="float-left" src="<?php echo thumb($rootpath.'images/favicon.png', 500);?>">
+                    <img class="float-left" src="<?php echo thumb($rootpath.'images/favicon.png', 500);?>" alt="Gravity logo">
                     <i class="float-right fa fa-bars"></i>
                 </div>
                 <div class="row">
 					<a class="four columns logo" href="<?php echo $rootpath;?>">
-						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
+						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png" alt="Large gravity logo">
 					</a>
 					<div class="eight columns navigation align-right">
 						<?php foreach ($navItems as $name => $link) {

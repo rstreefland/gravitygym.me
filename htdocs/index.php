@@ -114,7 +114,7 @@ $raisedMoney = ($donateFinished ? $targetMoney : 317460);
 	</div>
 	<?php for ($i = 1; $i <= 4; $i++) { ?>
 	<div class="testimonial">
-		<img class="circle" src="<?php echo thumb($rootpath.'images/people/testimonial'.$i.'.jpg', 200)?>">
+		<img class="circle" src="<?php echo thumb($rootpath.'images/people/testimonial'.$i.'.jpg', 200)?>" alt="Testmonial author">
 		<p>I really love Gravity Gym, all of the teachers are so friendly, I can't wait for them to open up their new site so I can learn even more! <span>Eleanor Smith, age 6</span></p>
 	</div>
 	<?php } ?>

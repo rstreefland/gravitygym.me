@@ -15,7 +15,7 @@
             <p>Gravity Gym is our home away from home, and we want it to be yours too. We strive to make learning about Gymnastics everyone's favourite pass-time through our wide range of courses taught by our professional instructors. Members can also use the gym whenevery they want to practice what they have learnt.</p>
         </div>
 		<div class="five columns">
-			<img src="../images/about/gymnasticClub.jpg">
+			<img src="../images/about/gymnasticClub.jpg" alt="Gravity gym building">
 		</div>
 	</div>
     <div class = "row">
@@ -23,7 +23,7 @@
     </div>
     <div class = "row">
         <div class="two columns">
-            <img class="circle" src="../images/people/dan.jpg">
+            <img class="circle" src="../images/people/dan.jpg" alt="Profile picture">
         </div>
         <div class="ten columns">
             <p class = "pad-top">
@@ -40,12 +40,12 @@
             </p>
         </div>
         <div class="two columns">
-            <img class="circle" src="../images/people/george.jpg">
+            <img class="circle" src="../images/people/george.jpg" alt="Profile picture">
         </div>
     </div>
     <div class = "row">
         <div class="two columns">
-            <img class="circle" src="../images/people/beth.jpg">
+            <img class="circle" src="../images/people/beth.jpg" alt="Profile picture">
         </div>
         <div class="ten columns">
             <p class = "pad-top">
@@ -62,7 +62,7 @@
             </p>
         </div>
         <div class="two columns">
-            <img class="circle" src="../images/people/rhys.jpg">
+            <img class="circle" src="../images/people/rhys.jpg" alt="Profile picture">
         </div>
     </div>
 </div>

@@ -65,10 +65,10 @@ $(document).ready(function(){
 		</div>
 		<div class="six columns">
 			<div class="community_slider">
-			<div><img src="../images/community/1.jpg"></div>
-			<div><img src="../images/community/2.jpg"></div>
-			<div><img src="../images/community/3.jpg"></div>
-			<div><img src="../images/community/4.jpg"></div>
+			<div><img src="../images/community/1.jpg" alt="Community image"></div>
+			<div><img src="../images/community/2.jpg" alt="Community image"></div>
+			<div><img src="../images/community/3.jpg" alt="Community image"></div>
+			<div><img src="../images/community/4.jpg" alt="Community image"></div>
 			</div>
 		</div>
 	</div>

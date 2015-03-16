@@ -27,7 +27,7 @@ $items = array(
 					if ( $item != "." && $item != ".." && $item != 'front.jpg') { ?>
 
 <a href='<?php echo $gallery.'/'.$item;?>' data-lightbox='<?php echo $gallery;?>'>
-	<img class="masonry-item" src="<?php echo thumb($rootpath.'gallery/'.$gallery.'/'.$item, 300);?>">
+	<img class="masonry-item" src="<?php echo thumb($rootpath.'gallery/'.$gallery.'/'.$item, 300);?>" alt="Gallery item">
 </a>
 					<?php }
 				} ?>
@@ -47,7 +47,7 @@ $items = array(
 		?>
 			<a class="slide" href="<?php echo $rootpath.'gallery/?p='.$folder;?>">
 				<div class="img-container">
-					<img src="<?php echo thumb($rootpath.'gallery/'.$folder.'/front.jpg', 1140);?>">
+					<img src="<?php echo thumb($rootpath.'gallery/'.$folder.'/front.jpg', 1140);?>" alt="<?php echo $title?>">
 				</div>
 				<h3><?php echo $title;?></h3>
 			</a>

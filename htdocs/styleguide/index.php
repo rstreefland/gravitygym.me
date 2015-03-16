@@ -10,9 +10,9 @@
 	<section>
 		<h2>Branding</h2>
 		<h3>Site logo</h3>
-		<p><img style="max-width: 300px;" src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 500)?>"></p>
+		<p><img style="max-width: 300px;" src="<?php echo thumb($rootpath.'images/logo_wide_pink.png', 500)?>" alt="Large gravity logo"></p>
 		<h3>Favicon</h3>
-		<p><img style="max-width: 50px;" src="<?php echo thumb($rootpath.'images/logo_icon_pink.png', 500)?>"></p>
+		<p><img style="max-width: 50px;" src="<?php echo thumb($rootpath.'images/logo_icon_pink.png', 500)?>" alt="Small gravity logo"></p>
 	</section>
 	<section>
 		<h2>Colours</h2>

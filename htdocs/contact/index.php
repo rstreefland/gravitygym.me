@@ -50,7 +50,7 @@
 		</form>
     <div class = "row pad-top">
         <div class = "six columns">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104937.49335482396!2d139.11432295!3d-34.72291575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab7602e4c759ed9%3A0x4033654628edcf0!2sSprington+SA+5235%2C+Australia!5e0!3m2!1sen!2suk!4v1423562267423" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9948.001229828486!2d-0.9396273176416617!3d51.43978823584887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487684b360159d63%3A0xa74d6f19cd5e05ca!2sUniversity+of+Reading!5e0!3m2!1sen!2s!4v1426588159070" width="600" height="450" frameborder="0" style="border:0"></iframe>
         </div>
         <div class = "six columns">
             <h3 class="no-margin">Gravity Gym Address</h3>

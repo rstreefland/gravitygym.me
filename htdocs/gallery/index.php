@@ -3,6 +3,7 @@
 
 $items = array(
 	'freerunning',
+	'trampolining',
 	'parallel-bars'
 );
 

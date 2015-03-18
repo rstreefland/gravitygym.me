@@ -3,6 +3,7 @@
 
 $items = array(
 	'freerunning',
+	'trampolining',
 	'parallel-bars'
 );
 
@@ -44,7 +45,7 @@ if (isSet($_GET['p'])) {
 			<div class="wrap align-center">
 				<div class="row">
 					<div class="twelve columns">
-						<h2><?php echo ucwords(str_replace('-', ' ', $gallery));?></h2>
+						<h2><?php echo ucfirst(str_replace('-', ' ', $gallery));?></h2>
 					</div>
 				</div>
 				<div class="row">

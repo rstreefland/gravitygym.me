@@ -107,7 +107,7 @@ body > header .mobnavigation {
 
     width: 100%;
     text-align: center;
-    padding: 2em 0;
+    padding: 3.33em 0 2em 0;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -124,7 +124,7 @@ body > header .mobnavigation {
         display: block;
     }
 
-    body > header .navigation {
+    body > header .navigation, body > header .logo {
         display: none;
     }
 

@@ -97,7 +97,7 @@ if (isset($_GET['p'])) {
 				"donate-button-text" => ($row['amount'] == 0 ? "Donate other amount" : "Donate £" . $row['amount']),
 				"amount-text" => ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']),
 				"gets-us" => $row['getsUs'],
-				"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $row['getsYou'])).'</li></ul>',
+				"gets-you" => $row['getsYou']
 			));
 		}
 
@@ -109,7 +109,7 @@ if (isset($_GET['p'])) {
 			"donate-button-text" => ($row['amount'] == 0 ? "Donate other amount" : "Donate " . $row['amountText']),
 			"amount-text" => ($row['amount'] == 0 ? 'Other' : '£'.$row['amount']),
 			"gets-us" => $row['getsUs'],
-			"gets-you" => '<ul><li>'.implode(".</li><li>", explode('. ', $row['getsYou'])).'</li></ul>',
+			"gets-you" => $row['getsYou'],
 		));
 
 

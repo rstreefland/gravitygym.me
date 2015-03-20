@@ -1,0 +1,209 @@
+[
+    {
+        "name": "xes/templater",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/templater.git",
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/templater/zipball/794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
+            "reference": "794d8d3adb0a2a9cd01180811c9d785e99c4e0a9",
+            "shasum": ""
+        },
+        "time": "2015-02-19 16:10:17",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Basic template library with a Twig-like syntax",
+        "homepage": "https://github.com/dan1elhughes/templater"
+    },
+    {
+        "name": "xes/cacher",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/cacher.git",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/cacher/zipball/b1c60186b8999d16500c646824e877c920933f32",
+            "reference": "b1c60186b8999d16500c646824e877c920933f32",
+            "shasum": ""
+        },
+        "time": "2015-02-17 16:51:42",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple file caching for PHP with string replacements",
+        "homepage": "https://github.com/dan1elhughes/cacher"
+    },
+    {
+        "name": "xes/lipsum",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/lipsum.git",
+            "reference": "25a5db25aec16c7bfda48664cefc729f2bf9e974"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/lipsum/zipball/25a5db25aec16c7bfda48664cefc729f2bf9e974",
+            "reference": "25a5db25aec16c7bfda48664cefc729f2bf9e974",
+            "shasum": ""
+        },
+        "time": "2015-02-28 14:32:45",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "xes\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Dan Hughes",
+                "email": "dh@xes.io",
+                "homepage": "https://xes.io",
+                "role": "Developer"
+            }
+        ],
+        "description": "Get paragraphs of Lorem Ipsum",
+        "homepage": "https://github.com/dan1elhughes/lipsum"
+    },
+    {
+        "name": "xes/simpleimage",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dan1elhughes/SimpleImage.git",
+            "reference": "0fc5c1e87f642503a46e6f497a851074347aa6e3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dan1elhughes/SimpleImage/zipball/0fc5c1e87f642503a46e6f497a851074347aa6e3",
+            "reference": "0fc5c1e87f642503a46e6f497a851074347aa6e3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-03-02 13:50:36",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "abeautifulsite": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nazar Mokrynskyi",
+                "email": "nazar@mokrynskyi.com",
+                "homepage": "http://cleverstyle.org/",
+                "role": "Developer"
+            },
+            {
+                "name": "Cory LaViska",
+                "homepage": "http://www.abeautifulsite.net/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class that simplifies working with images"
+    },
+    {
+        "name": "leafo/scssphp",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/leafo/scssphp.git",
+            "reference": "cc3e8945fc7a46350c09d3610f2714875b15954a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/leafo/scssphp/zipball/cc3e8945fc7a46350c09d3610f2714875b15954a",
+            "reference": "cc3e8945fc7a46350c09d3610f2714875b15954a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2015-01-27 19:12:34",
+        "bin": [
+            "bin/pscss"
+        ],
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "classmap.php"
+            ],
+            "psr-4": {
+                "Leafo\\ScssPhp\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Leaf Corcoran",
+                "email": "leafot@gmail.com",
+                "homepage": "http://leafo.net"
+            }
+        ],
+        "description": "scssphp is a compiler for SCSS written in PHP.",
+        "homepage": "http://leafo.net/scssphp/",
+        "keywords": [
+            "css",
+            "less",
+            "sass",
+            "scss",
+            "stylesheet"
+        ]
+    }
+]

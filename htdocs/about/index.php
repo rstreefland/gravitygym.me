@@ -12,53 +12,57 @@
 	<div class="row">
         <div class="seven columns">
             <h2>What Is Gravity Gym?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin, ex nec tempus gravida, orci eros aliquet metus, non vestibulum metus velit sed ante. Proin id placerat tellus. Sed et maximus felis, laoreet malesuada ipsum. Maecenas mollis, dolor id condimentum fermentum, orci dolor gravida justo, imperdiet mollis odio risus ut tortor. Donec dignissim magna in dolor mattis, ut pellentesque nisi dictum. Maecenas a ex sagittis, sollicitudin neque congue, molestie erat. Fusce semper molestie euismod. Phasellus vel viverra felis.</p>
+            <p>Gravity Gym is our home away from home, and we want it to be yours too. We strive to make learning about Gymnastics everyone's favourite pass-time through our wide range of courses taught by our professional instructors. Members can also use the gym whenevery they want to practice what they have learnt.</p>
         </div>
 		<div class="five columns">
-			<img src="../images/about/gymnasticClub.jpg">
+			<img src="../images/about/gymnasticClub.jpg" alt="Gravity gym building">
 		</div>
 	</div>
     <div class = "row">
         <h2>Meet the Team</h2>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/dan.jpg">
+        <div class="two columns">
+            <img class="circle" src="../images/people/dan.jpg" alt="Profile picture">
         </div>
-        <div class="seven columns">
-            <p>
+        <div class="ten columns">
+            <p class = "pad-top">
                 This is Dan, he doesn't actually work for the gym, but he's here anyway for being such a nifty guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/george.jpg">
-        </div>
-        <div class="seven columns">
-            <p>
+        <div class="ten columns">
+            <p class = "pad-top">
                 This is George, he doesn't actually work for the gym, but he's here anyway for being such a swell guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
+        </div>
+        <div class="two columns">
+            <img class="circle" src="../images/people/george.jpg" alt="Profile picture">
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/beth.jpg">
+        <div class="two columns">
+            <img class="circle" src="../images/people/beth.jpg" alt="Profile picture">
         </div>
-        <div class="seven columns">
-            <p>
+        <div class="ten columns">
+            <p class = "pad-top">
                 This is Beth, she doesn't actually work for the gym, but she's here anyway for being such a stand-up gal!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
         </div>
     </div>
     <div class = "row">
-        <div class="three columns">
-            <img class="circle" src="../images/people/rhys.jpg">
-        </div>
-        <div class="seven columns">
-            <p>
-                This is Rhys, he doesn't actually work for the gym, but he's here anyway!
+        <div class="ten columns">
+            <p class = "pad-top">
+                This is Rhys, he doesn't actually work for the gym, but he's here anyway for being such an awesome guy!
+				<?php echo $lipsum->getSentence(5);?>
             </p>
+        </div>
+        <div class="two columns">
+            <img class="circle" src="../images/people/rhys.jpg" alt="Profile picture">
         </div>
     </div>
 </div>

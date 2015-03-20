@@ -1,63 +1,18 @@
 <?php
-//Display all errors and warnings
-error_reporting(-1);
-ini_set('display_errors', 'On');
 
-$rooturl = $_SERVER['HTTP_HOST'];
-$filepath = $_SERVER['DOCUMENT_ROOT'];
+require('settings.php');
+require('db.php');
+require('functions.php');
 
-//Assume production environment, tweak otherwise
-$rootpath='/';
-$stylesheet=$rootpath.'includes/style.php?p=style.scss';
+$cache = new xes\Cacher($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/cache/', !$devMode);
+$cache->start();
 
-//If running on local machine, use devmode settings (don't cache, use local rather than CDN files)
-//Detect if running in production (gravitygym.me)
-$devMode = ($_SERVER['HTTP_HOST'] != 'gravitygym.me');
-if ($devMode) {
-	$rootpath='/';
-	$stylesheet=$rootpath.'includes/style.dev.php?p=style.scss&reset=1';
-}
+$templater = new xes\Templater($_SERVER['DOCUMENT_ROOT'].$rootpath.'includes/templates/');
 
-//Detect if running in staging environment (workshop.xes.io/gravitygym)
-$stagingMode = (strpos($filepath,'workshop') !== false);
-if ($stagingMode) {
-	$devMode = false;
-	$rootpath='/gravitygym/';
-	$stylesheet=$rootpath.'includes/style.php?p=style.scss';
-}
+$lipsum = new xes\Lipsum();
 
-//Include external PHP libraries
-require($filepath.$rootpath.'includes/scripts/parsedown/parsedown.php');
-
-//Start caching
-if (!$devMode) {
-	$cache_time = 5; // Time in seconds to keep a page cached
-	$cache_folder = $filepath.$rootpath.'includes/cache/'; // Folder to store cached files (no trailing slash)
-	$cache_filename = $cache_folder.md5($_SERVER['REQUEST_URI']).'.html'; // Location to lookup or store cached file
-	$cache_created  = (file_exists($cache_filename)) ? filemtime($cache_filename) : 0; //Check to see if this file has already been cached, if it has then get and store the file creation time
-
-	if ((time() - $cache_created) < $cache_time) {
-		readfile($cache_filename); // The cached copy is still valid, read it into the output buffer and exit
-		die();
-	}
-}
-ob_start(); //Start storing HTML rather than outputting directly, allows to replace title and description
-
-//externalFile returns the local copy of a file, or the CDN copy if production
-function externalFile($url, $file) {
-	global $rootpath, $devMode;
-	if ($devMode) {
-		return $rootpath.'includes/external/'.$file;
-	}
-	else {
-		return '//'.$url.$file;
-	}
-}
-
-//thumb returns a compressed version of an image for faster page loading times
-function thumb($src, $width) {
-	global $rootpath;
-	return $rootpath."images/thumb/&#63;w=$width&amp;src=$src";
+function generateCode() {
+    return strToUpper(substr(md5(rand()), -8));
 }
 
 $navItems = array(
@@ -68,6 +23,8 @@ $navItems = array(
 	"Community" => "community/",
 	"Contact" => "contact/"
 );
+
+$donateFinished = isSet($_GET['donateFinished']);
 
 ?>
 <!DOCTYPE html>
@@ -88,6 +45,7 @@ $navItems = array(
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/', 'masonry.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/', 'imagesloaded.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/', 'lightbox.min.js');?>"></script>
+        <script type="text/javascript" src="<?php echo $rootpath;?>includes/scripts/parallax.min.js"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>
@@ -118,20 +76,38 @@ $navItems = array(
 		<!--[if IE]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		<header>
 			<nav class="wrap">
-				<div class="row">
+                <div id="pull" class="float-container">
+                    <img class="float-left" src="<?php echo thumb($rootpath.'images/favicon.png', 500);?>" alt="Gravity logo">
+                    <i class="float-right fa fa-bars"></i>
+                </div>
+                <div class="row">
 					<a class="four columns logo" href="<?php echo $rootpath;?>">
-						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png">
+						<img src="<?php echo $rootpath;?>images/logo_wide_pink.png" alt="Large gravity logo">
 					</a>
 					<div class="eight columns navigation align-right">
 						<?php foreach ($navItems as $name => $link) {
 							$url = $rootpath.$link;
 							echo "<a href='$url'>$name</a>";
 						}
-						$url = $rootpath.'donate/';
-						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        if (!$donateFinished) {
+    						$url = $rootpath.'donate/';
+    						echo "<a class='button-primary' href='$url'>Donate</a>";
+                        }
 						?>
 					</div>
 				</div>
+                <div class="mobnavigation align-center">
+                    <?php foreach ($navItems as $name => $link) {
+                        $url = $rootpath.$link;
+                        echo "<a href='$url'>$name</a>";
+                    }
+                    if (!$donateFinished) {
+                        $url = $rootpath.'donate/';
+                        echo "<a class='button-primary' href='$url'>Donate</a>";
+                    }
+                    ?>
+                </div>
+
 			</nav>
 		</header>
 	<div id="content">

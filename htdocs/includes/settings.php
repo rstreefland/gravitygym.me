@@ -7,6 +7,7 @@ ini_set('display_errors', 'On');
 $siteName = "GRAVITY";
 $rooturl = $_SERVER['HTTP_HOST'];
 $filepath = $_SERVER['DOCUMENT_ROOT'];
+$stylesheetDev = false;
 
 //Assume production environment, tweak otherwise
 $rootpath='/';
@@ -24,7 +25,6 @@ $stagingMode = (strpos($filepath,'workshop') !== false);
 if ($stagingMode) {
 	$devMode = false;
 	$rootpath='/gravitygym/';
-	$stylesheetDev = false;
 }
 
 $stylesheet=$rootpath.'includes/style.php?p=style.scss'.$stylesheetDev;

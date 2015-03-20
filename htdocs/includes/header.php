@@ -62,7 +62,7 @@ $donateFinished = isSet($_GET['donateFinished']);
 		<meta property="og:image" content="<!--IMAGE-->"<?php $pageImage = "http://".$rooturl.$rootpath."images/logo.jpg";?>>
 		<meta property="og:title" content="<!--TITLE-->">
 		<meta property="og:description" content="<!--DESCRIPTION-->"<?php $pageDescription = "In order to achieve our goal, we need to raise £1,500,000, and we can't do that without your contributions, so please donate if you can. Each donation level will get you different rewards you can reclaim at the gym when we have reached our goal!.";?>>
-		<meta property="og:url" content="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>"/>
+		<meta property="og:url" content="<?php echo "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>"/>
 
 		<?php if ($devMode) { ?>
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />

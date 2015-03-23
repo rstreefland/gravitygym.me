@@ -47,8 +47,6 @@ $classes = array(
 	),
 );
 ?>
-
-<span class="link" id="rhythmic">&nbsp;</span>
 <div class="block pad bg bg7 align-center">
 	<div class="wrap">
 		<div class="row">

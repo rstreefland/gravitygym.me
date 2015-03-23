@@ -46,19 +46,6 @@ $classes = array(
 		'link' => 'nul'
 	),
 );
-
-$template->render(array(
-
-));
-//rhythmic
-//freerunning
-//parallelbars
-//trampoline
-//floor
-//jumping
-//children
-
-
 ?>
 
 <span class="link" id="rhythmic">&nbsp;</span>

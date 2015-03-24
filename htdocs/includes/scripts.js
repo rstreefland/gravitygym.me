@@ -31,8 +31,6 @@ $( document ).ready(function() {
 		$container.addClass('loaded');
 	});
 
-	jQuery(window).trigger('resize').trigger('scroll');
-
 });
 
 $(function() {

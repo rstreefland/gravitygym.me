@@ -31,6 +31,8 @@ $( document ).ready(function() {
 		$container.addClass('loaded');
 	});
 
+	$(".parallax-mirror").hide().fadeIn('fast');
+
 });
 
 $(function() {

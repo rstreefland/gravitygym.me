@@ -47,7 +47,7 @@ $(window).load(function() {
 	// }
 	setTimeout(function() {
 		$(window).trigger('resize')
-	}, 10000)
+	}, 200)
 });
 
 $(function() {

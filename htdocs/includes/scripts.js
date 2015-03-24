@@ -35,6 +35,23 @@ $( document ).ready(function() {
 
 });
 
+$(window).load(function() {
+	$('.parallax-1').parallax({
+		imageSrc: '/images/block-bg/1.jpg',
+		positionY: '400px'
+	}).resize();
+	$('.parallax-5').parallax({imageSrc: '/images/block-bg/5.jpg'});
+
+
+	  // place this within dom ready function
+	// function fixParallax() {
+	// 	$(window).trigger('resize');
+	// }
+	setTimeout(function() {
+		$(window).trigger('resize')
+	}, 200)
+});
+
 $(function() {
 	var pull 		= $('#pull');
 	menu 		= $('nav .mobnavigation');

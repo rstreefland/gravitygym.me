@@ -13,23 +13,14 @@ body, html {
 	padding-top: 5.5em;
 }
 
-.parallax {
+.parallax-window {
     background: linear-gradient(
 		rgba(0, 0, 0, 0.25),
 		rgba(0, 0, 0, 1)
 	),
 }
 
-.parallax-mirror {
-    visibility: visible !important;
-}
-.parallax-slider {
-    // padding-top: 17em;
-    // height: auto !important;
-    // top: 0px !important;
-}
-
-.parallax.nofade {
+.parallax-window.nofade {
     background: rgba(0, 0, 0, 0.5);
 }
 /* =====================================*/

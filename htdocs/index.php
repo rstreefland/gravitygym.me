@@ -5,7 +5,7 @@ $targetMoney = 1500000;
 $raisedMoney = ($donateFinished ? $targetMoney : 317460);
 
 ?>
-<div class="block large pad bg parallax parallax-1 align-center">
+<div class="block large pad bg parallax-window align-center" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/1.jpg?cache=0">
 	<div class="wrap align-center">
 		<div class="row">
 			<h1 class="twelve columns fontsize-xhuge">Welcome to Gravity Gym.</h1>
@@ -45,7 +45,7 @@ $raisedMoney = ($donateFinished ? $targetMoney : 317460);
 		</div>
 	</div>
 </div>
-<div class="block huge pad bg parallax parallax-5 nofade">
+<div class="block huge pad bg parallax-window nofade" data-parallax="scroll" data-image-src="<?php echo $rootpath;?>images/block-bg/5.jpg?cache=0">
 	<div class="wrap">
 		<div class="row">
 			<div class="eight columns offset-by-four">

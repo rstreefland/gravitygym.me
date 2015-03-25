@@ -45,7 +45,7 @@ $donateFinished = isSet($_GET['donateFinished']);
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/', 'masonry.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/', 'imagesloaded.pkgd.min.js');?>"></script>
 		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/', 'lightbox.min.js');?>"></script>
-        <script type="text/javascript" src="<?php echo $rootpath;?>includes/scripts/parallax.min.js"></script>
+		<script type="text/javascript" src="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/', 'jquery.stellar.min.js');?>"></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="<?php echo externalFile('cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/', 'normalize.min.css');?>"/>

@@ -1,10 +1,22 @@
-<div class="block pad bg parallax-window align-center" data-parallax="scroll" data-image-src="{{image}}">
+<div class="block pad bg align-center" data-parallax="scroll" data-image-src="{{image}}">
 	<div class="wrap">
 		<div class="row">
             <h1>{{title}}</h1>
 		</div>
 	</div>
 </div>
+<style>
+.bg {
+background:
+	linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 1)
+	),
+	url({{image}});
+	background-size: cover;
+	background-position: center center;
+}
+</style>
 <article class="wrap small pad-top">
 	<div class="fontsize-small faint">{{date}}</div>
 	<div class="pad-top">

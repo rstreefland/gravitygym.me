@@ -1,5 +1,2 @@
-#HCI and Applications
-##Overview
-Second year group project for the HCI module at University of Reading.
-##Demo
-https://gravitygym.me
+#gravitygym.me
+Second year group project for the HCI module at the University of Reading.
